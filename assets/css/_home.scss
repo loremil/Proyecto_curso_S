@@ -1,0 +1,809 @@
+// .sass css home
+
+.titulo-linea {
+  width: 100px;
+  border: 0;
+  height: 4px;
+  background-color: #FFC80A;
+  display: block;
+  margin: 5px auto 50px;
+}
+
+.homePresentacion {
+  height: auto;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  height: 450px;
+
+  .homePresentacion--contenedor {
+    text-align: left;
+    z-index: 190;
+    position: absolute;
+    top: 15%;
+
+    .titulo {
+      color: #fff;
+      text-align: left;
+      @include font-36;
+      @include roboto-normal;
+      border: none;
+    }
+
+    .subtitulo {
+      color: #fff;
+      text-align: left;
+      @include roboto-light;
+      @include font-36;
+      line-height: 1.2;
+    }
+  }
+
+  .video--home {
+    background: #535557;
+    position: relative;
+    overflow: hidden;
+    video {
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      opacity: 0.5;
+      transition: 1s opacity;
+    }
+  }
+
+  .caja--slider {
+    background: #eee;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  #sliderhomeContenedor {
+    position: relative;
+    top: 20%;
+
+    .swiper-container-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+      bottom: 0 !important;
+      left: 0 !important;
+      width: 100%;
+    }
+
+    .sliderHome {
+      width: 370px;
+      position: absolute;
+      right: 0;
+      z-index: 200;
+
+      .ban-swiper-container {
+        border-radius: 4px;
+      }
+
+      .swiper-slide {
+        .contenedorSliderHome {
+          background-color: #536374;
+
+          img {
+            width: 100%;
+            opacity: 0.5;
+          }
+
+          .contenedorSliderHome--mensaje {
+            position: absolute;
+            background-color: #535557;
+            opacity: 0.9;
+            height: auto;
+            min-height: 90px;
+            width: 100%;
+            bottom: 0;
+
+            h4 {
+              @include font-18;
+              padding: 12px 15px 5px;
+              color: #fff;
+
+              i {
+                float: right;
+                top: -4px;
+                position: relative;
+                color: #fff;
+              }
+            }
+
+            p {
+              padding: 9px 15px;
+              line-height: 1.2em;
+              color: #fff;
+              @include font-14;
+            }
+          }
+        }
+      }
+
+      .pagination {
+        position: relative;
+        top: 12px;
+        left: 50%;
+        height: 0;
+
+        .swiper-pagination-bullet {
+          &:nth-of-type(odd) {
+            margin-right: 5px;
+          }
+
+          &:nth-of-type(even) {
+            margin-right: 5px;
+          }
+        }
+
+        .swiper-pagination-bullet-active {
+          background: #fff !important;
+        }
+      }
+    }
+  }
+}
+/*Correcciones indicadores jguerra 20-11*/
+.homeIndicadores {
+  background-color: #fff;
+  border-top: 1px solid #CCD1D9;
+  border-bottom: 1px solid #CCD1D9;
+  .sliderIndicadoresHome {
+      .swiper-container-horizontal {
+          .swiper-scrollbar {
+            display: none;
+        }
+      }
+    .swiper-container {
+      width: 100%;
+      height: auto;
+      margin: auto;
+      min-height: 75px
+    }
+    .swiper-slide {
+      padding: 0.4em;
+      text-align: center;
+      font-size: 18px;
+      width: auto;
+      min-width: 60px;
+
+      margin-right: 0px !important;
+      .contenedorIndicador {
+        width: 100%;
+        padding: 0 0.3em 0 0;
+        border-right: 1px dotted #CCD1D9;
+        text-align: left;
+        align-items: center;
+        @include font-16;
+        .indicadorNombre {
+          width: 100%;
+          @include font-14;
+          line-height: 14px;
+          color: #536374;
+          @include roboto-bold;
+          padding-bottom: 3px;
+        }
+        .indicadorEstructura {
+          height: 30px;
+
+          .indicadorDatos {
+            text-align: left;
+            display: inline-block;
+            vertical-align: middle;
+            padding-right: 0.3em;
+            line-height: 12px;
+            @include font-12;
+            .indicadorPrecio {
+              margin-bottom: 0.2em;
+              line-height: 14px;
+            }
+            .indicadorVariacion {
+              font-weight: 700;
+              line-height: 14px;
+            }
+          }
+          .indicadorGrafico {
+            display: inline-block;
+            vertical-align: middle;
+            overflow: hidden;
+            img {
+              max-width: 100%;
+              height: 30px;
+            }
+          }
+        }
+        .datos {
+          p {
+            padding: 2px 0;
+          }
+        }
+
+        .porcentaje {
+          margin: auto auto 25px;
+        }
+      }
+    }
+  }
+}
+
+.homeProductos {
+  .slide-up {
+    position: relative;
+
+    .linkProductos {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      content: '';
+      z-index: 3;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .titulo {
+    text-align: center;
+    font-size: 2rem;
+    @include roboto-light;
+    border: none;
+  }
+
+  &.color--fondo {
+    background-color: #F0F2F5 !important;
+  }
+
+  .producto--fondo {
+    background-image: url("../images/home-ffmm.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+
+  .producto--acciones {
+    background-image: url("../images/home-acciones.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+
+  .producto--mx {
+    background-image: url("../images/home-mx.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+
+  .producto--rentafija {
+    background-image: url("../images/home-rf.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+
+  .producto--mercado {
+    background-image: url("../images/home-mercado.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+
+  .producto--derivados {
+    background-image: url("../images/home-derivados.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+
+  .producto--apv {
+    background-image: url("../images/home-apv.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+
+  .producto--banchilepay {
+    background-image: url("../images/home-banchilepay.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+
+  .producto--ca {
+    background-image: url("../images/home-ca.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+
+  .producto--fondoinversion {
+    background-image: url("../images/home-fondoinversion.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+
+  .productos--bloque {
+    display: block;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    margin: 0 auto 30px;
+    border-radius: 4px;
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+
+    .producto--filtro {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .productos--titulos {
+      color: #fff;
+      line-height: 1.25em !important;
+      @include font-20;
+      @include roboto-normal;
+      margin-bottom: 10px;
+      opacity: 0.95;
+    }
+
+    .productos--icono {
+      margin: 30px auto;
+      color: #fff;
+      text-align: center;
+      position: relative;
+      padding: 11px;
+      line-height: 0;
+      opacity: 0.95;
+
+      i {
+        font-size: 38px;
+      }
+
+      md-icon {
+        color: #fff;
+        text-align: center;
+        line-height: 0;
+        font-size: 22px;
+        position: relative;
+        right: 3.2px;
+      }
+    }
+
+    .producto--overlay {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  .slide-up{
+  .producto--overlay {
+    background-color: #535557;
+    opacity: 0.95;
+    transform: translateY(100%);
+    -webkit-transition: transform 0.3s ease-out;
+    -o-transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    display: flex;
+    display: -ms-flexbox;
+    align-items: center;
+    -ms-flex-align: center;
+
+    .productos--parrafo {
+      padding: 1em;
+      color: #fff;
+      line-height: 20px;
+      font-size: 14px !important;
+      font-family: 'robotolight';
+      height: auto;
+      min-height: auto!important;
+    }
+
+    .botones-caja {
+      .boton--rescatar {
+        float: none !important;
+      }
+
+      .md-primary {
+        color: #336A9B !important;
+        min-height: 37px;
+        min-width: 180px;
+      }
+    }
+  }
+}
+
+  .slide-up .productos--bloque:hover .producto--overlay {
+    transform: translateY(0);
+  }
+
+  .productos--bloque:hover {
+    box-shadow: 0 2px 2px rgba(156, 156, 156, .30), 0 4px 4px rgba(156, 156, 156, 0.30), 0 8px 8px rgba(156, 156, 156, 0.30), 0 16px 16px rgba(156, 156, 156, 0.4);
+  }
+}
+
+.homeInvierte {
+  background-image: url('../images/home-bg-section-a.jpg');
+  background-size: 120%;
+  background-position: right;
+  background-color: $color-secundario-blanco;
+  height: auto;
+  padding: 60px 0;
+  overflow: hidden;
+
+  .titulo {
+    text-align: center;
+    font-size: 2rem;
+    @include roboto-light;
+    border: none;
+
+    span {
+      @include roboto-normal;
+      margin-left: 4px;
+    }
+  }
+
+  .invierte--bloque {
+    margin: 0;
+    position: relative;
+
+    .invierte--parrafo {
+      line-height: 1.25em !important;
+      margin-bottom: 2em !important;
+      @include font-16;
+      max-width: 361px;
+    }
+
+    .invierte--app {
+      margin-top: 7em;
+      text-align: left;
+
+      img {
+        width: 140px;
+        height: auto;
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+.homeLideres {
+  background: #f0f2f5;
+  height: auto;
+  padding: 60px 0;
+
+  .titulo {
+    text-align: center;
+    font-size: 2rem;
+    @include roboto-light;
+    border: none;
+
+    span {
+      @include roboto-normal;
+      margin-left: 4px;
+    }
+  }
+
+  .lideres--bloque {
+    color: $color-primario;
+    margin: 0;
+    position: relative;
+
+    .lideres--parrafo {
+      color: $color-primario;
+      line-height: 1.25em !important;
+      margin-bottom: 1em !important;
+      text-align: center;
+      @include font-16;
+    }
+
+    .lideres--imagen {
+      width: 700px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 40px;
+    }
+
+    .premiosReconocimientos {
+      display: flex;
+      display: -ms-flexbox;
+      align-items: center;
+      -ms-flex-align: center;
+      justify-content: center;
+      -ms-flex-pack: center;
+      margin-top: 50px;
+    }
+  }
+}
+
+.homeInformate {
+  height: auto;
+  padding: 60px 0 80px;
+  background-image: url('../images/home-e-bg-section-c.jpg');
+
+  .titulo {
+    text-align: center;
+    font-size: 2rem;
+    @include roboto-light;
+    border: none;
+
+    span {
+      @include roboto-normal;
+      margin-left: 4px;
+    }
+  }
+
+  .informate--bloque {
+    color: $color-primario;
+    margin: 0;
+    position: relative;
+
+    .informate--parrafo {
+      line-height: 1.25em;
+      margin-bottom: 2em;
+      @include font-16;
+      text-align: center;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .productos--bloque {
+    .producto--overlay{
+      p{
+        // max-height:5.2em;
+        overflow:hidden;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+ /*productos y servicios mejorados jorge--12-04 */
+  .homeProductos {
+    .productos--bloque {
+      display: block;
+      height: 130px;
+      .productos--titulos {
+        margin-bottom: 0;
+      }
+      .productos--icono {
+        margin: 3px auto 0 auto;
+      }
+
+      .producto--overlay {
+        display: none;
+      }
+      .productos--parrafo {
+        display: none;
+      }
+    }
+  }
+
+   /* fin productos y servicios mejorados jorge--12-04 */
+
+  .homePresentacion {
+    .sliderHome {
+      position: absolute!important;
+      left: 200px !important;
+      top: 108px !important;
+    }
+
+    .homePresentacion--contenedor {
+      min-width: 50% !important;
+      top: 2% !important;
+      left: 25% !important;
+      text-align: center !important;
+
+      .titulo {
+        color: #fff;
+        @include font-36;
+        @include roboto-normal;
+        border: none;
+        text-align: center !important;
+      }
+
+      .subtitulo {
+        color: #fff;
+        text-align: center !important;
+        @include roboto-light;
+        @include font-36;
+        line-height: 1.2;
+      }
+    }
+  }
+/*17-05 jorge*/
+  .homeInvierte {
+    background-image: url('../images/home-bg-section-a.jpg') !important;
+    // background-image: none;
+    background-position: right !important;
+
+    .invierte--bloque {
+      .invierte--parrafo {
+        max-width: 100%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .homePresentacion {
+    height: auto !important;
+
+    video {
+      display: none;
+    }
+
+    .sliderHome {
+      width: 100% !important;
+      position: relative !important;
+      .swiper-pagination-bullets{
+         display: none ;
+      }
+      .titulo {
+        display: none;
+      }
+
+      .swiper-slide {
+        height: auto !important;
+      }
+    }
+  }
+ /*slider mejorados jorge-12-04 */
+  .homeInformate {
+    .swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+      top: 10px;
+      margin-bottom: 20px !important;
+    }
+  }
+   /*slider mejorados jorge-12-04 */
+
+ /* productos y servicios mejorados--jorge-12-04 */
+  .homeProductos {
+    .productos--bloque {
+      display: block;
+      height: 100px;
+      width: 80%;
+      .productos--titulos {
+        margin-bottom: 0;
+        font-size: 16px;
+      }
+      .productos--icono {
+        margin: 3px auto 0 auto;
+      }
+
+      .producto--overlay {
+        display: none;
+      }
+      .productos--parrafo {
+        display: none;
+      }
+    }
+  }
+   /*fin productos y servicios mejorados jorge-12-04 */
+
+/* 17-05-jorge */
+  .homeInvierte {
+    background-image: url('../images/home-bg-section-a.jpg') !important;
+    // background-image: none;
+    background-position: right !important;
+    padding: 25px 16px 5px;
+    .invierte--bloque {
+      .invierte--parrafo {
+        max-width: 100%;
+        text-align: center;
+      }
+      .invierte--app {
+        margin-top: 2em;
+        padding-bottom: 1em;
+      }
+    }
+    .titulo{
+      @include font-24;
+      padding: 0;
+    }
+  }
+
+  .homeLideres {
+    padding: 25px 16px 25px;
+    .lideres--bloque {
+      .lideres--imagen {
+        width: 100%;
+        padding: 1em;
+        margin-top: 0;
+      }
+      .premiosReconocimientos{
+        padding: 1em 0;
+        margin-top: 0;
+      }
+    }
+    .titulo{
+      @include font-24;
+      padding: 0;
+    }
+  }
+
+  .homeInformate {
+    padding: 25px 16px 5px;
+    background-position: center center !important;
+    .titulo{
+      @include font-24;
+      padding: 0;
+    }
+    .informate--bloque{
+      .informate--parrafo {
+        margin-bottom: 1em;
+      }
+    }
+  }
+  .titulo-linea {
+    margin: 8px auto 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .homePresentacion{
+
+     .homePresentacion--contenedor{
+        display: none;
+     }
+     #sliderhomeContenedor{
+        .swiper-pagination{
+           display: none;
+        }
+     }
+     .video--home{
+        display: none;
+     }
+
+   }
+    /* productos y servicios mejorados jorge-12-04 */
+   .homeProductos {
+     .productos--bloque {
+       display: block;
+       height: 100px;
+       .productos--titulos {
+         margin-bottom: 0;
+         font-size: 16px;
+       }
+       .productos--icono {
+         margin: 3px auto 0 auto;
+       }
+
+       .producto--overlay {
+         display: none;
+       }
+       .productos--parrafo {
+         display: none;
+       }
+     }
+   }
+  /* fin productos y servicios mejorados jorge-12-04 */
+}
+/* parallax-fijo   jorge-13-04 */
+.paraxify {
+  background-attachment: fixed;
+  background-position: center center !important;
+  background-size: cover;
+  overflow: hidden;
+}
+/*fin  parallax fijo jorge-13-04 */
+
+div#sliderHome {
+  -webkit-box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.19);
+  box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.19);
+}

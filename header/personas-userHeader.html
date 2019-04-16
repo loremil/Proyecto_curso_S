@@ -1,0 +1,66 @@
+<div id="login--menu">
+  <div class="menu--usuario">
+    <div class="usuario--contenedor">
+      <div class="ban-row h--padding0">
+        <div class="ban-col-xs-9">
+          <p>Alejandro Henríquez</p>
+          <p class="contenedor--rut ">15.316.789.-k</p>
+        </div>
+        <div class="ban-col-xs-3">
+          <div class="menu--cerrar" ng-controller="asideCloseRight">
+            <md-button class="md-icon-button" aria-label="Settings" ng-click="close()">
+              <i class="material-icons">close</i>
+            </md-button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <md-content class="usuario--navegacion">
+    <md-list>
+      <md-list-item>
+        <md-divider>
+          <md-button ng-href="#mis-datos-resumen">Resumen de datos</md-button>
+        </md-divider>
+      </md-list-item>
+      <md-list-item>
+        <md-divider>
+          <md-button ng-href="login-personas.html#/encuesta-inversionista">Encuesta de Inversionista</md-button>
+        </md-divider>
+      </md-list-item>
+      <md-list-item>
+        <md-divider>
+          <md-button ng-href="#actualizacion-de-datos">Actualización de Datos</md-button>
+        </md-divider>
+      </md-list-item>
+    </md-list>
+  </md-content>
+  <div class="usuario--footer">
+    <p>Mi último acceso: 01/08/29016 14:00:00</p>
+    <p>Mi ejecutiva: Amanda Rivas</p>
+    <!--VERSION DESTOCK-->
+    <p class="h--paddingTop1">
+      <md-icon>
+        <i class="material-icons">phone</i>
+      </md-icon>
+      <span style="vertical-align:middle;"> 800 202 820 </span>
+    </p>
+    <p class="h--paddingTop1">
+      <md-icon>
+        <i class="material-icons">email</i>
+      </md-icon>
+      <span style="vertical-align:middle;"> contacto@banchile.cl</span>
+    </p>
+    <div class="ban-col-md-12 h--marginTop2">
+      <md-button class="boton--secundario line-center-primario" ng-click="close()">
+        <span>CERRAR SESIÓN</span>
+      </md-button>
+    </p>
+  </div>
+  <div class="ban-col-md-12 h--marginTop2">
+    <md-button class="boton--primario line-center-primario" ng-click="close()">
+      <span>Volver al BAnco</span>
+    </md-button>
+  </p>
+</div>
+</div>

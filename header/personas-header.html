@@ -1,0 +1,24 @@
+<!--header layout material angular-->
+<header>
+  <div hl-sticky="">
+    <!-- inicio header logo -->
+    <div class="headerEstilo ban-col-md-12">
+      <div class="ban-row">
+        <div class="ban-col-md-6">
+          <a class="tituloHeader" ng-href="#portada" >MATERIAL DE FORMACIÓN TÉCNICA
+            <br><span>BANCA EMPRESA Y BANCA PERSONAS</span>
+          </a>
+        </div>
+        <div class="ban-col-md-6 h--padding0">
+          <img class="h--floatRight" src="assets/images/logo_security.png" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- fin header logo -->
+    <!--   menu sesionado -->
+    <nav id="navegacionPrivada" class="nav--Privado" ng-include src="'navegacion-privada/navegacion-privada-persona.html'"
+      ng-controller="menuRouteCrtl-personas">
+    </nav>
+    <!--   menu sesionado -->
+  </div>
+</header>

@@ -1,0 +1,42 @@
+<section>
+  <div class="contenido--background asesoria-persona"></div>
+  <div class="ban-container">
+    <div class="card h--marginTopcard h--borderRadiusTop4px" ng-controller="BuscaListadoCtrl">
+      <div class="ban-row a_fadein">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-4 ban-col-lg-3 h--marginBottom0_5">
+          <h1 class="titulo--operacion ">Informes</h1>
+          <div class="border--titulo">
+            <hr>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-8 ban-col-md-5 ban-col-lg-6">
+            <div class="ban-row h--paddingLeft15_sm">
+              <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-6 ban-col-lg-6 h--paddingLeft-r"></div>
+              <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-6 ban-col-lg-6 h--paddingLeft-r">
+                <div id="select-cuenta" ng-include src=" 'select-cuenta/personas/card-cuenta.html' "></div>
+              </div>
+            </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-4 ban-col-md-3 ban-col-lg-3 h--paddingLeft-r h--marginBottom1">
+          <div id="select-cuenta" ng-include src=" 'select-cuenta/personas/card-saldo.html' "></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="ban-container">
+    <!-- ¡INICIO! Contenido tablas PDF -->
+    <div ng-include src=" 'contenido-privado/informes.html' "></div>
+    <!--  ¡FIN!  Contenido tablas PDF  -->
+  </div>
+</section>
+<!-- inicio contenedorBannerFM -->
+<section>
+  <div class="ban-container h--marginBottom4" ng-controller="animateCtrl">
+    <div class="card h--paddingTop2 h--paddingBottom2 h--borderRadiusBottom4px">
+      <div ng-include src=" './contenido-publico/banner-fondos_mutuos.html' "></div>
+    </div>
+  </div>
+</section>
+<!-- fin contenedorBannerFM -->

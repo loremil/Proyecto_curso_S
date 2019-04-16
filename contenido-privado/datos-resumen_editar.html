@@ -1,0 +1,615 @@
+<!--DATOS PERSONALES-->
+<section>
+  <div class="ban-container">
+    <div class="card">
+      <div class="contenedor--subtitulo animated fadeInDown ">
+        <div class="subtitulo--pasos">
+          <h3 class="subtitulo">Datos personales</h3>
+        </div>
+      </div>
+
+      <div class="ban-row animated fadeInDown h--verticalCenter">
+        <div class="ban-col-md-12 ban-col-lg-3">
+          <div class="imagenPersonal">
+            <img src="assets/images/avatar-empresa.png" alt="">
+          </div>
+        </div>
+        <div class="ban-col-md-12 ban-col-lg-9">
+          <div class="ban-row">
+            <div class="ban-col-md-6 ban-col-lg-4">
+              <md-input-container class="input--dropdowns">
+                <label>Rut Empresa</label>
+                <input required md-no-asterisk name="nombres" ng-model="nombres.nombre">
+                <div ng-messages="empresaForm.nombre.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                </div>
+              </md-input-container>
+            </div>
+            <div class="ban-col-md-6 ban-col-lg-4">
+              <md-input-container class="input--dropdowns">
+                <label>Razón Social</label>
+                <input required md-no-asterisk name="Paternoo" ng-model="Paternoo.nombre">
+                <div ng-messages="empresaForm.nombre.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                </div>
+              </md-input-container>
+            </div>
+            <div class="ban-col-md-6 ban-col-lg-4">
+              <md-input-container class="input--dropdowns">
+                <label>Nombre de fantasía</label>
+                <input required md-no-asterisk name="pellido" ng-model="apellido.nombre">
+                <div ng-messages="empresaForm.nombre.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                </div>
+              </md-input-container>
+            </div>
+            <div class="ban-col-md-6 ban-col-lg-4">
+              <md-input-container class="input--dropdowns">
+                <label>Fecha de nacimiento</label>
+                <md-datepicker required md-no-asterisk name="fecha" ng-model="fecha.nombre"></md-datepicker>
+                <div ng-messages="empresaForm.nombre.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                </div>
+              </md-input-container>
+            </div>
+            <div class="ban-col-md-6 ban-col-lg-4">
+              <md-input-container class="input--dropdowns">
+                <label>Nacionalidad</label>
+                <md-select required md-no-asterisk name="nacionalidad" ng-model="nacionalidad.nombre">
+                  <md-option value="1 ">Chileno</md-option>
+                </md-select>
+                <div ng-messages="empresaForm.nombre.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                </div>
+              </md-input-container>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--FIN DATOS PERSONALES-->
+<section>
+  <!--DATOS DE CONTACTO-->
+  <div class="ban-container">
+    <div class="card">
+      <div class="contenedor--subtitulo animated fadeInDown">
+        <div class="subtitulo--pasos">
+          <h3 class="subtitulo">Datos de contacto</h3>
+        </div>
+      </div>
+      <div class="ban-row animated fadeInDown">
+        <div class="ban-col-sm-6 ban-col-lg-3">
+          <md-input-container class="input--dropdowns">
+            <label>País</label>
+            <md-select required md-no-asterisk name="nombre" ng-model="empresa.nombre">
+              <md-option value="3">Masculino</md-option>
+            </md-select>
+            <div ng-messages="empresaForm.nombre.$error">
+              <div ng-message="required">Este campo es obligatorio.</div>
+            </div>
+          </md-input-container>
+        </div>
+        <div class="ban-col-sm-6 ban-col-lg-3">
+          <md-input-container class="input--dropdowns">
+            <label>Región</label>
+            <md-select required md-no-asterisk name="region" ng-model="region.nombre">
+              <md-option value="1">Región Metropolitana</md-option>
+            </md-select>
+            <div ng-messages="empresaForm.nombre.$error">
+              <div ng-message="required">Este campo es obligatorio.</div>
+            </div>
+          </md-input-container>
+        </div>
+        <div class="ban-col-sm-6 ban-col-lg-3">
+          <md-input-container class="input--dropdowns">
+            <label>Estado o provincia</label>
+            <md-select required md-no-asterisk name="estado" ng-model="estado.nombre">
+              <md-option value="1">Santiago</md-option>
+            </md-select>
+            <div ng-messages="empresaForm.nombre.$error">
+              <div ng-message="required">Este campo es obligatorio.</div>
+            </div>
+          </md-input-container>
+        </div>
+        <div class="ban-col-sm-6 ban-col-lg-3">
+          <md-input-container class="input--dropdowns">
+            <label>Ciudad</label>
+            <md-select required md-no-asterisk name="ciudad" ng-model="ciudad.nombre">
+              <md-option value="1">Santiago</md-option>
+            </md-select>
+            <div ng-messages="empresaForm.nombre.$error">
+              <div ng-message="required">Este campo es obligatorio.</div>
+            </div>
+          </md-input-container>
+        </div>
+        <div class="ban-col-sm-6 ban-col-lg-3">
+          <md-input-container class="input--dropdowns">
+            <label>Comuna</label>
+            <md-select required md-no-asterisk name="comuna" ng-model="comuna.nombre">
+              <md-option value="1">Macul</md-option>
+            </md-select>
+            <div ng-messages="empresaForm.nombre.$error">
+              <div ng-message="required">Este campo es obligatorio.</div>
+            </div>
+          </md-input-container>
+        </div>
+        <div class="ban-col-sm-6 ban-col-lg-3">
+          <md-input-container class="input--dropdowns">
+            <label>Tipo de calle</label>
+            <md-select required md-no-asterisk name="tipo" ng-model="tipo.nombre">
+              <md-option value="11">Calle</md-option>
+            </md-select>
+            <div ng-messages="empresaForm.nombre.$error">
+              <div ng-message="required">Este campo es obligatorio.</div>
+            </div>
+          </md-input-container>
+        </div>
+        <div class="ban-col-sm-6 ban-col-lg-3">
+          <md-input-container class="input--dropdowns">
+            <label>Nombre calle</label>
+            <input required md-no-asterisk name="nombre" ng-model="nombre.nombre">
+            <div ng-messages="empresaForm.nombre.$error">
+              <div ng-message="required">Este campo es obligatorio.</div>
+            </div>
+          </md-input-container>
+        </div>
+        <div class="ban-col-sm-6 ban-col-lg-3">
+          <md-input-container class="input--dropdowns">
+            <label>Número</label>
+            <input required md-no-asterisk name="numero" ng-model="numero.nombre">
+            <div ng-messages="empresaForm.nombre.$error">
+              <div ng-message="required">Este campo es obligatorio.</div>
+            </div>
+          </md-input-container>
+        </div>
+        <div class="ban-col-sm-6 ban-col-lg-3">
+          <md-input-container class="input--dropdowns">
+            <label>Depto/Casa/Block</label>
+            <input required md-no-asterisk name="numero" ng-model="numero.nombre">
+            <div ng-messages="empresaForm.nombre.$error">
+              <div ng-message="required">Este campo es obligatorio.</div>
+            </div>
+          </md-input-container>
+        </div>
+        <div class="ban-col-sm-6 ban-col-lg-3">
+          <md-input-container class="input--dropdowns">
+            <label>Código Postal</label>
+            <input required md-no-asterisk name="numero" ng-model="numero.nombre">
+            <div ng-messages="empresaForm.nombre.$error">
+              <div ng-message="required">Este campo es obligatorio.</div>
+            </div>
+          </md-input-container>
+        </div>
+        <div class="ban-col-sm-6 ban-col-lg-3">
+          <md-input-container class="input--dropdowns">
+            <label>Clasificación dirección</label>
+            <md-select required md-no-asterisk name="clasificicacion" ng-model="clasificicacion.nombre">
+              <md-option value="1">Particular</md-option>
+            </md-select>
+            <div ng-messages="empresaForm.nombre.$error">
+              <div ng-message="required">Este campo es obligatorio.</div>
+            </div>
+          </md-input-container>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Telefone -->
+<section>
+  <div class="ban-container">
+    <div class="card">
+      <div class="contenedor--subtitulo animated fadeInDown">
+        <div class="subtitulo--pasos">
+          <h3 class="subtitulo">Teléfonos</h3>
+        </div>
+      </div>
+      <div class="ban-row animated fadeInDown">
+        <div class="ban-col-sm-6 ban-col-lg-4">
+          <div class="input--label">
+            <p class="label--texto">Número de télefono</p>
+            <md-input-container class="input--dropdowns__ancho">
+              <md-select name="plantilla1" ng-model="area" placeholder="56">
+                <md-option value="1">56</md-option>
+                <md-option value="1">54</md-option>
+                <md-option value="1">52</md-option>
+              </md-select>
+            </md-input-container>
+            <md-input-container class="input--dropdowns__ancho">
+              <label></label>
+              <md-select name="plantilla2" ng-model="codigofono" placeholder="02">
+                <md-option value="1">02</md-option>
+                <md-option value="1">32</md-option>
+                <md-option value="1">09</md-option>
+              </md-select>
+            </md-input-container>
+            <md-input-container class="input--dropdowns__number h--dropdowns__number">
+              <label></label>
+              <input required md-no-asterisk name="number" ng-model="number.nombre" placeholder="84567654">
+              <div ng-messages="empresaForm.nombre.$error">
+                <div ng-message="required">Este campo es obligatorio.</div>
+              </div>
+            </md-input-container>
+          </div>
+        </div>
+        <div class="ban-col-sm-6 ban-col-lg-4">
+          <md-input-container class="input--dropdowns">
+            <label>Tipo de télefono</label>
+            <md-select required md-no-asterisk name="tipo" ng-model="tipo.nombre">
+              <md-option value="1">Fijo</md-option>
+            </md-select>
+            <div ng-messages="empresaForm.nombre.$error">
+              <div ng-message="required">Este campo es obligatorio.</div>
+            </div>
+          </md-input-container>
+        </div>
+        <div class="ban-col-sm-6 ban-col-lg-4">
+          <md-input-container class="input--dropdowns">
+            <label>Clasificación de télefono</label>
+            <md-select required md-no-asterisk name="clasif" ng-model="clasif.nombre">
+              <md-option value="9">Particular</md-option>
+            </md-select>
+            <div ng-messages="empresaForm.nombre.$error">
+              <div ng-message="required">Este campo es obligatorio.</div>
+            </div>
+          </md-input-container>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Fin Telefone -->
+<!--Emails  -->
+<section>
+  <div class="ban-container">
+    <div class="card">
+      <div class="contenedor--subtitulo animated fadeInDown">
+        <div class="subtitulo--pasos">
+          <h3 class="subtitulo">Emails</h3>
+        </div>
+      </div>
+      <div class="ban-row animated fadeInDown h--verticalCenter">
+
+        <div class="ban-col-md-6 ban-col-lg-3">
+          <md-input-container class="input--dropdowns">
+            <label>Email</label>
+            <input required md-no-asterisk name="nombres" ng-model="nombres.nombre">
+            <div ng-messages="empresaForm.nombre.$error">
+              <div ng-message="required">Este campo es obligatorio.</div>
+            </div>
+          </md-input-container>
+        </div>
+
+        <div class="ban-col-md-6 ban-col-lg-3">
+          <md-checkbox md-no-ink aria-label="Checkbox" ng-model="Moneda" class="md-primary perfil--check">
+            Normativos y legales
+          </md-checkbox>
+        </div>
+
+        <div class="ban-col-md-6 ban-col-lg-3">
+          <md-checkbox md-no-ink aria-label="Checkbox" ng-model="Moneda" class="md-primary perfil--check">
+            Facturas y notas de crédito
+          </md-checkbox>
+        </div>
+
+        <div class="ban-col-md-6 ban-col-lg-3">
+          <md-checkbox md-no-ink aria-label="Checkbox" ng-model="Moneda" class="md-primary perfil--check">
+            Comunicaciones
+          </md-checkbox>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Fin Emails -->
+<!--MARCO DE ACTUACION-->
+<section>
+  <div class="ban-container">
+    <div class="card">
+      <div class="contenedor--subtitulo animated fadeInDown">
+        <div class="subtitulo--pasos">
+          <h3 class="subtitulo">Marco de actuación personal</h3>
+        </div>
+      </div>
+      <div id="marcoDeActuacionPersonal" class="contenedorDatos operacion--seleccion h--backgroundNone animated fadeInDown">
+        <div class="contenedor--perfil">
+          <div class="ban-row">
+            <div class="ban-col-sm-12 ban-col-md-4">
+              <h4 class="seleccion__subtitulo">Marco de actuacción calculado</h4>
+              <div class="perfil--contenido h--marginTop3">
+                <div class="contenido--marco">
+                  <img src="assets/images/nivel-actuacion.png" alt="">
+                  <div class="marco--info">
+                    <p class="calculado--title">Prudente</p>
+                    <p class="calculado--texto">Inviertes hasta un 30% RV.</p>
+                  </div>
+                </div>
+                <div class="contenido--porcentaje">
+                  <img src="assets/images/marco1.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="ban-col-sm-12 ban-col-md-8">
+              <h4 class="seleccion__subtitulo">Marco de actuacción selecionado</h4>
+              <div class="marcoSeleccionado">
+                <div class="marco--select h--shadowBoxNoHover">
+                  <img src="assets/images/iconosDisplay/IcoDisplay_Conservador.png" alt="">
+                  <h4>Conservador</h4>
+                  <p>hasta 10% RV</p>
+                  <md-radio-group ng-model="demo.showTooltip" class="check--marco">
+                    <md-radio-button value="Conservador" class="md-primary"></md-radio-button>
+                  </md-radio-group>
+                </div>
+                <div class="marco--select h--shadowBoxNoHover">
+                  <img src="assets/images/iconosDisplay/IcoDisplay_Prudente.png" alt="">
+                  <h4>Prudente</h4>
+                  <p>hasta 30% RV</p>
+                  <md-radio-group ng-model="demo.showTooltip" class="check--marco">
+                    <md-radio-button value="Prudente" class="md-primary"> </md-radio-button>
+                  </md-radio-group>
+                </div>
+                <div class="marco--select h--shadowBoxNoHover ">
+                  <img src="assets/images/iconosDisplay/IcoDisplay_Intermedio.png" alt="">
+                  <h4>Intermedio</h4>
+                  <p>hasta 50% RV</p>
+                  <md-radio-group ng-model="demo.showTooltip" class="check--marco">
+                    <md-radio-button value="Intermedio" class="md-primary"></md-radio-button>
+                  </md-radio-group>
+                </div>
+                <div class="marco--select h--shadowBoxNoHover ">
+                  <img src="assets/images/iconosDisplay/IcoDisplay_Decidido.png" alt="">
+                  <h4>Decidido</h4>
+                  <p>asta 70% RV</p>
+                  <md-radio-group ng-model="demo.showTooltip" class="check--marco">
+                    <md-radio-button value="Decidido" class="md-primary"></md-radio-button>
+                  </md-radio-group>
+                </div>
+                <div class="marco--select h--shadowBoxNoHover">
+                  <img src="assets/images/iconosDisplay/IcoDisplay_Arriesgado.png" alt="">
+                  <h4>Arriesgado</h4>
+                  <p>asta 70% RV</p>
+                  <md-radio-group ng-model="demo.showTooltip" class="check--marco">
+                    <md-radio-button value="Arriesgado" class="md-primary"></md-radio-button>
+                  </md-radio-group>
+                </div>
+              </div>
+
+
+              <div class="descripcionMarco" ng-show="demo.showTooltip == 'Conservador'">
+                <i class="material-icons icon--activo">info</i>
+                <p> Busca la protección del capital y acepta un riesgo bajo de pérdida a cambio de un pequeño aumento en la expectativa
+                  de la rentabilidad 1
+                </p>
+              </div>
+              <div class="descripcionMarco" ng-show="demo.showTooltip == 'Prudente'">
+                <i class="material-icons icon--activo">info</i>
+                <p> Busca la protección del capital y acepta un riesgo bajo de pérdida a cambio de un pequeño aumento en la expectativa
+                  de la rentabilidad 2
+                </p>
+              </div>
+
+              <div class="descripcionMarco" ng-show="demo.showTooltip == 'Intermedio'">
+                <i class="material-icons icon--activo">info</i>
+                <p> Busca la protección del capital y acepta un riesgo bajo de pérdida a cambio de un pequeño aumento en la expectativa
+                  de la rentabilidad 3
+                </p>
+              </div>
+              <div class="descripcionMarco" ng-show="demo.showTooltip == 'Decidido'">
+                <i class="material-icons icon--activo">info</i>
+                <p> Busca la protección del capital y acepta un riesgo bajo de pérdida a cambio de un pequeño aumento en la expectativa
+                  de la rentabilidad 4
+                </p>
+              </div>
+              <div class="descripcionMarco" ng-show="demo.showTooltip == 'Arriesgado'">
+                <i class="material-icons icon--activo">info</i>
+                <p> Busca la protección del capital y acepta un riesgo bajo de pérdida a cambio de un pequeño aumento en la expectativa
+                  de la rentabilidad 5
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--FIN MARCO DE ACTUACION-->
+<!-- Productos para invertir -->
+<section>
+  <!--PRODUCTOS PARA INVERTIR-->
+  <div class="ban-container">
+    <div class="card card">
+      <div class="contenedor--subtitulo animated fadeInDown">
+        <div class="subtitulo--pasos">
+          <h3 class="subtitulo">Productos para invertir</h3>
+        </div>
+      </div>
+      <div class="contenedorDatos  operacion--seleccion h--backgroundNone animated fadeInDown">
+        <div class="contenedor--perfil">
+          <div class="ban-row">
+            <div class="ban-col-sm-12 ban-col-md-4">
+              <h4 class="seleccion__subtitulo">Tu perfil de inversionista calculado es</h4>
+              <div class="perfil--contenido">
+                <div class="contenido--marco">
+                  <img src="assets/images/nivel-productos.png" alt="">
+                  <div class="marco--info">
+                    <p class="calculado--title">Nivel de Productos 5</p>
+                  </div>
+                  <md-tooltip class="productos--tooltip">Este Nivel de Producto es asignado por Banchile Inversiones de acuerdo a tu perfil de cliente y a la sotisficación
+                    de los productos y servicios ofrecidos. Banchile podrás modificar en el futuro los productos que se asocian
+                    al perfil.
+                  </md-tooltip>
+                </div>
+              </div>
+            </div>
+            <div class="ban-col-sm-12 ban-col-md-8">
+              <h4 class="seleccion__subtitulo">Productos en los que quieres invertir</h4>
+              <div class="ban-row">
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <md-checkbox md-no-ink aria-label="Checkbox" ng-model="Moneda" class="md-primary perfil--check">
+                    Moneda Extranjera
+                  </md-checkbox>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <md-checkbox md-no-ink aria-label="Checkbox" ng-model="Acciones" class="md-primary perfil--check">
+                    Acciones Nacionales
+                  </md-checkbox>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <md-checkbox md-no-ink aria-label="Checkbox" ng-model="Pactos" class="md-primary perfil--check">
+                    Pactos
+                  </md-checkbox>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <md-checkbox md-no-ink aria-label="Checkbox" ng-model="Fondos" class="md-primary perfil--check">
+                    Fondos Mutuos
+                  </md-checkbox>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <md-checkbox md-no-ink aria-label="Checkbox" ng-model="Cartera" class="md-primary perfil--check">
+                    Cartera Activa
+                  </md-checkbox>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <md-checkbox md-no-ink aria-label="Checkbox" ng-model="Prestamo" class="md-primary perfil--check">
+                    Préstamo de Acciones
+                  </md-checkbox>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <md-checkbox md-no-ink aria-label="Checkbox" ng-model="Mercado" class="md-primary perfil--check">
+                    Mercado de Valores Extranjeros
+                  </md-checkbox>
+                </div>
+              </div>
+            </div>
+            <div class="ban-col-sm-12 ban-col-md-12">
+              <h4 class="seleccion__subtitulo">Tipo de orden para instruir tus inversiones</h4>
+            </div>
+            <div class="ban-col-sm-6 ban-col-md-3">
+              <md-input-container class="input--dropdowns h--marginTopinput">
+                <label>Clase de Acciones</label>
+                <md-select name="Acciones" ng-model="Acciones">
+                  <md-option value="1">Escrita y verbal</md-option>
+                </md-select>
+              </md-input-container>
+            </div>
+            <div class="ban-col-sm-6 ban-col-md-3">
+              <md-input-container class="input--dropdowns h--marginTopinput">
+                <label>Préstamos Acciones</label>
+                <md-select name="Acciones" ng-model="Acciones">
+                  <md-option value="2">Verbales con confirmación</md-option>
+                </md-select>
+              </md-input-container>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Fin Productos para invertir -->
+<!-- Productos para invertir -->
+<section>
+  <!--PRODUCTOS PARA INVERTIR-->
+  <div class="ban-container">
+    <div class="card card h--marginBottom4 h--borderRadiusBottom4px">
+      <div class="contenedor--subtitulo animated fadeInDown">
+        <div class="subtitulo--pasos">
+          <h3 class="subtitulo">Suscripciones y envíos</h3>
+        </div>
+      </div>
+      <div class="contenedorDatos  operacion--seleccion h--backgroundNone animated fadeInDown">
+        <div class="contenedor--perfil">
+          <div class="ban-row">
+            <div class="ban-col-sm-12 ban-col-md-4">
+              <h4 class="seleccion__subtitulo">Quieres suscribirte a los informes</h4>
+              <div class="selectorInforme">
+                <p>SI</p>
+                <md-radio-group ng-model="demo.showTooltip" class="check--marco">
+                  <md-radio-button value="informesSI" class="md-primary"></md-radio-button>
+                </md-radio-group>
+                <p>NO</p>
+                <md-radio-group ng-model="demo.showTooltip" class="check--marco">
+                  <md-radio-button value="informesNO" class="md-primary"></md-radio-button>
+                </md-radio-group>
+              </div>
+            </div>
+            <div class="ban-col-sm-12 ban-col-md-8" ng-show="demo.showTooltip == 'informesSI'" ng-hide="demo.showTooltip == 'informesNO'">
+              <h4 class="seleccion__subtitulo">Productos en los que quieres invertir</h4>
+              <div class="ban-row">
+
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <md-checkbox md-no-ink aria-label="Checkbox" ng-model="Moneda" class="md-primary perfil--check">
+                    Informe Diario
+                  </md-checkbox>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <md-checkbox md-no-ink aria-label="Checkbox" ng-model="Acciones" class="md-primary perfil--check">
+                    Informe Semanal
+                  </md-checkbox>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <md-checkbox md-no-ink aria-label="Checkbox" ng-model="Pactos" class="md-primary perfil--check">
+                    Informe de Empresas
+                  </md-checkbox>
+                </div>
+              </div>
+              <div class="ban-row">
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <md-checkbox md-no-ink aria-label="Checkbox" ng-model="Fondos" class="md-primary perfil--check">
+                    Informes de Estrategia
+                  </md-checkbox>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <md-checkbox md-no-ink aria-label="Checkbox" ng-model="Cartera" class="md-primary perfil--check">
+                    Informe de EconomIa
+                  </md-checkbox>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <md-checkbox md-no-ink aria-label="Checkbox" ng-model="Prestamo" class="md-primary perfil--check">
+                    Banchile Citi </md-checkbox>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ban-row">
+        <div class="ban-col-md-12">
+          <!-- Inicia autorizacion-clave-editar -->
+          <div class="contenedor--subtitulo subt--noborder subtitulos__usuarios" ng-controller="animateCtrl">
+            <div class="ban-row no_visible" when-visible="a_fadein">
+              <div class=" ban-col-md-offset-6">
+                <div class="claveSeguridad">
+                  <div class="claveSeguridad--input">
+                    <md-input-container class="input--dropdowns">
+                      <label>Ingresa tu clave de seguridad</label>
+                      <md-icon class="dropdowns--icon">
+                        <i class="material-icons">verified_user</i></md-icon>
+                      <input ng-model="user.autorizacion">
+                    </md-input-container>
+                  </div>
+                  <div class="claveSeguridad--buton" ng-controller="modalesCrtl">
+                    <md-button ng-click="showAgregarUsuario($event)" class="boton1 confirmacion--boton md-raised no_visible" when-visible="a_fadeup1">Editar</md-button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fin autorizacion-clave-editar -->
+        </div>
+      </div>
+
+      <!-- <div class="contenedor--botones right" ng-controller="modalesCrtl">
+        <md-button ng-href="#mis-datos-resumen" class="boton2 md-raised boton--xl">Cancelar</md-button>
+        <md-button ng-click="showmisDatos($event)" class="boton1 md-raised boton--xl">Guardar</md-button>
+      </div> -->
+    </div>
+  </div>
+</section>
+  <!-- Fin Productos para invertir -->

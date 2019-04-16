@@ -1,0 +1,211 @@
+h1,h2,h3,span,p,a, {
+    font-family: 'Cabin', sans-serif !important;
+    color:#000000;
+}
+
+.ban-container{
+    width:1400px;
+}
+
+.card{
+height: 768px;
+width: 100%;
+background-color: #FFFFFF;
+// background-color:pink !important;
+    &.corta{
+        height: 720px !important;
+    }
+}
+.contenedorLlamada{
+    height: 700px !important;
+    // background-color: green;
+}
+
+.contenidoImagen{
+    img{
+        width: 100%;
+    }
+}
+.migadepan{
+    border-left: 10px solid #ec6e00;
+    display: inline-block;
+    font-size: 18px;
+    color: #222222;
+    padding: 0 10px;
+    margin-left: 2em;
+}
+.contenedorContenido{
+    margin:1em 2em;
+}
+
+body.personas {
+header {
+    
+    .headerEstilo{
+        background-color:#985c9e;
+        height:100px;
+        width: 100%;
+
+        .tituloHeader{
+            margin:1.5em 1.5em 1.5em 3em;
+            color:#FFFFFF;
+            font-size: 18px;
+            display: block;
+            span{
+                color:#FFFFFF;
+                padding-top: 5px;
+                display: inline-block;
+                font-size:28px;
+            }
+        }
+    }
+
+
+    nav#navegacionPrivada{
+        &.nav--Privado {
+            background-color: #FFFFFF;
+            .Privado-menu{
+                ul{
+                    li{
+                        // margin-left: -40px;
+                        
+                        border-radius: 8px;
+                        webkit-box-shadow: 10px 10px 10px -7px rgba(0,0,0,0.75);
+                        -moz-box-shadow: 10px 10px 10px -7px rgba(0,0,0,0.75);
+                        box-shadow: 10px 10px 10px -7px rgba(0,0,0,0.75);
+                            a{
+                                width: 300px;
+                                height: 50px;
+                                line-height:50px;
+                                color:#000000;
+                                font-size:20px;
+                            }
+                            md-menu-content.navMenu{
+                                &.posicion2{
+                                    left:297px !important;
+                                }
+                                &.posicion3{
+                                    left:525px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tituloPortada{
+    color:#000000;
+        p{
+        margin-left: 0.2em;
+        font-size: 26px;
+        line-height: 36px;
+        display:inline-block;
+            span{
+                font-style: bold;
+                font-size: 38px;
+            }
+        }
+        .cuadroColor{
+            background-color:red;
+            width: 20px;
+            display: inline-block;
+            height: 60px;
+        }  
+    }
+    .footerColor{
+        height: 60px;
+        width: 100%;
+        background-color: #9560AF;
+    }
+
+//   botonera superior
+  .botoneraSuperior {
+      background-color: #ec6e00;
+      color:#FFFFFF;
+      border-radius:8px; 
+      float:right;
+      top: 0px;
+      z-index: 30;
+      width: 120px;
+
+      &.home{
+
+      }
+  }
+ 
+.indice{
+    height: 40px;
+    background-color:#302d5a;
+    color:#FFFFFF;
+    p{
+        font-size: 16px;
+    }
+}
+
+
+// nav vertical
+
+nav#navegacionPrivada{
+    &.nav--Privado {
+      background-color: #519CAD;
+      position: relative;
+      transition: all 0.3s ease;
+      z-index: -2;
+      .Privado-menu {
+        ul {
+          list-style-type: none;
+          li {
+            display: inline-block;
+            text-align: left;
+            margin: 0;
+            > md-menu-content {
+              display: none;
+              max-height: unset;
+            }
+            &.open > a + md-menu-content {
+              display: block;
+              overflow: hide;
+              border-radius: 16px !important;
+            }
+            a {
+              color: white;
+              text-transform: none;
+              height: 45px;
+              line-height: 45px;
+              padding: 0;
+              margin: 0 0 -2px;
+              border-radius: none !important;
+              .active{
+                background: dodgerblue;
+                color: #fff;
+              }
+            //   &:hover {
+            //       background-color: none;
+            //     border-bottom: #302d5a 6px solid !important;
+            //     border-radius: none !important;
+            //   }
+              &:focus {
+                border: none;
+              }
+              i {
+                color: #fff;
+              }
+            }
+            a.menuPrivado--link.md-button.md-ink-ripple {
+              &.activo-menuPrivado {
+                background-color: #69b4c5;
+                height: 45px;
+                line-height: 45px;
+                padding: 0;
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+

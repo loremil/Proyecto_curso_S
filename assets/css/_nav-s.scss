@@ -1,0 +1,48 @@
+.navMenu {
+    margin: 0;
+    padding: 0;
+    width: 360px !important;
+    position: absolute !important;
+    left: 0;
+    overflow: hidden;
+    background: #fff;
+
+        &.vertical{
+            left:300px !important;
+        }
+      
+    md-menu-content {
+      padding: 0 !important;
+      overflow: hidden;
+    }
+  
+    md-icon-button {
+      line-height: inherit !important;
+  
+      .material-icons {
+        line-height: inherit !important;
+      }
+    }
+  
+      .navMenu--contenido {
+        margin: 0;
+        background: #4f4b6d;
+        color:#ffffff;
+      }
+     
+    .ie8 .navMenu--opciones {
+      padding-top: 0 !important;
+    }
+  
+    a {
+      &:hover {
+        background-color: transparent !important;
+      }
+  
+      &:focus {
+        border: none;
+      }
+    }
+  }
+
+

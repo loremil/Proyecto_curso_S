@@ -1,0 +1,44 @@
+.portada-landing{
+  height: 445px !important;
+  position: relative;
+  text-align: center;
+  display: flex;
+    align-content: center;
+    align-items: center;
+  img{
+    position: relative;
+  }
+  .texto--portadaLanding{
+    position:absolute;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    h1{
+      color: white;
+      @include font-42;
+      @include roboto-normal;
+    }
+    hr{
+      border: 2.5px solid #FFC80A;
+      margin:25px auto;
+    }
+  }
+}
+@media all and (max-width: 767px) {
+  .portada-landing{
+    max-height: 150px;
+    .texto--portadaLanding{
+      width: 100%;
+      top:40%;
+      h1{
+        @include font-20;
+      }
+    }
+  }
+}
+.texto--landing{
+  @include font-14;
+  @include roboto-normal;
+  text-align: justify;
+  line-height: 1.5;
+}

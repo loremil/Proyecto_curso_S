@@ -1,0 +1,35 @@
+{
+  "name": "Proyecto-WEB",
+  "homepage": "https://github.com/vdrog/Proyecto-WEB",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angu-fixed-header-table": "^1.2.0",
+    "angular-click-outside": "^2.10.2",
+    "angular-media-queries": "^0.6.1",
+    "angular-parallax": "^0.0.2",
+    "angular-material": "^1.0.9",
+    "angular-responsive-tables": "^0.4.1",
+    "angular-sticky": "angular-sticky-plugin#^0.3.0",
+    "angular-swiper": "~0.4.0",
+    "angular-svg-round-progressbar": "0.4.8",
+    "angular-timer": "^1.3.5",
+    "bootstrap": "2.3.2",
+    "dragular": "^4.3.1",
+    "material-design-icons": "^3.0.1",
+    "normalize-css": "*",
+    "progressbar.js": "~0.5.0",
+    "ngprogress": "^1.1.3",
+    "angular-scroll-animate": "^0.9.9",
+    "material-design-icons-iconfont": "^3.0.3"
+  }
+}

@@ -1,0 +1,37 @@
+<div class="card">
+  <div class="contenedorContenido h--marginTop2">
+    <!-- inicio miga de pan -->
+    <div class="migadepan">
+      <p>HOME/ BOLETA DE GARANTÍA ONLINE/ FLUJO DEL PROCESO COMERCIAL</p>
+    </div>
+    <!-- fin miga de pan -->
+    <!-- inicio botonera derecha superior -->
+    <div class="botoneraSuperior home" ng-controller="menuPrivadoCrtl-p">
+      <ul>
+        <li ng-repeat="menu in menuEmpresa">
+          <div data-ui-sref="{{menu.id}}" data-ui-sref-active="active" ng-mouseleave="currentOpen.menuId = false; isActive =null;">
+            <!-- inicio menu items -->
+            <md-list class="navMenu--opciones">
+              <div class="ban-row">
+                <div class="ban-col-md-6">
+                  <md-list-item class="list-principal" ng-href="#boleta-manual">
+                    <i class="material-icons">info
+                        <md-tooltip>hola</md-tooltip>
+                    </i>
+                  </md-list-item>
+                </div>
+                <div class="ban-col-md-6">
+                  <md-list-item class="list-principal" ng-href="#boleta-manual">
+                    <i class="material-icons">insert_drive_file</i>
+                  </md-list-item>
+                </div>
+              </div>
+            </md-list>
+            <!-- fin menu items -->
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- fin botonera derecha superior -->
+  </div>
+</div>

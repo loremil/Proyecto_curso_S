@@ -1,0 +1,154 @@
+<!--header layout material angular-->
+<header>
+    <div hl-sticky="">
+      <div layout="row" layout-align="center center" class="bg--shadow">
+        <div flex-xs="100" flex-sm="100" flex-md="15" flex-gt-md="25"  flex-gt-lg="20">
+          <div layout="row" layout-align="space-between center">
+            <!-- inicio menu móvil -->
+            <div hide-gt-sm flex="33" flex-xs="15">
+              <div class="menu--PublicoMobil padding0" ng-controller="solicFondoM" ng-click="toggleLeft()" ng-hide="isOpenLeft()">
+                <md-icon>
+                  <i class="material-icons">menu</i>
+                </md-icon>
+              </div>
+            </div>
+            <!-- inicio logo -->
+            <div flex="33" flex-xs="60" flex-md="100" flex-gt-md="100"  flex-gt-lg="100">
+              <div class="banchile--logo">
+                <a href="home-persona.html" title="Banchile Inversiones">
+                 <img src="assets/images/logo--Banchile_P.png" class="ban-img-responsive"/></a>
+              </div>
+            </div>
+            <!-- fin logo -->
+            <div hide-gt-sm flex="33" flex-xs="20">
+                <div class="login--info  h--marginTop0" layout="row" layout-align="end center" ng-controller="solicFondoM">
+                    <!-- inicio icono login -->
+                    <a class="info--user h--marginRight1" ng-click="toggleRight3()" ng-hide="isOpenRight()">
+                      <md-icon class="user--img"><img alt="test" src="assets/images/iconosDisplay/icoDisplay_lock_blanco.svg" class="ban-img-responsive" /></md-icon>
+                    </a>
+                    <!-- <a class="info--user h--marginRight1" ng-click="toggleRight3()" ng-hide="isOpenRight()">
+                      <md-icon class="user--img"><img alt="test" src="assets/images/iconosDisplay/icoDisplay_Avatar.svg" class="ban-img-responsive" /></md-icon>
+                    </a> -->
+                </div>
+            </div>
+          <!-- fin menu móvil -->
+          </div>
+        </div>
+        <div hide show-gt-sm flex-md="auto" flex-gt-md="auto" flex-gt-lg="auto" ng-controller="menuPublicoCrtl-p">
+            <!-- inicio menu publico -->
+            <nav id="navegacionPublicaMenu" layout="row" layout-align="center center">
+              <ul class="list--menuPublico" flex-offset-md="10">
+                <li class=" " ng-repeat="menu in menuEmpresa">
+                  <md-button href="" ng-click="togglePanel($index)">
+                    {{menu.name}}
+                  </md-button>
+                  <md-menu-content class="contenido--menuPublico navMenu" ng-show="menu.activo" ng-repeat="menu in menuEmpresa">
+                    <div class="ban-row" data-ui-sref="{{menu.id}}" data-ui-sref-active="active" ng-mouseleave="menu.activo = false">
+                      <div class="ban-col-xs-12 ban-col-sm-5 ban-col-md-3  menu--padding">
+                        <div class="{{menu.image}}">
+                          <h3 class="navMenu--titulo">{{menu.name}}</h3>
+                          <hr width="15%">
+                          <p class="navMenu--texto">{{menu.desc}}</p>
+                        </div>
+                      </div>
+                      <div class="ban-col-xs-12 ban-col-sm-7 ban-col-md-9 navMenu--contenido menu--padding">
+                        <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-4" ng-repeat="subMenu in menu.menu">
+                          <md-list class="navMenu--opcionesPublicas">
+                            <div class="subheader">
+                              <md-list-item ng-href="{{subMenu.url}}" ng-click="menu.activo = false" target="{{subMenu.target}}">{{subMenu.name}}</md-list-item>
+                            </div>
+                            <div class="list-item" ng-repeat="hijos in subMenu.subMenu">
+                              <md-list-item ng-href="{{hijos.url}}">{{hijos.name}}</md-list-item>
+                            </div>
+                          </md-list>
+                        </div>
+                      </div>
+                    </div>
+                  </md-menu-content>
+                </li>
+              </ul>
+            </nav>
+            <!-- fin menu publico -->
+        </div>
+        <div hide show-gt-sm flex-md="auto" flex-gt-md="auto" flex-gt-lg="25">
+          <div class="login--nav claro nav-top" layout="row">
+            <div hide show-gt-sm>
+                <div class="listaMenu">
+                  <ul>
+                      <li><a class="activo" href="home-persona-sinLogin.html">Personas</a></li>
+                      <li><a href="home-empresa-sinLogin.html">Empresas</a></li>
+                  </ul>
+                </div>
+                <!-- <md-button href="home-persona-sinLogin.html" class="boton--auxiliar boton--icono outline-auxiliar">
+                    <md-icon class="material-icons">
+                      <i class="material-icons">arrow_back</i>
+                    </md-icon>
+                    Volver al Banco
+                </md-button>
+                <md-button href="home-persona-sinLogin.html" class="boton--auxiliar boton--icono outline-auxiliar">
+                    <md-icon class="material-icons">
+                      <i class="material-icons">lock</i>
+                    </md-icon>
+                    Cerrar sesión
+                </md-button> -->
+            </div>
+            <!-- fin cerrar sesión -->
+          </div>
+          <div class="login--info" layout="row" layout-align="end center">
+            <!-- <div class="info--user h--marginRight1">
+              <md-icon class="user--img"><img alt="test" src="assets/images/iconosDisplay/icoDisplay_Avatar.svg" class="ban-img-responsive" /></md-icon>
+              <div class="user--content">
+                <p>Gissell Aguilar</p>
+                <p class="texto-xs">Último acceso 19 OCT 2018 15:55:40 hrs.</p>
+                <md-button href="#mis-datos-resumen" class="boton--auxiliar outline-auxiliar content--boton">
+                    Editar mis datos
+                    <md-tooltip md-direction="left" >Editar</md-tooltip>
+                </md-button>
+              </div>
+            </div> -->
+            <!-- <div class="info-div"></div>
+            <div class="info--user h--marginLeft1 h--marginRight1">
+                <div class="user--content">
+                  <p>Mi Ejecutivo: Alexandra Gutierrez</p>
+                  <md-button href="#" class="boton--auxiliar boton--icono outline-auxiliar h--minwidthAuto">
+                      <md-icon><i class="material-icons">chat</i></md-icon>
+                      Chat 
+                      <md-tooltip md-direction="left" >Preguntar a mi ejecutivo</md-tooltip>
+                  </md-button> 
+                  <span class="text-sm"><md-icon class="user--icon">phone</md-icon>
+                    600 62 62 200
+                  </span> 
+                  <md-button href="mailto:servicioalcliente@banchile.cl" class="boton--auxiliar boton--icono outline-auxiliar h--displayBlock ">
+                      <md-icon><i class="material-icons">mail</i></md-icon>
+                      servicioalcliente@banchile.cl
+                      <md-tooltip md-direction="left" >Enviar email</md-tooltip>
+                  </md-button>
+                </div>
+            </div> -->
+            <div class="info--inicioSesion">
+                <md-button href="login-personas.html" class="boton--icono boton--outline outline-destacado boton--xs efecto-pulse">
+                  <md-icon><i class="material-icons">lock_close</i></md-icon>
+                  INICIAR SESIÓN
+                </md-button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--   menu sesionado -->
+      <!-- <nav id="navegacionPrivada" class="nav--Privado" ng-include src="'navegacion-privada/navegacion-privada-persona.html'" ng-controller="menuRouteCrtl-personas">
+      </nav> -->
+      <!--   menu sesionado -->
+    </div>
+  </header>
+  
+  <section>
+    <md-sidenav class="md-sidenav-left" md-whiteframe="4" md-component-id="left">
+      <div ng-include class="animated fadeIn" src="'header/personas-menuHeader.html'"></div>
+    </md-sidenav>
+  </section>
+  <section class="menu-usuario_lateral">
+    <md-sidenav class="md-sidenav-right" md-whiteframe="2" md-component-id="right3">
+      <div ng-include class="menu-usuario_contenedor animated fadeIn" src="'header/personas-userHeader.html'"></div>
+    </md-sidenav>
+  </section>
+  

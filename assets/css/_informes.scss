@@ -1,0 +1,344 @@
+/* ESTILOS  INFORMES */
+/*****************************************
+          INICIO ESTILOS TABS
+ *****************************************/
+.informes md-tabs.md-default-theme md-tabs-wrapper,
+md-tabs md-tabs-wrapper {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.informes md-tabs-canvas {
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.informes {
+  padding-top: 0;
+
+  md-tab-item {
+    display: inline !important;
+  }
+
+  md-tab-content {
+    padding-top: 0;
+  }
+
+  md-tabs-canvas {
+    background-color: #fff;
+
+    a:active,
+    a:focus {
+      text-decoration: none;
+    }
+  }
+
+  md-pagination-wrapper {
+    width: 2000% !important;
+  }
+
+  md-tabs-wrapper {
+    width: 100% !important;
+  }
+
+  md-tabs md-ink-bar,
+  md-tabs.md-default-theme md-ink-bar {
+    height: 0.25em;
+  }
+
+  md-tabs .md-tab,
+  md-tabs.md-default-theme .md-tab {
+    text-transform: capitalize;
+    color: inherit;
+    font-size: 1em;
+    padding: 12px 50px;
+  }
+
+  md-tabs .md-tab.md-active,
+  md-tabs .md-tab.md-active md-icon,
+  md-tabs .md-tab.md-focused,
+  md-tabs .md-tab.md-focused md-icon,
+  md-tabs.md-default-theme .md-tab.md-active,
+  md-tabs.md-default-theme .md-tab.md-active md-icon,
+  md-tabs.md-default-theme .md-tab.md-focused,
+  md-tabs.md-default-theme .md-tab.md-focused md-icon {
+    @include roboto-normal;
+  }
+
+  md-tabs .md-tab .md-ripple-container {
+    color: $color-botones;
+  }
+
+  md-tabs md-ink-bar {
+    background: $color-active;
+    color: $color-active;
+  }
+}
+@media (max-width:600px) {
+  .informes md-tabs-wrapper {
+    width: 100% !important;
+  }
+}
+
+.buscador--avanzado__help {
+  opacity: 1;
+  height: 70px !important;
+  position: relative;
+  top: 1.5em;
+  box-shadow: none !important;
+  border: 1px solid #cbd0d9;
+  width: 99.5%;
+  margin-bottom: 1em;
+  overflow: hidden;
+}
+
+.buscador--avanzado .buscador--date {
+  margin: 1.25em 0 0 1.25em;
+  width: 100%;
+}
+
+.buscador--avanzado .input--palabraClave {
+  position: relative;
+  width: 100%;
+  margin-left: 20px;
+
+  md-icon {
+    width: 10%;
+    line-height: 43px;
+  }
+
+  .buscador--input {
+    width: 85%;
+    margin: 0;
+    top: 21px;
+  }
+}
+
+md-input-container.md-icon-left {
+  padding-left: 36px;
+  padding-right: 0;
+}
+
+.input--palabraClave > md-icon > i {
+  color: #4DA1B8;
+}
+
+.m .float--right {
+  float: right;
+}
+/* MEDIA QUERIES  */
+@media screen and (max-width:  1024px ) {
+   .documentosCliente{
+      .documentosCliente--icon{
+            .material-icons{
+                  padding-top: 0em !important;
+                  // margin-top:10%;
+         }
+      }
+   }
+}
+@media (max-width: 767px) {
+  .buscador--avanzado__help {
+    height: 145px !important;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    top: 16px;
+    width: 98.5%;
+  }
+
+  .buscador--avanzado .buscador--date {
+    width: 100%;
+  }
+
+  .buscador--avanzado .input--palabraClave {
+    width: 89%;
+  }
+}
+@media (max-width:600px) {
+
+  .buscador--avanzado__help {
+    height: 245px !important;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    top: 16px;
+    position: relative;
+    width: 73.5%;
+    padding: 5% 12% 0;
+  }
+
+  .buscador--avanzado .buscador--date {
+    width: 100%;
+    margin: 15px auto 20px !important;
+  }
+
+  .buscador--avanzado .input--palabraClave {
+    width: 100%;
+    margin: 0 !important;
+
+    .buscador--input {
+      width: 88%;
+      margin: 1px auto 20px !important;
+    }
+  }
+
+  .ban-mobile {
+    width: 100%;
+  }
+}
+@media (max-width:529px) {
+  .buscador--avanzado .input--palabraClave {
+    .buscador--input {
+      width: 84%;
+    }
+  }
+}
+@media (max-width:320px) {
+  .informes md-tabs .md-tab {
+    text-transform: capitalize;
+    color: inherit;
+    font-size: 1em;
+    padding: 12px 19px 12px 18px;
+  }
+}
+/*****************************************
+          FIN ESTILOS BUSCADOR
+ *****************************************/
+/*****************************************
+          INICIO ESTILOS TABLAS INFORMES
+ *****************************************/
+.informesCliente {
+  border: 1px solid #cbd0d9;
+  box-sizing: border-box;
+  height: 100px;
+  padding: 1rem;
+  max-width: 99%;
+  margin: 2rem 0 0;
+  @media all and (max-width:767px) {
+    max-width: 90%;
+    margin: 2rem 0 0 16px;
+  }
+
+  .informesCliente--icon {
+    color: $color-active;
+    float: left;
+    height: 100%;
+    vertical-align: middle;
+    width: 10%;
+  }
+
+  .informesCliente--info {
+    float: left;
+    vertical-align: middle;
+    width: 60%;
+
+    .caja--titulo {
+      @include font-18;
+      color: $color-active;
+      margin-bottom: 15px;
+      @include roboto-normal;
+    }
+
+    .caja--periodo {
+      @include font-14;
+      margin-bottom: 5px;
+    }
+
+    .caja--publicacion {
+      @include font-14;
+    }
+  }
+
+  .informesCliente--download {
+    float: right;
+    vertical-align: middle;
+
+    .download--icon {
+      border: 1px solid #cbd0d9;
+      border-radius: 50%;
+      height: 70px;
+      text-align: center;
+      width: 70px;
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
+
+      i {
+        color: #cbd0d9;
+        font-size: 48px;
+        line-height: 80px;
+        -webkit-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+      }
+    }
+
+    .download--icon:hover {
+      border: 1px solid $color-active;
+
+      i {
+        color: $color-active;
+        line-height: 60px;
+      }
+    }
+  }
+}
+@media (max-width: 678px) {
+  .informesCliente {
+    height: 100px;
+
+    .informesCliente--icon {
+      width: 14%;
+    }
+
+    .informesCliente--info {
+      width: 53%;
+
+      .caja--titulo {
+        @include font-14;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .ban-mobile {
+    width: 100% !important;
+  }
+
+  .informesCliente {
+    height: 100px;
+
+    .informesCliente--icon {
+      width: 10%;
+    }
+
+    .informesCliente--info {
+      width: 60%;
+
+      .caja--titulo {
+        @include font-16;
+      }
+    }
+  }
+}
+@media (max-width: 380px) {
+  .informesCliente {
+    height: 100px;
+
+    .informesCliente--icon {
+      width: 15%;
+    }
+
+    .informesCliente--info {
+      float: left;
+      vertical-align: middle;
+      width: 53%;
+
+      .caja--titulo {
+        @include font-14;
+      }
+    }
+  }
+}
+/*****************************************
+          FIN ESTILOS TABLAS INFORMES
+ *****************************************/

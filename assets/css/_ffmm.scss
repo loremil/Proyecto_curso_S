@@ -1,0 +1,134 @@
+// /* ESTILOS FONDOS MUTUOS */
+.subtitulos-centrados {
+  text-align: center;
+  font-family: 'robotolight';
+  @include font-22;
+  margin-bottom: 4px;
+  &.centrados--blanco {
+    color: #fff;
+  }
+  &.centrados--size{
+    @include font-18;
+  }
+}
+
+.fondo--link {
+  float: right;
+  padding-left: 1em;
+  padding-top: 0.6em;
+
+  span {
+    outline: none;
+    vertical-align: super;
+    @include roboto-normal;
+    @include font-14;
+  }
+
+  .icono {
+    color: $color-active;
+  }
+}
+
+.cartera--ico {
+  display: inline;
+  margin-left: 0.5em;
+
+  md-icon {
+    height: inherit;
+    color: #5BABBF;
+    padding-top: 0.5em;
+  }
+}
+
+.moneda--ico {
+  display: inline;
+  padding: 0;
+
+  md-icon {
+    height: inherit;
+    color: #5EA214;
+    padding: 0;
+
+    i {
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+//Estilos comprobante Jorge 27/04
+.logo--comprobante {
+  width: 200px;
+  float: right;
+  padding: 0 0 5px;
+
+  img {
+    width: 200px;
+  }
+}
+
+.timbre--comprobante {
+  width: 120px;
+  margin: 10px 0;
+
+  img {
+    width: 120px;
+  }
+}
+
+.footer--comprobante {
+  border-top-style: dotted;
+  border-top: solid 2px #CCD1D9;
+  height: auto;
+  padding: 0.625em 0;
+}
+
+.input--monto {
+  height: auto;
+  @include font-24;
+  line-height: 36px;
+  outline: solid 1px red;
+  width: auto;
+  margin: 10px 0 0;
+}
+
+.input--comprobante {
+  color: $color-active;
+  height: auto;
+  width: 200px;
+  outline: solid 1px red;
+
+  .md-input[disabled],
+  [disabled] md-input-container .md-input {
+    background: none;
+    color: $color-active;
+    opacity: none;
+    background-position: none;
+    background-repeat: none;
+    background-size: none;
+    height: auto;
+    line-height: 36px;
+    @include font-36;
+  }
+}
+
+    md-switch{
+      margin-left: -15px;
+    }
+@media (max-width:991px) {
+  .fondo--link {
+    text-align: right;
+    float: none;
+  }
+
+  .tags {
+    padding-left: 0;
+  }
+
+  .fondo--ayuda {
+    .ayuda--informacion {
+      .informacion--caption {
+        margin-bottom: 1em;
+      }
+    }
+  }
+}

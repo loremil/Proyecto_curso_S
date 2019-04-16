@@ -1,0 +1,28 @@
+/*Caja Internet*/
+.contenedor--cajainternet {
+  padding-top: 1em;
+}
+
+.destino--boton_pago {
+  .pago--label {
+    color: $color-active;
+    display: block;
+    font-size: 12px;
+  }
+  margin-top: 18px;
+
+  .pago--boton {
+    width: 150px;
+    text-align: left;
+
+    .boton--banco {
+      font-size: 20px;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+.datosSeleccion {
+  margin: 0;
+}
+/*Fin caja Internet*/

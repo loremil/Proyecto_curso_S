@@ -1,0 +1,287 @@
+/*INICIO CONFIGURACION */
+.configuracion {
+	color: #536374;
+	width: 82%;
+	margin: 0 auto;
+	text-align: center;
+	.configuracion--usuario {
+		@include font-20;
+		padding: 1.5em 0 0;
+		text-align: center;
+		color: #0C4071;
+		@include roboto-light;
+	}
+
+	.configuracion--bienvenido {
+		@include font-36;
+		color: $color-primario;
+		text-align: center;
+		padding: 0.6em 0;
+		line-height: 1.2em;
+		@include roboto-light;
+	}
+
+	.configuracion--mensaje {
+		margin-top: 1em;
+		margin-bottom: 1.5em;
+		padding: 0 3em;
+		@include roboto-light;
+	}
+
+	.configuracion--titulo {
+		text-align: left;
+		padding-top: 1em;
+		@include font-16;
+		@include roboto-normal;
+	}
+
+	.configuracion--formulario {
+		padding-top: 1em;
+		text-align: center;
+		margin-bottom: 4em;
+
+		.formulario--boton {
+			line-height: 1.3em;
+			margin-top: 1.8em;
+		}
+	}
+	.configuracion--img{
+		margin: 0 auto;
+		img{
+			max-width: 430px;
+		}
+	}
+	.configuracion--contenido{
+		img{
+			margin-left: -1.2em;
+		}
+		text-align: justify;
+		h2{
+			margin-bottom: 0.5em;
+		}
+		.contenido--mensaje{
+			@include roboto-light;
+			span{
+				@include roboto-bold;
+				&.mensaje--color{
+					display: block;
+					margin-top: 1em;
+					color: #59ABBF;
+					text-align: left;
+					@include roboto-normal;
+				}
+				&.mensaje--simple{
+					margin-top: 0.5em;
+					@include roboto-normal;
+				}
+			}
+		}
+	}
+}
+.configuracion_contrato {
+	margin-bottom: 1em;
+	margin-top: 2em;
+	min-height: 400px;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+
+	.configuracion--usuario {
+		font-size: 24px;
+		margin: 0 auto;
+		padding: 3.5em 0 1em;
+		text-align: center;
+		width: 60%;
+	}
+
+	.configuracion--bienvenido {
+		color: $color-primario;
+		line-height: 1.2em;
+		margin: 0 auto;
+		padding: 0 0 0.5em;
+		text-align: center;
+		@include font-36;
+		@include roboto-light;
+	}
+
+	.usuario--nombre {
+		text-align: center;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		@include font-20;
+	}
+}
+
+.contrato--pdf {
+	height: 1000px;
+	margin: 1em 0 0;
+	width: 100%;
+}
+.sliderBienvenida{
+	.swiper-pagination {
+		margin-bottom: 2em !important;
+		bottom: 1em !important;
+	}
+	.sliderCards {
+		.swiper-container{
+			.swiper-button-prev {
+				top: 0 !important;
+				height: 100%;
+				left: 0;
+				background-color: #FFF;
+				padding-left: 1.5em;
+				background-size: 16px;
+				background-position: 30px;
+				padding-right: 0.5em;
+			}
+			.swiper-button-next{
+				top: 0 !important;
+				height: 100%;
+				right: 0;
+				background-color: #FFF;
+				padding-right: 1.5em;
+				background-size: 16px;
+				background-position: 8px;
+				padding-left: 0.5em;
+			}
+		} 
+		.swiper-slide{
+			margin-bottom: 1em;
+		}
+	}
+	.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled{
+		background-color: #FFF;
+	}
+	.configuracion{
+		margin-top: 4em;
+	}
+}
+.close--alignRight{
+	position: absolute;
+	margin-top: 0.5em !important;
+	z-index: 9;
+	right: 0;
+}
+
+@media screen and (max-width: 1199px) {
+	.configuracion {
+		.configuracion--img{
+			margin-top: 1em;
+			img{
+				max-width: 300px;
+			}
+		}
+		.configuracion--contenido{
+			img{
+				display: none;
+			}
+			h2{
+				margin-top: 0;
+			}
+		}
+	}
+
+}
+@media screen and (max-width: 991px) {
+	.configuracion {
+		.configuracion--formulario {
+			.formulario--boton {
+				text-align: center;
+			}
+		}
+
+		.configuracion--mensaje {
+			padding: 0;
+		}
+
+		.configuracion--bienvenido {
+			@include font-36;
+		}
+		.configuracion--img{
+			img{
+				max-width: 200px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 767px) {
+	.configuracion {
+		padding: 0 1em;
+		box-sizing: border-box;
+
+		.configuracion--bienvenido {
+			@include font-26;
+			display: inline-block;
+		}
+
+		.configuracion--usuario {
+			@include font-20;
+			padding: 1em;
+		}
+
+		.configuracion--formulario {
+			.formulario--boton {
+				text-align: center;
+			}
+		}
+		.configuracion--img{
+			img{
+				max-width: 100%;
+			}
+		}
+	}
+}
+
+//esta medida es especial de angular material es el corte "xs" que realiza con el controlador
+@media screen and (max-width: 599px) {
+	.sliderBienvenida{
+		.swiper-pagination {
+			margin-bottom: 0 !important;
+			bottom: 10px !important;
+		}
+		.sliderCards {
+			.swiper-container{
+				.swiper-button-prev {
+					padding-left: 0;
+					background-position: 9px;
+					padding-right: 0;
+					background-size: 14px;
+				}
+				.swiper-button-next{
+					padding-right: 0;
+					background-position: 5px;
+					padding-left: 0;
+					background-size: 14px;
+				}
+				.swiper-wrapper{
+					margin-bottom: 0;
+				}
+			} 
+			.swiper-slide{
+				margin-bottom: 0;
+			}
+		}
+		.configuracion{
+			margin-top: 3.5em;
+			width: 98%;
+			h2{
+				line-height: 1.3em;
+				margin-top: 0.8em;
+				text-align: center;
+				@include font-18;
+			}
+			.configuracion--img {
+				margin-top: 0;
+			}
+		}
+	}
+	.sliderBienvenida .swiper-pagination {
+		display: none;
+	}
+	.close--alignRight{
+		margin-top: 0;
+		right: 0;
+		margin-right: 0 !important;
+	}
+}
+/*FIN CONFIGURACION*/

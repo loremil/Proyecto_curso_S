@@ -1,0 +1,122 @@
+// FAB SASS (GONZALO)
+
+$body-bg: #FAFAFA;
+$primary-col: #03A9F4;
+$font-stack: roboto;
+$easer: cubic-bezier(0.4, 0, 0.2, 1);
+
+.favoritos_head {
+  padding: 10px 0 20px 0;
+  text-align: left;
+  h5{
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    padding: 0 20px;
+    color: #FFF;
+    @include roboto-light;
+  }
+}
+.favoritos_body {
+  font-family: $font-stack;
+  width: 100%;
+  height: 800px;
+  margin: 0;
+  padding: 0;
+  background: $body-bg;
+  md-divider{
+     margin: 0;
+ }
+ .navMenu--contenido{
+   min-height: 0;
+   }
+}
+
+.boton{
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  font-size: 20px;
+  line-height: 60px !important;
+  transform: rotate(45deg);
+  transition: all 0.7s $easer;
+  outline: none !important;
+  float: right;
+  @include roboto-bold;
+  i{
+    color: #FFF;
+    line-height: 60px;
+ }
+}
+
+.expand .boton {
+  transform: rotate(630deg);
+  transition: all 0.5s $easer;
+  outline: none !important;
+  width: 80px;
+  height: 80px;
+  line-height: 100px !important;
+}
+
+.favoritos_container {
+  float: right;
+  position: fixed;
+  margin: 1em;
+  right: 0;
+  z-index: 100;
+  bottom: 0;
+  background-color: $color-active;
+  border-radius: 50%;
+  width: 60px;
+  max-width: 60px;
+  height: 60px;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  overflow: hidden;
+  transition: all 0.2s 0.45s,
+  height 0.2s $easer 0.25s,
+  max-width 0.2s $easer 0.35s,
+  width 0.2s $easer 0.35s;
+  .informacion--caption {
+    color: #9B9B9B;
+    @include font-12;
+
+    padding-top: 0.7em;
+    padding-left: 2em;
+    a{
+      text-decoration: none;
+   }
+  }
+}
+.favoritos_container.expand {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.17);
+  border-radius: 4px;
+  width: 80%;
+  height: 400px;
+  max-width: 400px;
+  padding: 0;
+  transition: all 0.2s, max-width 0.2s $easer 0.1s, height 0.3s ease 0.25s;
+}
+.favoritos_content {
+  transform: translateY(100%);
+  width: 100%;
+  // height: 100%;
+  opacity: 0;
+  text-align: left;
+  transition: transform 0.2s $easer, opacity 0.2s 0.2s;
+}
+.expand .favoritos_content {
+  transform: translateY(0px);
+  opacity: 1;
+  transition: transform 0.7s $easer 0.05s, opacity 0s;
+}
+
+.favoritos_content .favoritos_body {
+  color: #000;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #FFF;
+  width: 100%;
+  height: 800px;
+  box-sizing: border-box;
+  padding-bottom: 100px;
+}

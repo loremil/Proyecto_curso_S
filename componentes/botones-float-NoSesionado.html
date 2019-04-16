@@ -1,0 +1,36 @@
+<div class="panel_float">
+        <!--Side menu Indicadores de mercado -->
+        <div class="side--menu menu--market">
+          <md-button target="_blank" href="http://banchile.show.finmarketslive.cl/www/index.html">
+            <md-icon class="icon--panel">
+                <i class="material-icons ng-scope">trending_up</i>
+            </md-icon>
+            <p>Mercados</p>
+          </md-button>
+        </div>
+        <!--Side menu Ayuda -->
+        <div class="side--menu menu--help" ng-controller="modalesCrtl">
+          <md-button ng-click="showAyuda($event)" ng-init="showDescarga($event)">
+            <md-icon class="icon--panel">
+                <i class="material-icons ng-scope">contact_support</i>
+            </md-icon>
+            <p>Ayuda</p>
+          </md-button>
+        </div>
+        <!--Side menu Bienvenida -->
+        <div class="side--menu menu--bienvenida" ng-controller="modalesCrtl">
+          <md-button ng-click="showBienvenidaNoSesinado($event)" >
+            <md-icon>
+              <i class="material-icons">ondemand_video</i>
+            </md-icon>
+            <p>Nuestro sitio</p>
+          </md-button>
+        </div>
+        <!--Side menu Up -->
+        <div class="side--menu menu--up" ng-controller="anclaUp">
+            <md-icon ng-click="scrollTo('lugarUp')" class="icon--panel">
+              <i class="material-icons ng-scope">keyboard_arrow_up</i>
+            </md-icon>
+        </div>
+      </div>
+      

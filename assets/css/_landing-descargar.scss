@@ -1,0 +1,119 @@
+.closeButton {
+	height: 32px;
+	width: auto;
+	padding: 0.5em;
+
+	.md-button {
+		margin: 0;
+		min-width: unset;
+		float: right;
+
+		md-icon {
+			i {
+				&.closeClaro {
+					color: #536374;
+				}
+			}
+		}
+	}
+}
+
+.contenedorlanding {
+	height: 100vh;
+	width: 100%;
+
+	.fondoImagen {
+		height: 100vh;
+text-align: center;
+overflow: hidden;
+		img {
+			height: 100vh;
+			display: none;
+			    display: block;
+			    margin-left: -80%;
+		}
+	}
+}
+
+.contenidoLanding {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	height: auto;
+
+	&.Top {
+		top: 0;
+	}
+
+	&.Bottom {
+		bottom: 0;
+	}
+
+	.imagenLogo {
+		width: 130px;
+		padding: 1em;
+	}
+
+	.imagenApp {
+		width: 130px;
+	}
+
+	.imagenLeyenda {
+		width: 160px;
+	}
+
+	.imagenMiInversion {
+		width: 60px;
+		padding: 1em;
+	}
+
+	.textoSlogan {
+		font-size: 9px;
+		color: #2A5E92;
+		border: 1px solid #2A5E92;
+		width: 130px;
+		text-align: center;
+		display: inline-block;
+		font-weight: bold;
+	}
+
+	.parrafo_texto {
+		text-align: center;
+		font-size: 12px;
+		line-height: 18px;
+		color: white;
+		padding: 1em 4em;
+	}
+
+	.texto_link {
+		text-decoration: underline;
+		text-align: center;
+		font-size: 0.9em;
+		color: #fffc;
+	}
+}
+
+
+.texto_link a:link {
+	color: white !important;
+	line-height: 30px;
+}
+
+.texto_link a:visited {
+	color: white !important;
+}
+
+@media (min-width: 414px) {
+	.parrafo_texto {
+		font-size: 12px;
+		padding: 20px 85px 0;
+	}
+
+}
+@media (max-width: 320px) {
+	.parrafo_texto {
+		font-size: 12px;
+		padding: 20px 40px 0;
+	}
+
+}

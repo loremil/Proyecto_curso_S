@@ -1,0 +1,212 @@
+/* ESTILOS FOOTER */
+footer {
+  background-color: #404654;
+  color: #9CAFC3;
+  position: relative;
+
+  md-divider {
+    display: block;
+    border-top-width: 1px;
+    border-top-style: solid;
+    margin: 0;
+  }
+
+  .footer--logo {
+    width: 100%;
+    height: 70px;
+    img {
+      display: inline-block;
+      width: 180px;
+      -ms-interpolation-mode: bicubic !important;
+    }
+  }
+
+  .footerLight {
+    height: 45px;
+    line-height: 45px;
+    width: 100%;
+    text-align: center;
+    .footerLight--icon {
+      display: inline-block;
+      vertical-align: middle;
+      width: 30px;
+      height: 30px;
+      img {
+        -ms-interpolation-mode: bicubic !important;
+      }
+    }
+
+    .footerLight--copy {
+      display: inline-block;
+      @include font-12
+    }
+  }
+}
+
+.footer-min{
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-minAbsolute {
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+}
+
+.footerMenu {
+  padding: 2.50em 0;
+
+  .footerLogo {
+    img {
+      width: 122px;
+      outline: 1px green solid;
+      -ms-interpolation-mode: nearest-neighbor; // IE 7+ (non-standard property)
+    }
+
+    .footerLogo--icon {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  .footerMenu--titulo {
+    color: #fff;
+    padding: 0 0 1.125em 1.125em;
+  }
+}
+
+/* nuevos estilos footer telefono 13/04 jorge */
+.footerInformacion {
+  .footerInformacion--item {
+    line-height: 40px;
+    a {
+      text-decoration: none;
+      color: #9CAFC3 !important;
+
+    }
+    .footerItem--texto {
+      line-height: 40px;
+      i {
+        font-size: 18px;
+        margin-right: 15px;
+        vertical-align: middle;
+      }
+      span {
+        .textoBlanco {
+          color: #fff;
+        }
+      }
+    }
+    &.numeroXl {
+      color: #9CAFC3;
+      font-size: 20px;
+      span {
+        line-height: 40px  ;
+      }
+    }
+  }
+}
+
+.footerCopyright {
+  background: #5A606D;
+  width: 100%;
+  text-align: center;
+  line-height: 2.50em;
+  height: 2.50em;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .footerInformacion {
+    .numeroXl {
+      p {
+        font-size: 20px !important;
+
+      }
+    }
+  }
+}
+/* fin nuevos estilos footer telefono 13/04 jorge */
+@media (max-width: 991px) {
+  .footerInformacion {
+    margin-top: 1em;
+    .footerInformacion--item {
+      text-align: center;
+      line-height: inherit;
+      .footerItem--texto {
+        text-align: center;
+        font-size: 14px;
+        line-height: 2em;
+      }
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .footerMenu {
+    .footerLogo {
+      .footerLogo--icon {
+        display: block;
+        margin: 0 auto;
+        width: 10em;
+      }
+    }
+
+    .footerMenu--titulo {
+      padding: 2.50em 0 0.625em 1.125em;
+    }
+  }
+}
+/* actualizacion footer-jorge-13-04-*/
+@media (max-width: 767px) {
+  .footerMenu {
+    padding: 1em 0;
+    .footer--logo {
+      width: 100%;
+      height: 70px;
+      img{
+        position: relative;
+        width: 180px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      span {
+        visibility: hidden;
+      }
+    }
+
+    .footerMenu--titulo {
+        display: none;
+      text-align: center;
+      padding: 1.5em 0 0.625em;
+    }
+
+    .footerMenu--item {
+      display: none;
+      color: #9CAFC3 !important;
+      p {
+        text-align: center;
+        color: #9CAFC3 !important;
+      }
+    }
+  }
+
+  .footerInformacion{
+    padding: 0.5em 0;
+    margin-top: 0;
+    .footerInformacion--item{
+      line-height: inherit;
+      .footerItem--texto {
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.5em;
+        i{
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+/*fin actualizacion footer-jorge-13-04-*/
+@media (max-width: 480px) {}
+
+/*fin footer*/

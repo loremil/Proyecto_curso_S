@@ -1,0 +1,22 @@
+.menu {
+  width: 300px;
+}
+.menu > div {
+  border-radius: 12px;
+  height: 50px;
+  top: 153px;
+  border: 1px solid #aaa;
+  text-align: center;
+  line-height: 50px;    
+  background-color: #ddd;
+}
+.menu > div:hover {
+  background-color: #bbb;
+}
+
+.menu-contenido {
+  background: #eee;
+  left:310px;
+  top: 153px;
+  position: absolute;
+}

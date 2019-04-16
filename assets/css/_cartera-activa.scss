@@ -1,0 +1,62 @@
+.detalle--descripcion {
+  margin: 0.5em 0 2em 1em;
+  text-align: right;
+
+  .descripcion--composicion {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    background-color: #336A9B;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #2D8ABB;
+
+    &.descripcion--composicion__naranja {
+      background-color: #EAA000;
+      margin-left: 2em;
+    }
+  }
+
+  .descripcion--texto {
+    font-size: 12px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 0.5em;
+  }
+}
+
+.contenedor--graficosScroll {
+  overflow: overlay;
+  margin-top: 1em;
+
+  .ngsb-wrap {
+    padding: 0;
+  }
+
+  .contenedorScrollme--desktop .patrimonioWidgetBar .patrimonioWidgetBar--contenedorDatos-personas {
+    width: 100%;
+    float: left;
+  }
+
+  .contenedorScrollme--desktop .patrimonioWidgetBar {
+    margin-bottom: 18px;
+  }
+
+  .contenedorScrollme--desktop .patrimonioWidgetBar .patrimonioWidgetBar--progresBar {
+    background-color: #5BABBF !important;
+    height: 2px;
+  }
+}
+
+img.datos--comp {
+  width: 89px;
+}
+
+.pilares--centrados {
+   position: inherit !important;
+   text-align: center !important;
+   float: none !important;
+   img{
+      margin-top: 0.5em;
+   }
+}

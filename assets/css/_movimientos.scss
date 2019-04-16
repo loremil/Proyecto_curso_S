@@ -1,0 +1,20 @@
+/* ESTILOS MOVIMIENTOS */
+.bold {
+  @include roboto-normal;
+    &:focus {
+      outline: none;
+    }
+}
+
+  md-list-item, md-list-item ._md-list-item-inner {
+      max-height: 2.25em;
+      min-height: 2.25em;
+  }
+
+/*AGREGAR appearance: MOVIMIENTOS: */
+
+.buscador--date{
+  margin: 0 0 0 1.25em;
+}
+
+/* FIN DE ESTILOS MOVIMIENTOS */

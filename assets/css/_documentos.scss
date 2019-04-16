@@ -1,0 +1,209 @@
+/* ESTILOS DOCUMENTOS */
+.documentos {
+  padding-top: 0;
+  md-tabs-canvas {
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+
+    a:active,
+    a:focus {
+      text-decoration: none;
+    }
+  }
+
+  md-pagination-wrapper {
+    // width: 64em !important;
+  }
+
+  md-tabs md-ink-bar,
+  md-tabs.md-default-theme md-ink-bar {
+    height: 0.25em;
+  }
+
+  md-tabs .md-tab,
+  md-tabs.md-default-theme .md-tab {
+    text-transform: inherit;
+    color: inherit;
+    padding: 12px 50px;
+    @include font-16;
+    @include roboto-normal;
+  }
+
+  md-tabs .md-tab.md-active,
+  md-tabs .md-tab.md-active md-icon,
+  md-tabs .md-tab.md-focused,
+  md-tabs .md-tab.md-focused md-icon,
+  md-tabs.md-default-theme .md-tab.md-active,
+  md-tabs.md-default-theme .md-tab.md-active md-icon,
+  md-tabs.md-default-theme .md-tab.md-focused,
+  md-tabs.md-default-theme .md-tab.md-focused md-icon {
+    @include roboto-normal;
+  }
+
+  md-tabs .md-tab .md-ripple-container {
+    color: $color-botones;
+  }
+
+  md-tabs md-ink-bar {
+    background: $color-active;
+    color: $color-active;
+  }
+}
+/***************
+Estilos de los documentos jorge 08-06
+ ****************/
+.documentosCliente {
+  border: 1px solid #cbd0d9;
+  box-sizing: border-box;
+  height: 80px;
+  padding: 10px 16px 10px 10px;
+  max-width: 100%;
+  margin: 0 0 2rem;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+
+  .documentosCliente--icon {
+    color: $color-active;
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    width: 10%;
+
+
+    i.material-icons {
+      padding-top: 0.7em;
+    }
+  }
+
+  .documentosCliente--info {
+    display: inline-block;
+    vertical-align: middle;
+    width: 63%;
+    padding-left: 8px;
+
+    .caja--titulo {
+      color: $color-active;
+      height: 20px;
+      line-height: 18px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 100%;
+      @include font-14;
+      @include roboto-normal;
+    }
+
+    .caja--periodo {
+      @include font-12;
+      line-height: 18px;
+    }
+
+    .caja--publicacion {
+      @include font-12;
+    }
+  }
+
+  .documentosCliente--download {
+    display: inline-block;
+    vertical-align: middle;
+    width: 18%;
+    position: absolute;
+
+    .download--icon {
+      border: 1px solid #cbd0d9;
+      border-radius: 50%;
+      cursor: pointer;
+      height: 50px;
+      text-align: center;
+      width: 50px;
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
+
+      i {
+        color: #cbd0d9;
+        font-size: 27px;
+        line-height: 52px;
+        -webkit-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+
+        &.icon--exito {
+          color: #7EB645;
+        }
+
+        &.icon--error {
+          color: #C11818;
+        }
+      }
+
+      &.border--exito {
+        border: 1px solid #7EB645;
+      }
+
+      &.border--error {
+        border: 1px solid #C11818;
+      }
+    }
+
+    .download--circular {
+      md-progress-circular {
+        position: absolute;
+        top: 11px;
+        width: 55px !important;
+        height: 55px !important;
+
+        path {
+          stroke: #519CAD !important;
+          stroke-width: 2.2px !important;
+        }
+
+        svg {
+          margin-left: -2px;
+        }
+      }
+    }
+
+    .download--icon:hover {
+      border: 1px solid $color-active;
+
+      i {
+        color: $color-active;
+        line-height: 63px;
+      }
+    }
+
+    .firmado--icon:hover {
+      border: 1px solid $color-active;
+
+      i {
+        color: $color-active;
+        line-height: 63px;
+      }
+    }
+  }
+}
+@media (max-width:767px) {
+  .documentos md-tabs .md-tab,
+  .documentos md-tabs.md-default-theme .md-tab {
+    padding: 12px 1em;
+  }
+
+  .misDatos md-tabs-wrapper {
+    padding: 0.8em 0;
+  }
+
+  .documentosCliente--icon {
+    i.material-icons {
+      padding-top: 0.7em !important;
+    }
+  }
+}
+
+
+
+/***************
+FIN estilos de los documentos jorge 08-06
+ ****************/
+/* ESTILOS DOCUMENTOS */

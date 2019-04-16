@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'banchilefonts';
+  src: url('../fonts/banchilefonts.eot?53674361');
+  src: url('../fonts/banchilefonts.eot?53674361#iefix') format('embedded-opentype'),
+       url('../fonts/banchilefonts.woff2?53674361') format('woff2'),
+       url('../fonts/banchilefonts.woff?53674361') format('woff'),
+       url('../fonts/banchilefonts.ttf?53674361') format('truetype'),
+       url('../fonts/banchilefonts.svg?53674361#banchilefonts') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'banchilefonts';
+    src: url('../font/banchilefonts.svg?53674361#banchilefonts') format('svg');
+  }
+}
+*/
+ 
+ [class^="banicon-"]:before, [class*=" banicon-"]::before {
+  font-family: "banchilefonts";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.banicon-logotipo::before { content: '\e800'; } /* '' */
+.banicon-isotipo::before { content: '\e801'; } /* '' */
+.banicon-mas-asesoria::before { content: '\e802'; } /* '' */
+.banicon-menu::before { content: '\e803'; } /* '' */
+.banicon-agregar_favorito::before { content: '\e804'; } /* '' */
+.banicon-eliminar_favorito::before { content: '\e805'; } /* '' */
+.banicon-marcador_favoritos::before { content: '\e806'; } /* '' */
+.banicon-avatar::before { content: '\e807'; } /* '' */
+.banicon-correcto::before { content: '\e808'; } /* '' */
+.banicon-error::before { content: '\e809'; } /* '' */
+.banicon-ayuda::before { content: '\e80a'; } /* '' */
+.banicon-atencion::before { content: '\e80b'; } /* '' */
+.banicon-informacion::before { content: '\e80c'; } /* '' */
+.banicon-notificacion::before { content: '\e80d'; } /* '' */
+.banicon-notificacion_globo::before { content: '\e80e'; } /* '' */
+.banicon-disclaimer::before { content: '\e80f'; } /* '' */
+.banicon-nuevo::before { content: '\e810'; } /* '' */
+.banicon-premio::before { content: '\e811'; } /* '' */
+.banicon-indicadores::before { content: '\e812'; } /* '' */
+.banicon-cuenta::before { content: '\e813'; } /* '' */
+.banicon-clave::before { content: '\e814'; } /* '' */
+.banicon-eur::before { content: '\e815'; } /* '' */
+.banicon-usd::before { content: '\e816'; } /* '' */
+.banicon-distribucion::before { content: '\e817'; } /* '' */
+.banicon-fondos_mutuos::before { content: '\e818'; } /* '' */
+.banicon-acciones::before { content: '\e819'; } /* '' */
+.banicon-moneda_extranjera::before { content: '\e81a'; } /* '' */
+.banicon-cartera_activa::before { content: '\e81b'; } /* '' */
+.banicon-banchile_pay::before { content: '\e81c'; } /* '' */
+.banicon-mve::before { content: '\e81d'; } /* '' */
+.banicon-derivados::before { content: '\e81e'; } /* '' */
+.banicon-caja_internet::before { content: '\e81f'; } /* '' */
+.banicon-firmar::before { content: '\e820'; } /* '' */
+.banicon-llamar::before { content: '\e821'; } /* '' */
+.banicon-aprender::before { content: '\e822'; } /* '' */
+.banicon-descargar::before { content: '\e823'; } /* '' */
+.banicon-buscar::before { content: '\e824'; } /* '' */
+.banicon-imprimir::before { content: '\e825'; } /* '' */
+.banicon-comparar::before { content: '\e826'; } /* '' */
+.banicon-seguir::before { content: '\e827'; } /* '' */
+.banicon-exploracion::before { content: '\e828'; } /* '' */
+.banicon-ver_folleto::before { content: '\e829'; } /* '' */
+.banicon-ver_adjunto::before { content: '\e82a'; } /* '' */
+.banicon-administracion_cartera::before { content: '\e82b'; } /* '' */
+.banicon-recomendacion_fondos::before { content: '\e82c'; } /* '' */
+.banicon-palabra-clave::before { content: '\e82d'; } /* '' */
+.banicon-ubicacion::before { content: '\e82e'; } /* '' */
+.banicon-herramientas::before { content: '\e82f'; } /* '' */
+.banicon-calendario::before { content: '\e830'; } /* '' */
+.banicon-configurar::before { content: '\e831'; } /* '' */
+.banicon-refrescar::before { content: '\e832'; } /* '' */
+.banicon-resumen::before { content: '\e833'; } /* '' */
+.banicon-patrimonio::before { content: '\e834'; } /* '' */
+.banicon-movimientos::before { content: '\e835'; } /* '' */
+.banicon-documentos::before { content: '\e836'; } /* '' */
+.banicon-mercado::before { content: '\e837'; } /* '' */
+.banicon-empresa::before { content: '\e838'; } /* '' */
+.banicon-asdasdasd-01::before { content: '\e839'; } /* '' */
+.banicon-autorizaciones::before { content: '\e83a'; } /* '' */
+.banicon-bancologo::before { content: '\e83b'; } /* '' */
+.banicon-marcador_resumen::before { content: '\e842'; } /* '' */
+.banicon-marcador_patrimonio::before { content: '\e843'; } /* '' */
+.banicon-marcador_notificaciones::before { content: '\e844'; } /* '' */
+.banicon-marcador_movimientos::before { content: '\e845'; } /* '' */
+.banicon-marcador_moneda_extranjera::before { content: '\e846'; } /* '' */
+.banicon-marcador_fondos_mutuos::before { content: '\e847'; } /* '' */
+.banicon-marcador_empresa::before { content: '\e849'; } /* '' */
+.banicon-marcador_documentos::before { content: '\e84a'; } /* '' */
+.banicon-marcador_cartera_activa::before { content: '\e84b'; } /* '' */
+.banicon-marcador_caja_internet::before { content: '\e84c'; } /* '' */
+.banicon-marcador_beneficiarios::before { content: '\e84d'; } /* '' */
+.banicon-marcador_banchile_pay::before { content: '\e84e'; } /* '' */
+.banicon-marcador_autorizaciones::before { content: '\e84f'; } /* '' */
+.banicon-marcador_asesoria::before { content: '\e850'; } /* '' */
+.banicon-marcador_acciones::before { content: '\e851'; } /* '' */
+.banicon-pendiente::before { content: '\e852'; } /* '' */
+.banicon-a2-01-01::before { content: '\e855'; } /* '' */
+.banicon-a1-01::before { content: '\e856'; } /* '' */
+.banicon-beneficiarios::before { content: '\e85b'; } /* '' */
+.banicon-seleccion_fondos-02::before { content: '\e85c'; } /* '' */
+.banicon-asesoria-02::before { content: '\e85d'; } /* '' */
+.banicon-toggle-02::before { content: '\e85f'; } /* '' */

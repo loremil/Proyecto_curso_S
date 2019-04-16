@@ -1,0 +1,245 @@
+.contenedorTabs{
+  md-ink-bar{
+    top: 0;
+    color: #5BABBF;
+    background: #5BABBF;
+    height: 7px;
+    border-radius: 4px 4px 0 0;
+  }
+  .md-tab{
+    color: #536374;
+    text-transform: inherit;
+    padding: 0 0 0 12px;
+    background-color: #eaedf1;
+    height: 40px;
+    margin-top: 6px;
+    line-height: 32px;
+    border-radius: 4px 4px 0 0;
+    border: 1px solid #d6d6d6;
+    text-align: left;
+    width: 274px;
+    .alertTexto--tabs{
+      background-color: #F69D00;
+      border-radius: 2px;
+      color: #FFFFFF;
+      text-align: center;
+      position: absolute;
+      top: 6.5px;
+      right: 12px;
+      line-height: 17px;
+      padding: 1px 5px 2px;
+      display: inline-block;
+      vertical-align: bottom;
+      @include font-11;
+      .icon--tabs{
+        color: #FFFFFF;
+        position: relative;
+        left: -3px;
+        display: inline-block;
+        vertical-align: bottom;
+        @include font-16;
+      }
+    }
+    &.md-active{
+      color: #536374;
+      line-height: 43.5px;
+      height: 40px;
+      transition: height 0.1s ease-in-out;
+      background-color: #FFFFFF;
+      border-left: 1px solid #E3E3E3;
+      border-right: 1px solid #E3E3E3;
+      border-top: 1px solid #FFFFFF;
+      border-bottom: 0px solid #FFFFFF;
+      border-radius: 4px 4px 0 0;
+      margin-top: 0;
+      span{
+        @include roboto-bold;
+      }
+      .alertTexto--tabs{
+        top: 13px;
+      }
+    }
+  }
+}
+md-tabs-canvas{
+  height: 40px;
+}
+md-pagination-wrapper {
+  height: 40px;
+}
+md-tabs-wrapper md-prev-button, md-tabs-wrapper md-next-button{
+  width: 20px;
+}
+md-tabs-canvas.md-paginated {
+  margin: 0 20px;
+}
+md-tabs-wrapper md-prev-button md-icon{
+  left: 30%;
+}
+md-tabs-wrapper md-next-button md-icon{
+  left: 70%;
+}
+
+.marcoTexto{
+  width: 100%;
+  margin-top: 1em;
+  .marcoTexto--titulo{
+    float: left;
+    @include roboto-bold;
+  }
+  .marcoTexto--texto{
+    float: right;
+    span{
+      color: #519CAD;
+      @include roboto-bold;
+    }
+  }
+}
+
+.marcoSeleccionado {
+    display: inline-block;
+    justify-content: space-between;
+    text-align: center;
+    .marco--select {
+      display: inline-block;
+     flex-direction: column;
+     padding: 5px;
+     vertical-align: unset;
+     background-color: white;
+     border-radius: 4px;
+     text-align: center;
+     margin: 0.6em;
+     align-items: center;
+     min-width: 104px;
+        md-radio-button {
+            display: block;
+            margin: 7px 0 10px 38px !important;
+        }
+        &:last-child{
+          margin: 0.6em 0 0.6em 0.6em !important
+        }
+    }
+}
+
+.imagenPersonal {
+    text-align: center;
+    margin-top: 2px;
+}
+
+.contenido--porcentaje {
+    max-width: 257px;
+    img {
+        width: 100%;
+    }
+}
+
+.descripcionMarco {
+    padding: 1.5em 1.5em !important;
+    color: #536374 !important;
+    background-color: #F8F9FA !important;
+    border-radius: 3px !important;
+    border: 1px solid #CCD1D9 !important;
+    display: flex !important;
+    display: -ms-flexbox !important;
+    margin-top: 1.7em !important;
+    margin-bottom: 0 !important;
+    align-items: center;
+    -ms-flex-align: center;
+    i {
+        float: left;
+        margin-right: 10px;
+        color: #536374;
+    }
+    p {
+        @include font-12;
+    }
+}
+
+.selectorInforme {
+    display: flex;
+    display: -ms-flexbox;
+    justify-content: left;
+    -ms-flex-pack: center;
+    p {
+        margin-right: 10px;
+    }
+}
+
+#emailPrincipal,
+#productosInvertir,
+#supscripcionesEnvios {
+    .icon {
+        display: flex;
+        display: -ms-flexbox;
+        margin-top: 22px;
+        i {
+            color: #7EB645;
+            margin-right: 10px;
+        }
+    }
+}
+
+#supscripcionesEnvios {
+    .icon {
+        margin-top: 5px;
+    }
+}
+
+.otroOrigen {
+    display: flex;
+    display: -ms-flexbox;
+    margin-left: 15px;
+    p {
+        @include font-16;
+    }
+    .checkBox {
+        display: flex;
+        display: -ms-flexbox;
+        min-width: 120px;
+        align-items: center;
+        -ms-flex-align: center;
+        md-checkbox {
+            margin-top: 0px;
+        }
+    }
+}
+
+.texto--seleccion {
+    margin-bottom: 10px;
+}
+
+.seleccion--respuesta {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .contenedorTabs{
+    .md-tab{
+      width: 240px;
+    }
+  }
+}
+@media (max-width:767px) {
+    .marcoSeleccionado {
+        justify-content: center;
+
+        .marco--select {
+            margin: 15px 15px;
+            max-width: 100px;
+        }
+    }
+    .contenedorTabs{
+      .md-tab{
+        width: 170px;
+        .alertTexto--tabs{
+          padding: 1px 2px 2px;
+          .texto--tabs{
+            display: none;
+          }
+          .icon--tabs{
+            left: 0px;
+          }
+        }
+      }
+    }
+}

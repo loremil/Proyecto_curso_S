@@ -1,0 +1,548 @@
+/* inicio modales */
+.modal.modales-xl .swiper-container-horizontal >
+.swiper-pagination-bullets, .modal.modales-xl
+.swiper-pagination-custom, .modal.modales-xl
+.swiper-pagination-fraction {
+bottom: 90px !important;
+}
+
+.modal {
+  md-dialog {
+    padding: 1.5em;
+    box-sizing: border-box;
+    margin: 0 auto;
+    &.emergente {
+      height: 680px;
+    }
+  }
+
+  .modal--documentos {
+    md-dialog {
+      max-width: 90% !important;
+      overflow: hidden !important;
+    }
+  }
+
+
+  .botonpago_md {
+    height: auto !important;
+    min-height: auto;
+
+    .botonpago {
+      text-align: left!important;
+    }
+  }
+
+  &.ubicacionMensaje--card {
+    min-height: 400px;
+    margin-top: 8em;
+  }
+
+  &.modales-m {
+    max-width: 600px;
+    min-width: 610px;
+  }
+
+  &.modales-l {
+    min-width: 800px;
+  }
+  &.modales-xl {
+    width: 100%;
+
+    md-dialog {
+      box-shadow: none !important;
+      max-width: 100%;
+      .configuracion {
+        max-width: 85%;
+        width: 100%;
+        height: 480px;
+        img .img-icono-tutorials {width: 20%;}
+        .caja-img-wireframe {
+          margin-top: 3em;
+        }
+        .configuracion--mensaje {
+          font-size: 0.95rem;
+          line-height: 1.4em;
+          color: #536374;
+          margin-bottom: 1.5em;
+        }
+        .configuracion--migajas {
+          font-size: 0.95rem;
+          color: #59ABBF;
+        }
+        .caja-icono-tutorials > h1 {
+          color: #536374 !important;
+        }
+      }
+    }
+  }
+
+  &.modales-xxl {
+    width: 100%;
+    height: 100%;
+    //Estas propiedades sobreescriben las del md-dialog
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .mensajeTitulo--container {
+    text-align: center;
+
+    i.material-icons {
+      &.statusExito__small {
+        color: #7EB645;
+        font-size: 3em;
+        padding-bottom: 0.5em;
+        padding-top: 0.5em;
+      }
+
+      &.statusError__small {
+        color: #C11818;
+        font-size: 3em;
+        padding-bottom: 0.5em;
+      }
+
+      &.statusInfo__small {
+        color: #4E84B4;
+        font-size: 3em;
+        padding-bottom: 0.5em;
+      }
+
+      &.statusAlerta__small {
+        color: #F69D00;
+        font-size: 3em;
+        padding-bottom: 0.5em;
+      }
+
+        &.statusEspera__small {
+        color: #6AB5C7;
+        font-size: 3em;
+        padding-bottom: 0.5em;
+      }
+    }
+
+    h2.mensajeTitulo__error {
+      font-size: 18px;
+      color: #536374;
+      padding-top: 0.8em;
+      line-height: 1.2em;
+    }
+
+    h2.mensajeTitulo__info {
+      font-size: 18px;
+      color: #536374;
+      padding-top: 0.8em;
+    }
+
+    h2.mensajeTitulo__exito {
+      color: #7EB645;
+      padding-bottom: 1em;
+      @include font-20;
+      @include roboto-normal;
+    }
+
+    h2.mensajeTitulo__espera {
+      color:#6AB5C7;
+      padding-bottom: 1em;
+      @include font-20;
+      @include roboto-normal;
+    }
+
+    h2.mensajeTitulo__rechazo {
+      color: #D0021B;
+      padding-bottom: 1em;
+      @include font-20;
+      @include roboto-normal;
+    }
+
+    h2.mensajeTitulo__alerta {
+      font-size: 18px;
+      color: #F69D00;
+      padding-top: 0.8em;
+    }
+
+    .mensajeTexto__large {
+      margin: 0.6em 0;
+      padding-left: 0.5em;
+      text-align: center;
+      color: #9B9B9B;
+      padding-bottom: 1em;
+      line-height: 1.4em;
+      @include font-14;
+    }
+
+    .timbre--comprobante {
+      width: 0;
+    }
+
+    .timbre--comprobante img {
+      width: 80px;
+      position: absolute;
+      bottom: 24px;
+      left: 13px;
+    }
+  }
+}
+
+.modales--close {
+  height: 40px;
+  overflow: hidden;
+  .swiper-container {
+    height: 100%;
+    .md-button {
+      position: absolute;
+      right: 0;
+    }
+  }
+}
+
+md-dialog.modal.modal--ayuda {
+    width: 21%;
+    // max-height: 63%;
+    overflow: hidden !important;
+    border-radius: 12px;
+    top:19%;
+    right:-37%;
+    img {
+      width:100%;
+      height:100%;
+    }
+}
+
+
+/* fin modales */
+
+/* inicio modalesDocumentos */
+.modalDocumento{
+  background-color: #525659;
+  height: 85vh;
+  border-radius: 0px;
+  overflow: hidden;
+    .contenedorPdf{
+      width: 100%;
+      height: 85vh;
+      embed {
+        width: 100%;
+        height: 100%;
+        background: #fff;
+      }
+    }
+}
+
+.modal--documentos {
+  md-dialog {
+    max-width: 100% !important;
+    overflow: hidden !important;
+  }
+
+  md-dialog._md-transition-in {
+    max-width: 100%;
+    overflow: hidden !important;
+  }
+  #plugin {
+    width: 90% !important;
+  }
+}
+/* fin modalesDocumentos */
+
+/* inicio modalesDialogo */
+md-dialog {
+  md-toolbar.md-default-theme:not(.md-menu-toolbar),
+  md-toolbar:not(.md-menu-toolbar) {
+    background-color: #fff;
+    color: $color-primario;
+
+    .toolbar--logo {
+      height: 50px;
+      width: auto;
+    }
+  }
+
+  md-dialog-actions {
+    padding: 16px;
+    min-height: auto;
+    display: block !important;
+    overflow: unset;
+    z-index: 32;
+
+    md-input-container {
+      margin: 0.5em 0;
+    }
+  }
+}
+/* fin modalesDialogo */
+@media (max-width: 1198px) {
+  .modal.modales-xl md-dialog .configuracion .caja-img-wireframe {
+    margin-top: 3em;
+    width: 100%;
+  }
+  .modal.modales-xl md-dialog .configuracion {
+    .caja-img-welcome {
+      margin-top: 5em;
+    }
+    .caja-icono-tutorials > h1 {
+      color: #536374 !important;
+    }
+  }
+
+  img .h--hideMD {
+    width: 20%;
+  }
+}
+
+/* fin modalesDialogo */
+
+
+// @media (min-width: 768px) {
+//   .modal.modales-xl md-dialog .configuracion .caja-img-wireframe {
+//     margin-top: 1em;
+//     width: 60%;
+//   }
+// }
+@media (min-width: 768px) and (max-width: 991px) {
+.sliderBienvenida {
+  .configuracion {
+    .caja-img-wireframe {
+      margin-top: 6em !important;
+    }
+  }
+}
+}
+@media (max-width: 768px) {
+  md-dialog.modal.modal--ayuda {
+    max-width: 21%;
+      max-height: 63%;
+      overflow: hidden !important;
+      border-radius: 12px;
+      top:19%;
+      right:-30%;
+      img {
+        width:100%;
+        height:100%;
+      }
+  }
+  .caja-img-welcome {
+    margin-top: 0em;
+    img {
+      width: 80%;
+      margin-left: 10%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .modal.modales-xl md-dialog .configuracion {
+    color: #536374;
+    .caja-img-wireframe {
+      margin-top: 0em;
+    }
+    .caja-icono-tutorials {
+      margin-left: 0px;
+    }
+  }
+
+  .modal.modales-xl .swiper-container-horizontal >
+  .swiper-pagination-bullets, .modal.modales-xl
+  .swiper-pagination-custom, .modal.modales-xl
+  .swiper-pagination-fraction {
+    bottom: 125px !important;
+  }
+
+  img .h--hideMD {
+    width: 20%;
+  }
+
+  .modal {
+    .contenedor--botones {
+      width: 50%;
+      margin: 0 auto;
+      padding: 0 25px;
+
+      .boton1,
+      .boton2 {
+        min-height: 37px;
+        max-width: 250px;
+        margin-bottom: 10px;
+      }
+    }
+
+    &.ubicacionMensaje--card {
+      min-height: 200px;
+      margin-top: 4em;
+    }
+
+    &.modales-m {
+      min-width: 100%;
+    }
+
+    &.modales-l {
+      min-width: 100%;
+    }
+
+    &.modales-xl {
+      md-dialog {
+        .configuracion {
+          max-width: 100%;
+          height: 500px;
+          .h--marginLeft {margin:0px !important;}
+        }
+      }
+      md-dialog.emergente {
+        top: 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .modales--xxlResponsive {
+      .modales--close {
+          height: 15vh;
+          .swiper-container {
+            .md-button {
+              bottom: 0;
+            }
+          }
+      }
+      .modales--contenido {
+          .sliderCards {
+              .swiper-container {
+                  .swiper-wrapper {
+                      margin: 0;
+                      .swiper-slide {
+                          height: calc(100vh - 15vh);
+                          display: table;
+                          md-dialog {
+                            display: table-cell;
+                            vertical-align: middle;
+                              .configuracion {
+                                margin-top: -5vh;
+                                height: auto;
+                              }
+                          }
+                      }
+                  }
+              }
+          }
+      }
+  }
+
+  md-dialog.modal.modal--ayuda {
+      right:0%;
+      width: 90%;
+  }
+  .modal.modales-xl md-dialog
+  .configuracion .caja-img-welcome {
+    margin-top: 0em;
+    img {
+      width: 100%;
+      margin-left: 0%;
+    }
+  }
+  .md-dialog-container {align-items: center;}
+  .modal {
+    &.modales-xl {
+      md-dialog {
+        .configuracion {
+          // .img-icono-tutorials {width: 40%;}
+          max-width: 100%;
+          height: 550px;
+          .h--marginLeft {margin:0px !important;}
+        }
+      }
+      md-dialog.emergente {
+        top: 50px;
+      }
+    }
+    .contenedor--botones {
+      width: 100%;
+      padding: 0;
+
+      .boton2 {
+        min-height: 37px;
+        max-width: 250px;
+      }
+    }
+  }
+}
+@media (max-width: 375px) {
+  .modal.modales-xl {
+    md-dialog {
+      padding:0px;
+      .configuracion {
+        height: 460px;
+        color: #536374;
+        .configuracion--bienvenido{
+          font-size: 1.4rem;
+          display: inline-block;
+          padding: 0.7em 0;
+        }
+        .caja-img-welcome{
+            width: 100%;
+            display: inline-block;
+            img{
+            width: 100%;
+            margin-left: 0%;
+            }
+        }
+        .caja-img-wireframe{
+            width: 80%;
+            display: inline-block;
+        }
+        .configuracion--mensaje {
+          font-size: 0.9rem;
+          line-height: 1.3em;
+          margin-bottom: 1em;
+        }
+      }
+    }
+  }
+  .sliderBienvenida{
+    .configuracion{
+      padding: 0px 2.2em;
+    }
+  }
+}
+
+@media (min-width: 320px) {
+  .modal.modales-xl .swiper-container-horizontal >
+  .swiper-pagination-bullets, .modal.modales-xl
+  .swiper-pagination-custom, .modal.modales-xl
+  .swiper-pagination-fraction {
+    bottom: 80px !important;
+  }
+}
+
+
+@media (max-width: 375px) {
+  .modal.modales-xl {
+    md-dialog {
+      padding:0px;
+      .configuracion {
+        height: 460px;
+        color: #536374;
+        .caja-icono-tutorials{
+          margin-top: 0px;
+        }
+        .caja-img-wireframe{
+          width: 80%;
+          display: inline-block;
+        }
+        .configuracion--mensaje {
+          font-size: 0.9rem;
+          line-height: 1.3em;
+          margin-bottom: 1em;
+          // margin-top: 0px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  md-dialog.modal.modal--ayuda {
+      right:0%;
+      width: 90%;
+  }
+}
+/* fin modales*/

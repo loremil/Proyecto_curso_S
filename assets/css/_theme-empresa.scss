@@ -1,0 +1,213 @@
+body.empresa {
+    /* ESTILOS HEADER */
+
+    /* cambios jorge login 16-04*/
+    .login--contenido {
+      background-image: url("../images/1_empresas-v2.jpg");
+    }
+
+    /* fin cambios jorge login 16-04*/
+    header {
+           background-color: #FFFFFF;
+           .hl-sticky{
+             background-color: #FFFFFF;
+           }
+           .info--user{
+            color: #536374;
+            .user--icon{
+              color: #536374;
+            }
+            md-icon{
+              color: #2A5E92;
+            }
+            .user--content{
+              .text-sm{
+                md-icon.user--icon.material-icons {
+                    color: #2A5E92;
+                }
+              }
+            }
+          }
+          .info-div{
+            background-color: #2A5E92;
+          }
+          .md-button.boton--auxiliar{
+            color: #536374;
+            md-icon{
+              color: #2A5E92;
+            }
+            
+          }
+        a.outline-info:hover, a.outline-info:focus, a.outline-info:active{
+            border: transparent !important;
+        }
+        .listaMenu{
+            ul {
+                li {
+                  a {
+                    color: #536374;
+                  }
+                }
+              }
+
+        }
+        .menuSitios {
+            li {
+                a {
+                    color: #696969 !important;
+                    &.active {
+                        color: #5BABBF !important;
+                        border-top: 3px solid #5BABBF;
+                    }
+                }
+            }
+        }
+        .menu--PublicoMobil {
+            md-icon {
+              i {
+                color: #535557 ;
+              }
+            }
+          }
+
+        nav#navegacionPublicaMenu {
+            background-color: #ffffff !important;
+            
+            .list--menuPublico{
+              li {
+                a {
+                  color: $color-primario !important;
+                }
+              }
+            }
+            .menu--sitios {
+              .activo {
+                color: #5BABBF !important;
+                border-top: 3px solid #5BABBF !important;
+            }
+              a{
+                  color: #535557 !important;
+            }
+          }
+            h1 {
+                background-image: url('../images/logo--Banchile_E.png')!important;
+/*            filter: blur(2px);*/
+            }
+            .menuPublico--link {
+                color: white !important;
+            }
+            .menuPublicoMobil {
+                md-icon {
+                    i {
+                        color: #696969 !important;
+                        ;
+                    }
+                }
+            }
+            .menuPublico {
+                .menuPublico--item {
+                    &:hover {
+                        &::after {
+                            border-top: 8px solid #ececec !important;
+                        }
+                    }
+                    .menuPublico--link {
+                        color: #486C7C !important;
+                    }
+                    a.menuPublico--link.md-button.md-ink-ripple {
+                        &.activo-menuPublico {
+                            background-color: #ececec !important;
+                        }
+                    }
+                }
+            }
+            .menuLogin {
+                .menuLogin--despliegue {
+                    md-icon {
+                        i {
+                            color: #696969;
+                        }
+                    }
+                    p {
+                        color: #696969;
+                    }
+                }
+            }
+        }
+        .md-button.boton--outline{
+            border: 1px solid rgba(51, 106, 155, 0.5);
+            color:#2A5E92 !important;
+            md-icon{
+                color:#2A5E92;
+            }
+        }
+    }
+    #menuPublicoMobil {
+        background-color: #fff;
+        .menuPublicoMobil--eleccionSitio {
+            background-color: #fff;
+            border-right: solid 1px rgba(0, 0, 0, 0.22);
+            li:nth-child(1),
+            li:nth-child(2) {
+                a {
+                    color: #4A4A4A;
+                }
+            }
+            li.activo {
+                border-bottom: solid 4px #5BABBF;
+                a {
+                    color: #5BABBF;
+                }
+            }
+        }
+        .menuPublicoMobil--buscador {
+            md-input-container {
+                background-color: rgba(240, 242, 245, 0.22);
+                border: solid 1px rgba(151, 151, 151, 0.3);
+            }
+        }
+        .nivel2 {
+            background-color: #F9F9F9;
+            .md-button.md-ink-ripple {
+                color: #4A4A4A;
+            }
+        }
+    }
+    #login--menu {
+        .menu--usuario {
+            background-color: #FFFFFF;
+            .usuario--contenedor {
+               color: #536374;
+            }
+        }
+    }
+    #login {
+        .panelLogin {
+            .panelLogin--usuario {
+                background-color: #ffffff;
+                .panelLogin--usuario__contenedor {
+                    p {
+                        color: #696969;
+                    }
+                }
+                button.md-icon-button.md-button.md-ink-ripple {
+                    &:hover {}
+                    i {
+                        color: #6f6f6f;
+                    }
+                }
+            }
+        }
+    }
+
+    /*ESTILOS HOME */
+       .homePresentacion {
+        #sliderhomeContenedor {
+            .sliderHome {
+                .titulo{
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

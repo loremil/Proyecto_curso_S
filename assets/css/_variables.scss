@@ -1,0 +1,317 @@
+/* ..............
+  	FONT SIZE
+*/
+/* inicio tipografiaEstilos */
+@mixin cabin-bold{
+	font-family: 'Cabin-Bold';
+} 
+@mixin roboto-light{
+	font-family: 'robotolight';
+}
+@mixin roboto-normal{
+	font-family: 'robotoregular';
+}
+@mixin roboto-bold{
+	font-family: 'robotobold';
+}
+/* fin tipografiaEstilos */
+
+.activado {
+	opacity: 1 !important;
+	transition-duration: 0.55s;
+}
+
+.desactivado0_5 {
+	opacity: 0.5;
+	&:focus {
+		outline: none;
+	}
+}
+
+.desactivado0_3 {
+	opacity: 0.3;
+	&:focus {
+		outline: none;
+	}
+}
+
+.desactivado0_1 {
+	opacity: 0.1;
+	&:focus {
+		outline: none;
+	}
+}
+
+/* inicio tipografiaGeneral */
+p, h6, h5, h4, h3, h2, h1, ul, li, a, span {
+	@include cabin-bold;
+}
+
+a {
+	cursor: pointer;
+}
+
+p {
+	font-size: 14px;
+	font-size: 0.875rem;
+	line-height: 22px;
+}
+
+h6 {
+	font-size: 14px;
+	font-size: 0.875rem;
+	line-height: 22px;
+}
+
+h5 {
+	font-size: 16px;
+	font-size: 1rem;
+	line-height: 24px;
+}
+
+h4 {
+	font-size: 18px;
+	font-size: 1.063rem;
+	line-height: 26px;
+}
+
+h3 {
+	font-size: 20px;
+	font-size: 1.25rem;
+	line-height: 28px;
+}
+
+h2 {
+	font-size: 22px;
+	font-size: 1.375rem;
+	line-height: 30px;
+}
+
+h1 {
+	font-size: 24px;
+	font-size: 1.5rem;
+	line-height: 32px;
+}
+/* fin tipografiaGeneral */
+
+//Hint (imput) - Caption
+@mixin font-8{
+		font:{
+		size: 8px;
+		size: 0.5rem;
+		}
+}
+@mixin font-9{
+		font:{
+		size: 9px;
+		size: 0.5625rem;
+		}
+}
+@mixin font-10{
+		font:{
+		size: 10px;
+		size: 0.625rem;
+		}
+}
+@mixin font-11{
+	font:{
+	size: 11px;
+	size: 0.6875rem;
+	}
+}
+@mixin font-12{
+	font:{
+	size: 12px;
+	size: 0.75rem;
+	}
+}
+@mixin font-13{
+	font:{
+	size: 13px;
+	size: 0.8125rem;
+	}
+}
+// Tablas - Imput
+@mixin font-14{
+	font:{
+	size: 14px;
+	size: 0.875rem;
+	}
+
+}
+// Body - general
+@mixin font-16{
+	font:{
+	size: 16px;
+	size: 1rem;
+	}
+}
+// menu Quiero
+@mixin font-18{
+	font:{
+	size: 18px;
+	size: 1.125rem;
+	}
+}
+@mixin font-20{
+	font:{
+	size: 20px;
+	size: 1.25rem;
+	}
+}
+
+// menu Quiero activo
+@mixin font-24{
+	font:{
+	size: 24px;
+	size: 1.5rem;
+	}
+}
+@mixin font-26{
+	font:{
+	size: 26px;
+	size: 1.625rem;
+	}
+}
+@mixin font-22{
+	font:{
+	size: 22px;
+	size: 1.375rem;
+	}
+}
+
+// Quiero..
+@mixin font-30{
+	font:{
+	size: 30px;
+	size: 1.875rem;
+	}
+}
+@mixin font-32{
+	font:{
+	size: 32px;
+	size: 2rem;
+	}
+}
+@mixin font-34{
+	font:{
+	size: 34px;
+	size: 2.125rem;
+	}
+}
+@mixin font-36{
+	font:{
+	size: 36px;
+	size: 2.25rem;
+	}
+}
+@mixin font-42{
+	font:{
+	size: 42px;
+	size: 2.625rem;
+	}
+}
+@mixin font-44{
+	font:{
+	size: 44px;
+	size: 2.75rem;
+	}
+}
+// Bienvenida configuracion
+@mixin font-48{
+	font:{
+	size: 48px;
+	size: 3rem;
+	}
+	line-height: 1.2em;
+}
+@mixin font-60{
+	font:{
+	size: 60px;
+	size: 3.75rem;
+	}
+}
+// @mixin roboto-light{
+// 	font-family: 'robotolight';
+// }
+// @mixin roboto-normal{
+// 	font-family: 'robotoregular';
+// }
+// @mixin roboto-bold{
+// 	font-family: 'robotobold';
+// }
+
+/* usar:
+	.clase {
+		@include roboto-normal;
+		@include font-16;
+	}
+
+  	FIN FONT SIZE
+.................... */
+
+/*
+.............
+COLORES
+..............
+*/
+
+//COLORES DE BACKGROUND
+$background-body: #F0F2F5; // Background body ( gris claro )
+$background-principal: #336A9B; // Cabecera menu, footer, botones (azul)
+$background-secundario: #003673; // Footer (azul oscuro)
+$background-tablas: #F0F2F5; // Tablas (gris)
+
+//COLORES DE TEXTOS
+$color-primario: #536374; // Color textos
+$color-secundario: #4A4A4A; // Color gris para textos (gris oscuro)
+$color-secundario-blanco: #FFFFFF; // Blanco
+$color-secundario-azul: #336A9B; // Azul
+$color-cabecera: #FFFFFF; // Blanco
+$color-caption: #9B9B9B; // Gris claro
+$color-active: #5BABBF;// Color para links (verde agua)
+$color-error: #FF564E; // Color para mensajes de error (rojo)
+$color-botones: #336A9B; // botones y links
+$color-sub-titulos: #486C7C; // Color de los subtitulos
+
+
+//COLORES DE LINEAS
+$linea-input: #9B9B9B;  // gris mas claro
+$linea-divider: #9B9B9B; // para dividir (un poco mas oscura)
+$linea-subtitle: #CCD1D9;
+
+/*
+.............
+TAMANOS
+..............
+*/
+
+//CABECERA QUIERO
+$cabecera-titulo: 1.9rem;
+$cabecera-botones: 1.1rem;
+
+
+//CONTENIDO
+$font-titulo: 1.5rem;
+$font-subtitulo: 1.0rem;
+$font-parrafo: 16px;
+$font-caption:12px;
+
+
+//FORMULARIOS
+$font-label:14px;
+$font-input: 1.0rem;
+$font-mensaje: 0.75rem;
+$font-moneda: 1.25rem;
+
+
+//BOTONES
+$font-botones:16px;
+
+
+//TABLAS
+$font-tablas: 14px;
+
+
+//SELECT EMPRESAS
+$font-select-empresa: 16px;

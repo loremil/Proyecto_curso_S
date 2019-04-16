@@ -1,0 +1,487 @@
+
+.menuFondo{
+  .pin {
+    width: 16px;
+    height: 16px;
+    border: 0;
+    position: absolute;
+    box-shadow: 0px 1px 10px 0px rgba(112, 111, 111, 0.3);
+    background-color: #ffffff;
+    right: 6px;
+    top: calc(20% - 8px);
+    transform: rotate(45deg);
+  }
+}
+
+.fondoGris{
+  background-color: #F6F6F6;
+}
+
+.navMenu--contenido {
+  z-index: 1000;
+
+  .navMenu--notificaciones {
+    margin: 0;
+
+    .notificaciones--caja {
+      padding: 12px 0 12px 15px;
+      display: inline-flex;
+      display: -ms-inline-flexbox;
+
+
+      .notificaciones--texto {
+        margin: 0;
+        display: inline-block;
+        vertical-align: top;
+        h3 {
+          margin: 0;
+          font-size: 16px;
+          color: #486C7C;
+          line-height: 20px;
+        }
+
+        h4 {
+          font-size: 12px;
+          color: #69B4C5;
+          line-height: 20px;
+        }
+
+        p {
+          font-size: 11px;
+          color: #9B9B9B;
+          line-height: 20px;
+        }
+      }
+
+      &.leido {
+        h3,
+        h4,
+        p,
+        i {
+          color: #9B9B9B !important;
+        }
+      }
+      i{
+        color: #69B4C5;
+        padding: 4px 5px 0 0;
+        font-size: 14px;
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+
+    .notificaciones--caja:hover {
+      background-color: rgba(105,180,197,.2);
+      transition: 0.3s ease-in;
+    }
+  }
+
+  h2 {
+    border-bottom: none !important;
+    margin-top: 25px;
+    padding: 0 !important;
+    margin-bottom: 25px;
+    color: red;
+  }
+
+  .indicadores--contenedor {
+    height: 135px;
+    position: relative;
+    box-shadow: rgba(45,45,45,0.08) 0 2px 2px, rgba(49,49,49,0.08) 0 4px 4px, rgba(42,42,42,0.08) 0 8px 8px, rgba(32,32,32,0.08) 0 16px 16px, rgba(49,49,49,0.08) 0 32px 32px, rgba(35,35,35,0.08) 0 64px 64px;
+    margin-top: 5em;
+    overflow: hidden;
+    max-width: 218px;
+
+    &:hover {
+      border-radius: 10px 0 0;
+      box-shadow: rgba(45, 45, 45, 0.08) 0 2px 40px, rgba(49, 49, 49, 0.08) 0 4px 9px 5px, rgba(42, 42, 42, 0.08) 0 8px 15px 0px, rgba(32, 32, 32, 0.08) 0 16px 16px, rgba(49, 49, 49, 0.08) 0px 20px 32px 0px, rgba(35, 35, 35, 0.08) 0 64px 64px;
+    }
+
+    .indicadores--categoria {
+      background-color: rgba(0, 0, 0, 0.35);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      box-sizing: border-box;
+
+      .contenido {
+        height: 45px;
+        position: relative;
+
+        .cajaTexto {
+          width: 55%;
+          display: inline-block;
+          padding-left: 10px;
+
+          p {
+            margin: 0;
+            color: white;
+            display: block;
+
+            &.nombreProducto {
+              font-size: 15px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+
+            }
+          }
+        }
+
+        .cajaButton {
+          width: 34%;
+          display: inline-block;
+          height: 42px;
+          text-align: right;
+          float: right;
+          
+          .md-button.cerrarButton{
+            min-width: 20px;
+            margin: 0;
+            font-size: 6px;
+            height: 25px;
+            min-height: 10px;
+            
+            md-icon{
+                color:#ffffff;
+                opacity:0.6;
+                margin-top: -12px;
+            &:hover{
+                opacity:1;
+                } 
+              }
+            }
+          }
+          
+        p {
+          &.precioProducto {
+            font-size: 18px;
+            line-height: 45px;
+            text-align: center;
+          }
+
+          &.porcentajeProducto {
+            font-size: 18px;
+            line-height: 45px;
+            text-align: center;
+          }
+        }
+
+          &.colorVerde {
+            background-color: #6BAA1F;
+          }
+        }
+      }
+    }
+    .fondo--transparencia {
+      background-color: black;
+          &.hover {
+            opacity: 0.2;
+          }
+    }
+
+  .indicadores--L{
+    outline: none;
+  }
+  .indicadores--ACC,
+  .indicadores--ACI {
+    background-image: url("../images/fav-acciones.png");
+  }
+
+  .indicadores--IND {
+    background-image: url("../images/fav-mercado.png");
+  }
+
+  .indicadores--MON {
+    background-image: url("../images/fav-moneda.png");
+  }
+
+  .indicadores--TAX {
+    background-image: url("../images/fav-rentaFija.png");
+  }
+
+  .indicadores--FIN {
+    background-image: url("../images/fav-indicadoresFinancieros.png");
+  }
+
+
+}
+
+.items--cajaMenu {
+  background: #FFFFFF;
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  height: 290px;
+  margin: 0 auto 30px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.14);
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.14);
+  line-height: 1.3em;
+  box-sizing: border-box;
+  overflow: hidden;
+    &.bubbleMenu{
+      min-height: 334px;
+      border-radius: 0;
+    }
+    .chartInfo{
+      height:15%;
+
+      p{
+        color:#536374;
+      }
+        .chart--titulo{
+          font-size: 10px;
+          line-height: 18px;
+          color: #9B9B9B;
+        }
+        .chart--caracteristica{
+          font-size: 0.9rem;
+          line-height: 20px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          height: 20px;
+        }
+    }
+    .chartContenedor{
+      height:85%;
+    }
+  }
+
+// elimina borde de div
+  div:focus{
+    outline-width: 0px !important;
+  }
+
+/****  INDICES  ****/
+
+.negativoFondo {
+  background-color: #C11818;
+}
+
+.positivoFondo {
+  background-color: #197919;
+}
+
+.neutroFondo {
+  background-color: #DB8916;
+}
+
+.negativoTexto {
+  color: #C11818 !important;
+}
+
+p.positivoTexto {
+  color: #197919 !important;
+}
+
+.neutroTexto {
+  color: #DB8916 !important;
+}
+
+/************ TRANCISIONES Y ANIMACIONES *********/
+/**** ANIMACION DE TRANSICION login  ****/
+.login--open {
+  opacity: 1;
+  transition: all 0.2s linear, opacity 1ms;
+  transform: translate(-300px, 0);
+  position: fixed;
+  float: right;
+  top: 0 !important;
+}
+
+.login--close {
+  opacity: 1;
+  transition: all 0.2s linear, opacity 1ms;
+  transform: translate(300px, 0);
+  background-color: #f0f2f5;
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.14);
+}
+/**** FIN ANIMACION DE TRANSICION login  ****/
+/**** ANIMACION DE TRANSICION MENU menuPublicoMobil   ****/
+.menuPublicoMobil--open {
+  opacity: 1;
+  transition: all 0.2s linear, opacity 1ms;
+  transform: translate(300px, 0);
+  position: relative;
+  box-shadow: 0 2px 13px 6px rgba(0, 0, 0, 0.14);
+  border-right: solid 1px rgba(0, 0, 0, 0.22);
+  float: left;
+  height: 100%;
+  position: fixed;
+  background-color: white;
+  top: 0 !important;
+}
+
+.menuPublicoMobil--close {
+  opacity: 1;
+  transition: all 0.2s linear, opacity 1ms;
+  transform: translate(-300px, 0);
+  position: relative;
+  box-shadow: 0 2px 13px 6px rgba(0, 0, 0, 0.14);
+  border-right: solid 1px rgba(0, 0, 0, 0.22);
+  float: left;
+  height: 100%;
+  background-color: white;
+}
+/**** FIN ANIMACION DE TRANSICION    ****/
+/**** MEGA MENU NAV ****/
+
+  .navMenu--imagen {
+    .grafico--indicadores {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #fff;
+      min-height: 334px;
+    }
+  }
+
+/*Media queries*/
+@media all and (max-width: 1024px) {
+  .grafico--tablas {
+    width: 100%;
+    svg{
+      width: 70% !important;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .indicadores--L{
+    width: 20%;
+    margin-top: 0.5em;
+  }
+  .indicadores--porcentaje {
+    p {
+      margin-top: -5px;
+    }}
+
+}
+@media all and (max-width: 991px) {
+  .indicadores--porcentaje {
+    width: 35%;
+    height: 100%;
+  }
+
+  .grafico--tablas {
+    width: 100%;
+    svg{
+      width: 87% !important;
+    }
+  }
+
+}
+@media all and(min-width: 768px) and (max-width: 991px) {
+  .navMenu--contenido {
+    .navMenu--notificaciones {
+      .notificaciones--caja {
+        padding: 0.5em 0 0.5em 2em;
+      }
+    }
+  }
+
+  .megaMenuFooter {
+    display: none;
+  }
+  .navMenu--contenido {
+    min-height: 304px !important;
+    .indicadores--contenedor {
+      margin-left: 0;
+      margin-right: 1em;
+      height: 70px;
+      position: relative;
+      .indicadores--contenedorCategoria {
+        .indicadores--categoria {
+          height: 70px;
+          padding: 0.438em 0.625em 0em 0.625em;
+          h3 {
+            margin: 0px;
+            padding: 0px;
+            @include font-14;
+            line-height: 12px;
+          }
+          h4 {
+            margin: 0px;
+            padding: 0px;
+            @include font-14;
+            line-height: 12px;
+          }
+          p {
+            margin: 0px;
+            padding: 0px;
+            @include font-16;
+            line-height: 12px;
+          }
+        }
+
+        .indicadores--porcentaje {
+          position: absolute;
+          margin: 0px;
+          padding: 0px;
+          height: 25px;
+          top: 50px;
+          p {
+            margin: 0px;
+            padding: 0px;
+            line-height: 25px !important;
+            @include font-16;
+          }
+        }
+      }
+    }
+    .h--bordeParrafo{
+      padding-top: 1em;
+    }
+  }
+}
+@media all and (max-width: 768px) {
+  .navMenu--contenido {
+    .navMenu--notificaciones {
+      .notificaciones--caja {
+        padding: 1em 1em 0;
+      }
+    }
+  }
+}
+@media all and (max-width: 767px) {
+  .megaMenuFooter {
+    display: none;
+  }
+
+  .navMenu--contenido{
+    .navMenu--notificaciones{
+      .notificaciones--caja{
+        .notificaciones--texto {
+          h3{
+            @include font-14;
+          }
+        }
+      }
+    }
+    .indicadores--contenedor{
+      height: 100px;
+      .indicadores--contenedorCategoria{
+        .indicadores--categoria{
+              height: 100%;
+        }
+        .indicadores--porcentaje{
+          padding: 0;
+          p{
+            line-height: 18px;
+            @include font-12;
+          }
+        }
+      }
+    }
+  }
+}
+
+.grafico--tablas {
+  width: 100px;
+  svg{
+    width: 87%  ;
+  }
+}

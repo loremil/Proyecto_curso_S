@@ -1,0 +1,42 @@
+<div class="nav--Privado">
+        <div class="Privado-menu" ng-controller="menuInteriorCrtl">
+          <ul>
+            <li  ng-class="{open: currentOpen.menuId == menu.id}" ng-click="indicadores = false">
+              <md-button ng-class="{'active': currentOpen.menuId == menu.id, 'active': isActiveMenu == menu.id}" ng-click="activeButton(menu.id);"
+                class="menuPrivado--link" href="">
+                <div>
+                 
+                </div>
+              </md-button>
+              <md-menu-content class="menuFondo navMenu">
+                <div class="ban-row" data-ui-sref="{{menu.id}}" data-ui-sref-active="active" ng-mouseleave="currentOpen.menuId = false; isActive =null;">
+                  <!-- inicio menu items -->
+                  <div class="expandCollapseCtrl">
+                    <div class="ban-col-xs-12 navMenu--contenido">
+                      <div class="ban-col-xs-12" ng-repeat="subMenu in menu.menu" ng-click="mostrarOcultarSubMenu($index, subMenu.subMenu.length)">
+                        <div class="navMenu--bloque">
+                          <md-list class="navMenu--opciones">
+                            <div class="subheader" ng-click="cerrarMenu()">
+                              <md-list-item class="list-principal" ng-href="">
+                               
+                              </md-list-item>
+                            </div>
+                            <div>
+                              <div ng-repeat="hijos in subMenu.subMenu" ng-click="cerrarMenu()">
+                                <md-list-item class="list-contenido" ng-href="">
+                                  
+                                </md-list-item>
+                              </div>
+                            </div>
+                          </md-list>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- fin menu items -->
+                  </div>
+              </md-menu-content>
+            </li>
+
+          </ul>
+        </div>
+      </div>

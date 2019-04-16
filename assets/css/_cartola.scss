@@ -1,0 +1,232 @@
+/* INICIO CARTOLA */
+.bg--formCartola {
+    // Heigh multiplo de 16, segun material
+    height: auto;
+    padding: 16px 0;
+    background-color: #eaedf1;
+    border-radius: 6px;
+    display: block;
+    overflow: hidden;
+}
+.contenedor--patrimonio {
+    height: 64px;
+    overflow: hidden;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    p {
+        text-align: left;
+    }
+}
+
+.contenedor--bga {
+    .bga--logo {
+        display: block;
+        margin: 0.5em 0;
+        img {
+            width: 150px;
+        }
+    }
+    .bga--grafico {
+        height: 30px;
+        overflow: hidden;
+    }
+    .bga--marcoActuacion {
+        display: block;
+        overflow: hidden;
+        padding: 0.5em 0;
+        .marcoActuacion--logo {
+            display: inline-block;
+            width: 50px;
+            padding-right: 8px;
+            height: auto;
+            float: left;
+        }
+        .marcoActuacion--copy {
+            width: calc(100% - 69px);
+            display: inline-block;
+            height: auto;
+            float: left;
+            border-left: 1px solid;
+            p {
+                font-size: 10px;
+                line-height: 16px;
+                padding-left: 0.5em;
+            }
+        }
+    }
+}
+
+.contenedor--recomendacion {
+    .recomendacion--datos {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        padding: 0.5em 0;
+        .datos--porcentaje {
+            width: 50%;
+            display: inline-block;
+            float: left;
+            height: 40px;
+            box-sizing: border-box;
+            p {
+                line-height: 18px;
+                width: 100%;
+                color: #9B9B9B;
+            }
+            span {
+                font-size: 21px;
+                color: #69B4C5;
+            }
+        }
+        .datos--grafico {
+            width: 50%;
+            display: inline-block;
+            overflow: hidden;
+            float: left;
+            height: 40px;
+            box-sizing: border-box;
+        }
+    }
+}
+
+.patrimonio--exposicion {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    .exposicion--grafico {
+        padding-top: 0.5em;
+        height: 65px;
+        width: 50%;
+        display: inline-block;
+        float: left;
+        .highcharts-container {
+            .highcharts-data-label-box {
+                x: 0;
+                y: 0.8;
+            }
+        }
+    }
+}
+
+.border--separador {
+    hr {
+        border: 2px solid inherit;
+        border-radius: 2px;
+        margin: 5px 0;
+        width: 100%;
+    }
+    &.separador--aqua {
+        hr {
+            border: 2px solid #5BABBF;
+        }
+    }
+    &.separador--rojo {
+        hr {
+            border: 2px solid #7EB645;
+        }
+    }
+}
+
+.contenedor--indicadores {
+    text-align: left;
+    p {
+        padding: 0;
+        @include font-12;
+    }
+    .indicadores--asset {
+        width: 32.5%;
+        padding: 0 0.5em;
+        box-sizing: border-box;
+        display: inline-block;
+        &:nth-child(2), &:nth-child(3) {
+            border-left: 1px solid #737F8D;
+        }
+    }
+    .indicadores--rentabilidad {
+        width: 32.5%;
+        padding: 0;
+        box-sizing: border-box;
+        display: inline-block;
+        * {
+            @include roboto-light;
+            display: inline-block;
+        }
+        &:nth-child(2) {
+            text-align: center;
+        }
+        &:nth-child(3) {
+            text-align: right;
+            float: right;
+        }
+    }
+}
+
+.contenedor--rentabilidad {
+    //Mantiene a las cajas centradas sin importar su %
+    text-align: center;
+    .rentabilidad--mtd,
+    .rentabilidad--ytd,
+    .rentabilidad--m12 {
+        width: 32.8%;
+        display: inline-block;
+        text-align: left;
+        h3 {
+            display: inline-block;
+        }
+        span {
+            margin-left: 1em;
+            @include font-12;
+            @include roboto-light;
+        }
+    }
+    .rentabilidad--ytd {
+        text-align: center !important;
+    }
+    .rentabilidad--m12 {
+        text-align: right !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+@media (max-width: 991px) {}
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+@media (max-width: 767px) {
+    .cartolaContenido--valores {
+        text-align: left !important;
+        p {
+            width: 49.5%;
+            display: inline-block;
+            text-align: left;
+        }
+        .ban-text-valores {
+            text-align: right !important;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .cartolaTitulo {
+        .cartolaTitulo--primario {
+            @include font-20;
+        }
+        .cartolaTitulo--secundario {
+            @include font-20;
+        }
+        .border--titulo {
+            hr {
+                max-width: 50px;
+            }
+        }
+    }
+    .cartolaContenido--valores {
+        p {
+            width: 49%;
+        }
+    }
+}
+
+/* FIN CARTOLA */

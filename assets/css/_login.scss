@@ -1,0 +1,260 @@
+/* ESTILOS LOGIN */
+/*nuevo imput color*/
+md-select .md-select-value.md-select-placeholder {
+    color: olive;
+}
+
+md-select:not([disabled]):focus .md-select-value {
+    border-color: #5BABBF;
+}
+
+md-select-menu {
+    md-option[selected] {
+        color: #336A9B !important;
+    }
+
+    md-content md-option {
+        color: #536374 !important;
+    }
+}
+
+.md-select-value {
+    font-size: 16px;
+}
+
+md-radio-button:not([disabled]) {
+    &.md-checked .md-off {
+        border-color: #336A9B;
+    }
+
+    .md-on {
+        background-color: #336A9B;
+    }
+}
+
+md-radio-group .md-checked:not([disabled]) .md-ink-ripple {
+    color: #336A9B;
+}
+
+md-radio-button {
+    &:not([disabled]).md-checked .md-ink-ripple {
+        color: #336A9B;
+    }
+
+    &.md-checked .md-off {
+        border-color: #336A9B;
+    }
+}
+
+md-radio-button.md-checked .md-ink-ripple,
+md-radio-group .md-checked .md-ink-ripple {
+    color: #336A9B;
+}
+
+md-radio-group {
+    &.md-default-theme.md-focused:not(:empty) .md-checked .md-container:before,
+    &.md-focused:not(:empty) .md-checked .md-container:before {
+        background-color: #336A9B;
+        opacity: 0.25;
+        filter: alpha(opacity = 25);
+    }
+}
+
+
+.login--contenido_bg {
+    background-image: url(../images/1_edificio.jpg);
+    background-repeat: no-repeat;
+  }
+/* cambios jorge login 16-04*/
+.login--contenido {
+  background-image: url("../images/1_empresas-v2.jpg");
+  /*Fin cambios jorge login 16-04*/
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 799px;
+  min-height: 100%;
+  text-align: center;
+  position: fixed;
+   top: 0;
+   left: 0;
+
+  .card--login {
+    position: relative;
+    margin-top: 20px;
+    border-radius: 4px;
+    background-color: #FFF;
+    width: 370px;
+    height: auto;
+    text-align: center;
+    display: inline-block;
+    padding: 2em 0 2.3em;
+    margin: 8.5em 0 5em;
+    box-sizing: border-box;
+    -moz-box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.14);
+    -webkit-box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.14);
+
+    &.configuracion {
+      width: 100%;
+      padding: 2em;
+    }
+
+    .login--titulo {
+      padding: 0;
+      text-align: center;
+
+      .titulo--bienvenido {
+        line-height: 1.2em;
+        padding: 0;
+        @include font-48;
+        @include roboto-light;
+      }
+
+      .titulo--mensaje {
+        line-height: 32px;
+        letter-spacing: 0.3px;
+        color: #536374;
+        @include font-14;
+        @include roboto-normal;
+
+        span.titulo--cliente {
+          text-transform: uppercase;
+          color: #5BABBF;
+          font-weight: 600;
+        /*   comentario extraccion de border login 20/03/18 */
+          &:before {
+          /*   border-bottom: 1px solid $color-active; */
+            content: 'Empresa';
+            padding-bottom: 2px;
+          }
+        }
+      }
+    }
+
+    .login--datos {
+      padding-top: 1.5em;
+      padding-bottom: 1em;
+
+      .login--input {
+        text-align: left;
+        width: 200px;
+        height: 67px;
+        margin-bottom: 0;
+        margin-top: 0.5;
+        padding-bottom: 0;
+
+        .md-required:after {
+          content: ' ';
+          /* elimina * de los input */
+        }
+
+        md-icon {
+          color: $color-active;
+          top: 3px;
+          left: 6px;
+
+        }
+      }
+    }
+
+
+    .login--ingresar {
+      text-align: center;
+      margin-bottom: 0;
+
+      .login--pregunta {
+        line-height: 22px;
+        @include font-14;
+
+        a {
+          color: #336A9B;
+          line-height: 2em !important;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+  /* cambios jorge login 14-05*/
+@media all and (max-width: 767px) {
+  .login--contenido{
+    background-image: url("../images/1_empresas-v2.jpg");
+    background-position: top right;
+    background-size: 100%;
+    .card--login{
+      margin: 4.8em 0;
+      min-height: 1950px !important;
+      width: 100%;
+      padding: 0.625em 0 2.3em;
+
+      .login--ingresar {
+        padding: 0em 1em;
+        margin: 0;
+        button{
+          margin: 3px 0px 0px 0px;
+        }
+      }
+      .login--titulo{
+         .titulo--bienvenido{
+           @include font-30;
+         }
+         .titulo--mensaje{
+           @include font-12;
+
+         }
+      }
+      .login--datos{
+        padding-top: 0;
+        padding-bottom: 0;
+         .login--input{
+          width: 80%;
+          margin-top: 10px;
+          margin-bottom: 0;
+          padding-top: 0;
+          height: 60px;
+         }
+      }
+    }
+    /*Fin cambios jorge login 14-05*/
+    .ban-container{
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+  }
+}
+
+
+/* media queries especiales para android  jorge 15-05*/
+@media screen
+  and (max-width: 640px)
+  and (-webkit-device-pixel-ratio: 4)
+ {
+    footer {
+      .footerLight{
+          display: none;
+      }
+    }
+    .footer-minAbsolute{
+      display: none;
+    }
+}
+@media screen
+  and (max-width: 640px)
+  and (-webkit-device-pixel-ratio: 2)
+ {
+    footer {
+      .footerLight{
+          display: none;
+      }
+    }
+    .footer-minAbsolute{
+      display: none;
+    }
+}
+
+/*  fin media queries especiales para android  jorge 15-05*/

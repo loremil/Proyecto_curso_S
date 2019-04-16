@@ -1,0 +1,125 @@
+.h--bgnegro {
+    background-color: rgba(0, 0, 0, 0.45) !important; // Modificadores del contenido en fondo oscuro
+    /* INICIO FUENTE (THEME OSCURO) */
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: #FFFFFF;
+    }
+    /* FIN FUENTE (THEME OSCURO) */
+    .fondoSeparador {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 1em 0;
+    }
+    /* INICIO GRAFICOS (THEME OSCURO) */
+    .grafico--resumen {
+        .resumen--texto {
+            p,
+            span,
+            .texto--nombre,
+            .texto--monto {
+                color: #FFFFFF;
+            }
+            .texto--porcentaje {
+                color: #80D2E6;
+            }
+        }
+    }
+    /* FIN GRAFICOS (THEME OSCURO) */
+    /* INICIO ITEM CAJA */
+    .items--caja {
+        background: #F0F2F5;
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: #536374;
+        }
+    }
+    /* FIN ITEM CAJA */
+    /* INICIO BARRAPASOS (THEME OSCURO) */
+    .barraPasos {
+        md-progress-linear {
+            top: 15px;
+            &.barraPasos--progreso {
+                ._md-bar1 {
+                    background-color: #76787D;
+                }
+            }
+        }
+        .barraPasos--check {
+            .check--numero {
+                border: 2px solid #277CC8;
+                &.check--numeroInactivo {
+                    color: #536374;
+                    background-color: #76787D !important;
+                    border: 2px solid #76787D;
+                }
+            }
+            .check--positivo {
+                background-color: rgba(0,0,0,0.3);
+                border: 0;
+                box-shadow: inset 0px 0px 0px 4px #7EB645;
+            }
+            .check--titulo {
+                color: #FFFFFF;
+                &.check--tituloInactivo {
+                    color: #C3C3C3;
+                }
+            }
+        }
+    }
+    /* FIN BARRAPASOS (THEME OSCURO) */
+    /* INICIO ENCUESTA (THEME OSCURO) */
+    .encuesta--botones {
+        .md-button {
+            background-color: #FFFFFF;
+            i {
+                color: #536374;
+            }
+            p {
+                color: #536374;
+            }
+        }
+    }
+    .encuesta--slider {
+        md-input-container {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        md-slider-container md-input-container input[type="number"] {
+            color: #FFFFFF;
+        }
+        md-slider-container md-input-container input[type="monto"] {
+            color: #FFFFFF;
+        }
+    }
+    /* FIN ENCUESTA (THEME OSCURO) */
+    /* INICIO INPUTS (THEME OSCURO) */
+    md-input-container {
+        &.form {
+            background-color: #FFFFFF;
+            border: 2px solid rgba(255, 255, 255, 0);
+        }
+        &.disabled--activated {
+            border: 2px solid rgba(255, 255, 255, 1)
+        }
+    }
+    /* FIN INPUTS (THEME OSCURO) */
+    /* INICIO BOTONES (THEME OSCURO) */
+    .md-button.boton--navegacion {
+        color: #FFFFFF;
+        md-icon {
+            i {
+                color: #FFFFFF;
+            }
+        }
+    }
+    /* FIN BOTONES (THEME OSCURO) */
+}

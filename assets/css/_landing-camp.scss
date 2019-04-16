@@ -1,0 +1,202 @@
+/* landing campanas jguerra-03-10-2018 */
+.contenedorLanding {
+  background-size: cover;
+  background-position: right top;
+  padding: 0;
+  position: relative;
+  min-height: 600px;
+  width: 100%;
+  &.background-Landing {
+    background-image: url("../images/sitio_publico/backgroud-mailing.png");
+  }
+  .slogan-landing{
+      float: left;
+      position: relative;
+      margin: 150px 0px 0px 80px;
+      padding: 0;
+      width: 480px;
+  }
+  .landing--seccion_01{
+      height: auto;
+      margin: 0;
+      min-height: 112px;
+      padding: 3px 0;
+      width: 100%;
+  }
+  .landing-text-A{
+      background-position: top right;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background: url("../images/sitio_publico/backgroud-01blue.png");
+      color: #fff;
+      float: left;
+      line-height: 20px;
+      margin: 50px 0px 0px 50px;
+      padding: 15px;
+      width: 100%;
+      h4{
+          @include font-20;
+          font-weight: 400;
+          line-height: 23px;
+          margin: 5px 0px 0px 0px;
+          padding: 0;
+          width: 100%;
+          text-align: center;
+      }
+      h3{
+        @include font-36;
+        line-height: 36px;
+        text-align: center;
+      }
+  }
+  .landing-text-B{
+      background-position: top right;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background: url("../images/sitio_publico/backgroud-02white.png");
+      color: #2A598E;
+      float: left;
+      font-size: 18px;
+      line-height: 20px;
+      margin: 0px 0px 0px 50px;
+      padding: 15px;
+      width: 100%;
+      p{
+          text-align: center;
+      }
+  }
+}
+.subtitulos-landing {
+    text-align: center;
+    font-family: 'robotolight';
+    font-size: 22px;
+    font-size: 1.375rem;
+    margin-bottom: 4px;
+}
+
+.pasos-apv {
+  width: 100%;
+  height: 130px;
+  padding: 0px 0px 50px 0px;
+  .apv-fondo {
+      margin: 20px 0px ;
+  }
+  p {
+    color: #516172;
+    font-size: 18px;
+    line-height: 18px;
+    margin: 20px auto 0px auto;
+    padding: 0;
+    text-align: center;
+    width: 90%;
+  }
+  .apv-anillo {
+    float: left;
+    margin: 5px 0px 10px 0px;
+    padding: 0;
+    width: 100%;
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      height: 90px;
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .contenedorLanding {
+      background-size: cover;
+      background-position: left top;
+      position: relative;
+      width: 100%;
+      .slogan-landing{
+          float: left;
+          margin: 150px 0px 0px 40px;
+          width: 65%;
+      }
+  }
+
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .contenedorLanding {
+      background-size: cover;
+      background-position: center top;
+      position: relative;
+      width: 100%;
+      min-height: 480px;
+      .slogan-landing{
+          float: left;
+          margin: 80px 0px 0px 10px;
+          width: 70%;
+      }
+
+      .landing-text-A{
+         margin: 90px 0px 0px 5px;
+         width: 90%;
+          h4{
+              @include font-18;
+
+          }
+          h3{
+            @include font-26;
+
+          }
+      }
+      .landing-text-B{
+          margin: 0px 0px 0px 5px;
+          width: 90%;
+      }
+    }
+
+}
+
+/* Fin landing campanas jguerra-03-10-2018 */
+
+/* estilos landing items jguerra-23-10-2018 */
+.items--cajaLanding {
+  background: #FFFFFF;
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  height: 290px;
+  margin: 0 auto 30px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.14);
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.14);
+  line-height: 1.3em;
+  box-sizing: border-box;
+  overflow: hidden;
+  &.cajaLanding--s {
+    min-height: 96px;
+    height: 96px;
+  }
+  .caja--subtLanding{
+    color: #519CAD;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 16px;
+    font-size: 1rem;
+    max-height: 2.6em;
+    overflow: hidden;
+    padding: 0 1em;
+
+  }
+  .caja--textLanding{
+    color: #536374;
+    text-align: center;
+    line-height: 1.3em;
+    padding: 0 0.5em;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-family: 'robotolight';
+  }
+}
+.caja--iconoLanding {
+  width: 100%;
+  img {
+      width: 70px;
+  }
+}
+/*Fin estilos landing items jguerra-23-10-2018 */

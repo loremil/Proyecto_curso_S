@@ -1,0 +1,613 @@
+._md-datepicker-floating-label > label:not(.md-no-float):not(._md-container-ignore) {
+  right: auto;
+}
+.md-datepicker-expand-triangle {
+  display: block;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  text-align: end;
+  width: 24px;
+  margin: 0 4px;
+  -webkit-transform: translate3d(0, -2px, 0);
+  transform: translate3d(0, -2px, 0);
+  font-size: 1.2rem;
+  position: initial;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: auto;
+  border-left: initial;
+  border-right: initial;
+  border-top: initial;
+
+  &:after {
+    display: block;
+    content: '\25BC';
+    position: relative;
+    top: 2px;
+    left: -6px;
+    speak: none;
+    font-size: 16px;
+    -webkit-transform: scaleY(0.6) scaleX(1);
+    transform: scaleY(0.6) scaleX(1);
+    color: #536374;
+  }
+}
+
+md-input-container:not(.md-input-invalid).md-input-focused md-icon {
+  color: #5BABBF;
+}
+
+
+.contenido--marco {
+  display: flex;
+  display: -ms-flexbox;
+  padding-bottom: 0.5em;
+  align-items: center;
+  img {
+    margin-right: 1em;
+    height: 60px;
+    padding-left: 1em;
+  }
+  .marco--title {
+    display: inline-block;
+    @include font-18;
+  }
+  .marco--texto{
+    line-height: 1.4em;
+    color: #519CAD;
+    padding-right: 1.5em;
+    @include font-16;
+    @include roboto-bold;
+
+  }
+  // .marco--info {
+  //   text-align: left;
+  //   .calculado--title {
+  //     display: inline;
+  //     padding-bottom: 0.7em;
+  //     @include font-18;
+  //     @include roboto-normal;
+  //   }
+  //   // .calculado--texto {
+  //   //   line-height: 1.4em;
+  //   //   color: #519CAD;
+  //   //   padding-right: 1.5em;
+  //   //   @include font-16;
+  //   //   @include roboto-normal;
+  //   // }
+  // }
+}
+.contenido--porcentaje {
+    max-width: 257px;
+    margin: 1em auto 1.5em;
+    img {
+        width: 100%;
+    }
+}
+
+
+    .contenido--descrip {
+      color: #FFF;
+      font-size: 12px;
+      padding: 5px 12px;
+      border-radius: 2px;
+      margin-top: 2em;
+      margin-bottom: 1em;
+
+      &.descrip--activo {
+        padding: 1.5em;
+        color: #536374;
+        background-color: #F8F9FA;
+        border-radius: 3px;
+        border: 1px solid #CCD1D9;
+        display: inline-block;
+        margin-top: 1.7em;
+        margin-bottom: 0;
+
+        i {
+          float: left;
+        }
+
+        .marco--tooltip {
+          padding-left: 0.5em;
+          line-height: 1.3em;
+          @include roboto-normal;
+          width: 87%;
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+    }
+
+    md-input-container.perfil--input {
+      width: 100%;
+    }
+
+    .perfil--titulo__check {
+      padding-top: 1em;
+      @include font-16;
+    }
+
+    .perfil--check {
+      margin-bottom: 0.8em;
+      color: #486C7C;
+      display: inline-flex;
+      align-items: center;
+
+      &.inactivo {
+        color: #D0D2D3;
+      }
+    }
+
+    .perfil--select {
+      padding-left: 1em;
+    }
+
+  /*botones*/
+  .contenedor--boton {
+    width: 14%;
+    background-color: #FFF;
+    vertical-align: top;
+    padding-top: 6px;
+    min-height: 90px;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+
+    .boton--texto {
+      line-height: 1.2em;
+      vertical-align: middle;
+      white-space: pre-line;
+      @include font-14;
+      color: #7d7d7d;
+    }
+
+    .boton--img {
+      display: inline-block;
+      vertical-align: top;
+      height: 22px;
+    }
+  }
+
+
+.boton--back {
+  float: left;
+  padding-top: 0.5em;
+
+  i.material-icons {
+    color: #fff;
+    background: #9B9B9B;
+    border-radius: 28px;
+    margin-right: 8px;
+    vertical-align: middle;
+    @include font-30;
+  }
+
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    color: #9B9B9B;
+  }
+}
+
+.boton--verMas {
+  float:right;
+
+  i.material-icons {
+    color: #FFC80A !important;
+    border-radius: 28px;
+    margin-left: 8px;
+    vertical-align: middle;
+    padding: 0 !important;
+    max-height: 30px !important;
+    margin-left: -7px;
+    @include font-30;
+  }
+
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    color: #9B9B9B;
+  }
+}
+
+.info {
+  &.info--display {
+    padding-top: 1.8em;
+  }
+}
+.contenedor--bgBlanco{
+  background-color: #FFFFFF;
+  padding: 1em;
+  margin-top: 1em;
+  line-height: 16px;
+  p{
+    display: inline-flex;
+    @include font-12;
+    span{
+      padding-right: 1em;
+    }
+  }
+}
+
+.contenedor--producto{
+   background-color: #F0F2F5;
+   padding: 0.8em;
+   .producto--titulo{
+      padding-bottom: 0.2em;
+      font-size: 1.125rem;
+      margin-bottom: 0.2em;
+      border-bottom: 1px solid #e6e6e6;
+   }
+   .producto--item{
+      span{
+            font-size: 12px !important;
+            color: #7e7e7e !important;
+
+      }
+   }
+}
+
+.barraProgress {
+  text-align: center;
+  width: 780px;
+  margin: 1.5em auto 0;
+
+  md-progress-linear ._md-container {
+    background: #E5E8EA;
+    height: 3px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    position: relative;
+  }
+
+  md-progress-linear ._md-container ._md-bar {
+    background: #7EB645;
+    height: 10px;
+    width: 100%;
+  }
+
+  .barraProgress--linea {
+    margin: 0 auto;
+    width: 59%;
+    top: 13px;
+
+    &.encuestaBarra {
+      margin: 0;
+      width: 78%;
+      padding: 0 8em 1em;
+    }
+  }
+
+  .check--title {
+    vertical-align: middle;
+    color: #2A5E92;
+    &.check__active {
+      color: #7EB645;
+    }
+    &.check__inactive {
+      color: #c5c8ca;
+    }
+  }
+
+  .check--numero {
+    position: relative;
+    border: 5px solid #fff;
+    background-color: #277CC8;
+    color: #FFFFFF;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.37em;
+    @include font-18;
+
+    &.encuesta--numero {
+      border: 5px solid #535557;
+    }
+
+    &.check__inactive {
+      background-color: #dde0e3;
+      color: #9ea5ad;
+    }
+  }
+
+  .check-active {
+    color: #7EB645;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin-right: 0.5em;
+    height: 23px;
+    width: 23px;
+    margin-bottom: 10px;
+
+    i.material-icons {
+      font-size: 26px;
+      background-color: #fff;
+      border-radius: 50%;
+      border: solid 2px #fff;
+
+      &.encuesta--check {
+        background-color: #535557;
+        border: solid 2px #535557;
+      }
+    }
+  }
+}
+
+.checkActualizacion {
+  width: 19%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.infoUser {
+  .infoUser--radioButton {
+    padding-bottom: 1em;
+    .infoUser--pregunta {
+    line-height: 1.5em;
+    }
+    .infoUser--respuesta {
+      margin-top: 1.5em;
+      padding-left: 1em;
+      width: 100%;
+      @include font-14;
+
+      md-radio-button {
+        margin-left: 0.5em;
+      }
+    }
+
+    .perfil--titulo {
+      padding-left: 0.5em;
+      padding-top: 0.5em;
+      @include font-16;
+    }
+  }
+}
+
+.contenedor--preguntas {
+  color: #fff;
+  padding: 0;
+  text-align: center;
+
+  .preguntas--titulo {
+    line-height: 26px;
+    margin: 1.2em 0 0.8em;
+    text-align: center;
+    animation-name: fadeInUp;
+    animation-duration: 0.8s;
+    @include font-22;
+    @include roboto-light;
+  }
+}
+
+.datosDireccion--container {
+  margin-top: 0.5em;
+}
+
+.datosIniciales {
+  padding-top: 1.5em;
+  border-bottom: 1px solid #CCD1D9;
+  padding-bottom: 0.5em;
+  @include font-16;
+}
+
+.marco--select {
+  padding: 1.1em 0 1em 1em;
+  display: inline;
+  vertical-align: sub;
+  border-radius: 2px;
+}
+
+.pasos__inactive {
+  .check--numero {
+    background-color: #7d7d7d !important;
+  }
+
+  h2 {
+    color: #7d7d7d !important;
+  }
+}
+
+.h--pasosucces {
+  color: #7EB645;
+}
+
+.h--pasosactive {
+  color: #fff;
+}
+
+.txt--medio{
+  @include font-16;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .boton--width {
+    .boton--perfil {
+      width: 100%;
+    }
+  }
+
+  .checkActualizacion {
+    width: 19%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .contenedorDatos {
+    .contenedor--boton {
+      width: 40%;
+    }
+  }
+
+  .marco--select {
+    display: inline-block;
+    width: 87px;
+  }
+  .contenido--porcentaje {
+    margin: 1em 1em 2em;
+}
+  .boton--verMas{
+    margin-top: -10px;
+    position: absolute;
+    right: 7px;
+    bottom: 0;
+    span{
+      @include font-12;
+      padding-left: 0.8em;
+    }
+  }
+  .barraProgress {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .barraProgress {
+    width: 100%;
+  }
+
+
+  .checkActualizacion {
+    width: 19%;
+    display: inline-block;
+    vertical-align: middle;
+
+    h2 {
+      display: none;
+    }
+  }
+
+  .contenedorDatos {
+    padding: 0.5em 0;
+
+    .contenedor--boton {
+      width: 90%;
+    }
+
+    .contenedor--perfil {
+      .perfil--contenido {
+        display: block;
+        text-align: center;
+
+        .contenido--marco {
+          padding-bottom: 0.5em;
+        }
+      }
+    }
+  }
+
+  .boton--agregar {
+    min-width: inherit;
+
+    span {
+      display: none;
+    }
+  }
+
+  .infoUser {
+    .infoUser--radioButton {
+      .infoUser--pregunta {
+        line-height: 1.4em;
+      }
+
+      .infoUser--respuesta {
+        padding-bottom: 1em;
+      }
+    }
+  }
+
+  .h--inputDatos {
+    padding-bottom: 1em;
+    margin-top: 0;
+  }
+
+  .contenedor--preguntas {
+    .preguntas--titulo {
+      @include font-18;
+    }
+  }
+
+  .marco--select {
+    width: 44%;
+    display: inline-block;
+    padding: 0.5em;
+
+    .select--marco {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  .checkActualizacion {
+    text-align: center;
+  }
+
+  .datosIniciales {
+    padding-top: 2.5em;
+  }
+
+  .h--paddingL {
+    padding: 0 0.6em;
+  }
+
+  .contenedor--perfil {
+    padding: 0 0.8em;
+  }
+
+  .md-button.boton1,
+  .md-button.boton2 {
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+
+  .rzslider span {
+    width: 65px;
+  }
+  .boton--verMas{
+    position: relative;
+    width: 100%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    span{
+      @include font-12;
+      padding-left: 0.8em;
+    }
+    .md-button{
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  .h--bordeParrafo {
+    margin: 10px 10px 0;
+  }
+  .txt--medio{
+    margin-bottom: 0;
+    line-height: 18px;
+  }
+  .contenedor--bgBlanco{
+    p{
+      display: flex;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+
+  .checkActualizacion {
+    width: 19%;
+    display: inline-block;
+    vertical-align: middle;
+
+    h2 {
+      display: none;
+    }
+  }
+}
