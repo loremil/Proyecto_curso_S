@@ -26,15 +26,21 @@ cursosApp.config(function ($routeProvider) {
     .when('/portada', {
       templateUrl: 'consultar/personas/portada.html',
     })
-    .when('/boleta-online', {
-      templateUrl: 'consultar/personas/boleta-online.html',
-    })
     .when('/boleta-manual', {
       templateUrl: 'consultar/personas/boleta-manual.html',
     })
     .when('/post-venta-tarjeta', {
       templateUrl: 'consultar/personas/post-venta-tarjeta.html',
     })
+
+    // boleta de garantia
+    .when('/boletaOnline-flujoProcesoComercialDiagrama', {
+      templateUrl: 'consultar/personas/boleta-online_contenido/boletaOnline-flujoProcesoComercialDiagrama.html',
+    })
+    .when('/boletaOnline-flujoProcesoComercial', {
+      templateUrl: 'consultar/personas/boleta-online_contenido/boletaOnline-flujoProcesoComercial.html',
+    })
+
 
     .otherwise({
       redirectTo: '/boleta-online'

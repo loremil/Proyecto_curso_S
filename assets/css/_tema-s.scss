@@ -182,11 +182,6 @@ nav#navegacionPrivada{
                 background: dodgerblue;
                 color: #fff;
               }
-            //   &:hover {
-            //       background-color: none;
-            //     border-bottom: #302d5a 6px solid !important;
-            //     border-radius: none !important;
-            //   }
               &:focus {
                 border: none;
               }
@@ -208,4 +203,16 @@ nav#navegacionPrivada{
       }
     }
   }
+
+//   tabla
+
+.headTabla{
+    text-align: center;
+    font-size: 20px;
+    background-color: green;
+    background-color: #123a98;
+    height: 60px;
+    line-height: 40px;
+}
+
 

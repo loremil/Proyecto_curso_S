@@ -1,140 +1,25 @@
 <div class="panel_float ">
-    <div class="side--menu izquierdo">
-      <!-- inicio boton areas -->
-      <div class="ban-col-md-12 boton">
-
-        <span>UNIDAD DE <br>CONOCIMIENTO</span>
-        <i class="material-icons icon--info">keyboard_arrow_right</i>
-      </div>
-      <!-- fin boton areas -->
-      <div class="contenedorAreas ban-col-md-12">
-        <!-- linea 1 -->
-        <div class="ban-row">
-          <div class="ban-col-md-12">
-            <div class="ban-col-md-4 cuadro" style="background-color:#b3be11;">
-              <span style="color:#FFFFFF;">C</span>
-            </div>
-            <div class="ban-col-md-7">
-              <span style="line-height:32px;">Cliente</span>
-            </div>
-          </div>
-        </div>
-        <!-- linea 2 -->
-        <div class="ban-row h--paddingTop1">
-          <div class="ban-col-md-12">
-            <div class="ban-col-md-3 cuadro" style="background-color:#6a2383;">
-              <span style="color:#FFFFFF;">AC</span>
-            </div>
-            <div class="ban-col-md-7">
-              <span>Área Comercial:<br>
-                Ejecutivo o asistente
-              </span>
-            </div>
-          </div>
-        </div>
-        <!-- linea 3 -->
-        <div class="ban-row h--paddingTop1">
-          <div class="ban-col-md-12">
-            <div class="ban-col-md-4 cuadro" style="background-color:#00abdf;">
-              <span style="color:#FFFFFF;">S</span>
-            </div>
-            <div class="ban-col-md-8">
-              <span>Sucursal: Mesa de<br>
-                Atención al cliente/JOP
-              </span>
-            </div>
-          </div>
-        </div>
-        <!-- linea 4 -->
-        <div class="ban-row h--paddingTop1">
-          <div class="ban-col-md-12">
-            <div class="ban-col-md-4 cuadro" style="background-color:#312783;">
-              <span style="color:#FFFFFF;">W</span>
-            </div>
-            <div class="ban-col-md-8">
-              <span>Página web <br>persona cliente</span>
-            </div>
-          </div>
-        </div>
-        <!-- linea 5 -->
-        <div class="ban-row h--paddingTop1">
-          <div class="ban-col-md-12">
-            <div class="ban-col-md-4 cuadro" style="background-color:#e71d73;">
-              <span style="color:#FFFFFF;">SACS</span>
-            </div>
-            <div class="ban-col-md-8">
-              <span style="line-height:32px;">SACS TC</span>
-            </div>
-          </div>
-        </div>
-        <!-- linea 6 -->
-        <div class="ban-row h--paddingTop1">
-          <div class="ban-col-md-12">
-            <div class="ban-col-md-4 cuadro" style="background-color:#e187b7;">
-              <span style="color:#FFFFFF;">MATC</span>
-            </div>
-            <div class="ban-col-md-8">
-              <span>Mesa de asistencia<br> de TC</span>
-            </div>
-          </div>
-        </div>
-        <!-- linea 7 -->
-        <div class="ban-row h--paddingTop1">
-          <div class="ban-col-md-12">
-            <div class="ban-col-md-4 cuadro" style="background-color:#b17f4a;">
-              <span style="color:#FFFFFF;">MP.P</span>
-            </div>
-            <div class="ban-col-md-8">
-              <span>Medios de Pago:<br>producto</span>
-            </div>
-          </div>
-        </div>
-        <!-- linea 8 -->
-        <div class="ban-row h--paddingTop1">
-          <div class="ban-col-md-12">
-            <div class="ban-col-md-4 cuadro" style="background-color:#693c11;">
-              <span style="color:#FFFFFF;">MP.O</span>
-            </div>
-            <div class="ban-col-md-8">
-              <span>Medios de Pago:<br>operaciones</span>
-            </div>
-          </div>
-        </div>
-        <!-- linea 9 -->
-        <div class="ban-row h--paddingTop1">
-          <div class="ban-col-md-12">
-            <div class="ban-col-md-4 cuadro" style="background-color:#006633;">
-              <span style="color:#FFFFFF;">E</span>
-            </div>
-            <div class="ban-col-md-8">
-              <span>Externos: VigaTec<br>
-                CCA - Salones VIP
-              </span>
-            </div>
-          </div>
-        </div>
-        <!-- linea 10 -->
-        <div class="ban-row h--paddingTop1">
-          <div class="ban-col-md-12">
-            <div class="ban-col-md-4 cuadro" style="background-color:#db8a73;">
-              <span style="line-height:32px;color:#FFFFFF;">URP</span>
-            </div>
-            <div class="ban-col-md-8">
-              <span>Unidad de Reclamos</span>
-            </div>
-          </div>
-        </div>
-        <!-- linea 11 -->
-        <div class="ban-row h--paddingTop1">
-          <div class="ban-col-md-12">
-            <div class="ban-col-md-4 cuadro" style="background-color:#f39200;">
-              <span>D</span>
-            </div>
-            <div class="ban-col-md-8">
-              <span style="line-height:32px;color:#FFFFFF;">Delivery</span>
-            </div>
-          </div>
-        </div>
+  <div class="side--menu izquierdo">
+    <!-- inicio boton conocimiento -->
+    <div class="ban-col-md-12 boton">
+      <span>UNIDAD DE <br>CONOCIMIENTO</span>
+      <i class="material-icons icon--info">keyboard_arrow_right</i>
+    </div>
+    <!-- fin boton conocimiento -->
+    <!-- inicio nav -->
+    <div class="nav--Privado">
+      <div class="Privado-menu" ng-controller="menuPrivadoCrtl-p">
+        <ul>
+          <li ng-repeat="menu in menuEmpresa4" ng-class="{open: currentOpen.menuId == menu.id}">
+            <md-button ng-click="activeButton(menu.id);" class="line-center" href="#boletaOnline-flujoProcesoComercial">
+              <div>
+                {{menu.name}}
+              </div>
+            </md-button>
+          </li>
+        </ul>
       </div>
     </div>
+    <!-- fin nav -->
   </div>
+</div>

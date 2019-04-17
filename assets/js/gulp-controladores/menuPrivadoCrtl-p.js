@@ -51,7 +51,7 @@ cursosApp.controller('menuPrivadoCrtl-p', ['$scope', 'screenSize', '$location', 
     name: 'BOLETA DE GARANTÍA',
     menu: [{
       name: 'BOLETA DE GARANTÍA ONLINE',
-      url: '#boleta-online'
+      url: '#boletaOnline-flujoProcesoComercialDiagrama'
     }, {
       name: 'BOLETA DE GARANTÍA MANUAL',
       url: '#boleta-manual',
@@ -77,7 +77,7 @@ cursosApp.controller('menuPrivadoCrtl-p', ['$scope', 'screenSize', '$location', 
   $scope.menuEmpresa3 = [{
     id: 3,
     name: 'POST VENTA TARJETA DE CRÉDITO',
-    url: '#resumen',
+    // url: '#resumen',
     menu: [{
       name: 'menu3',
       url: '#resumen'
@@ -90,7 +90,8 @@ cursosApp.controller('menuPrivadoCrtl-p', ['$scope', 'screenSize', '$location', 
 
   $scope.menuEmpresa4 = [{
     id: 4,
-    name: 'CRÉDITO DE CONSUMO',
+    name: 'FLUJO DEL PROCESO COMERCIAL',
+    // url:'#boletaOnline-flujoProcesoComercial'
     menu: [{
       name: 'menu2',
       url: '#resumen'

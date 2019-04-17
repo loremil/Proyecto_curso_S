@@ -173,6 +173,15 @@ nav#navegacionPrivada.nav--Privado .Privado-menu ul li a.menuPrivado--link.md-bu
   margin: 0;
 }
 
+.headTabla {
+  text-align: center;
+  font-size: 20px;
+  background-color: green;
+  background-color: #123a98;
+  height: 60px;
+  line-height: 40px;
+}
+
 .navMenu {
   margin: 0;
   padding: 0;
