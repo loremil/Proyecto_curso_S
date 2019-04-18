@@ -47,10 +47,14 @@
 <body ng-app="cursosApp" class="personas ng-cloak">
 
   <div ng-include src="'header/personas-header.html'"></div>
-
+<!-- inicio visor nav superior -->
   <div ng-view autoscroll><span>{{currentNavItem}}</span></div>
-  <div ng-include src="'componentes/botons-float.html'"></div>
-  <div ng-include src="'navegacion-privada/menu-flotanteIzquierdo.html'"></div>
-</body>
+<!-- fin visor nav superior -->
 
+  <div ng-include src="'componentes/botons-float.html'"></div>
+
+  <!-- inicio menu flotante izquierdo -->
+  <div ng-include src="'navegacion-privada/menu-flotanteIzquierdo.html'"></div>
+  <!-- fin menu flotante izquierdo -->
+</body>
 </html>
