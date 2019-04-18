@@ -40,6 +40,10 @@ cursosApp.config(function ($routeProvider) {
     .when('/boletaOnline-flujoProcesoComercial', {
       templateUrl: 'consultar/personas/boleta-online_contenido/boletaOnline-flujoProcesoComercial.html',
     })
+    .when('/boletaOnline-documentacionRequerida', {
+      templateUrl: 'consultar/personas/boleta-online_contenido/boletaOnline-documentacionRequerida.html',
+    })
+
 
 
     .otherwise({
