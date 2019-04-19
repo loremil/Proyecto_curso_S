@@ -10,36 +10,97 @@
             <div class="contenidoImagen h--paddingTop2">
                 <img src="assets/images/BoletaOnline_FlujoProcesoComercial/BoletaOnline_FlujoProceso_encabezado.png">
             </div>
-            <md-button class="botonRedondoL h--floatRight" href="">CLIC PARA VER REFERENCIA</md-button>
-        </div>
-        <!-- fin contenedor imagen boton -->
-        <!-- inicio tabla -->
-        <div class="ban-col-md-12 tabla h--paddingTop2">
-            <div class="ban-row">
-                <!-- inicio columna menu -->
-                <div class="ban-col-md-3 menuInterior">
-                    <!-- inicio head tabla -->
-                    <div class="headTabla">
-                        <p style="color: #fff !important">INDICE</p>
+            <md-button>CLIC PARA VER REFERENCIA</md-button>
+            <div class="tabla" >
+                <div class="ban-row">
+                    <div class="ban-col-md-3 menuInterior" >
+                        <div class="headTabla">
+                            <p style="color: #fff !important">INDICE</p>
+                        </div>
+                        <div class="" style="height: 400px; background: #ccc; font-size: 18px; padding: 20px">
+                          <ul>
+                              <li style="text-decoration: none"><a style="color: rgb(13, 181, 210)" href="#/boletaOnline-flujoProcesoComercial">Boleta Online flujo Proceso Comercial</a></li>
+                              <br>
+                              <li style="text-decoration: none"><a style="color: #fff" href="#/boletaOnline-documentacionRequerida">Boleta Online documentacion Requerida</a></li>
+                          </ul>
+                          <div ng-app=" expandCollapseApp" ng-controller="expandCollapseCtrl">
+                              <div>
+                                  <div class="colapsable--lateral">
+                                      <div ng-click="active1 = !active1" ng-class="{'quiero-cerrado': active1, 'quiero-expandido': !active1}">
+                                          <p>
+                                              Boleta Online documentacion
+                                              <span class="icono--menu1">
+                                               <i class="material-icons">keyboard_arrow_down</i>
+                                           </span>
+                                              <span class="icono--menu2">
+                                               <i class="material-icons">keyboard_arrow_up</i>
+                                           </span>
+                                          </p>
+                                      </div>
+                                      <div class="slideDown" ng-hide="active1">
+                                          <div class="contenido--menu">
+                                              <ul>
+                                                  <li>
+                                                      <md-button ng-href="#/boletaOnline-documentacionRequerida">
+                                                          <p>Boleta Online flujo Proceso </p>
+                                                      </md-button>
+                                                  </li>
+                                                  <li>
+                                                      <md-button ng-href="">
+                                                          <p>Boleta Online documentacion</p>
+                                                      </md-button>
+                                                  </li>
+                                                  <li>
+                                                      <md-button ng-href="#/boletaOnline-documentacionRequerida">
+                                                          <p>Boleta Online flujo Proceso </p>
+                                                      </md-button>
+                                                  </li>
+                                                  <li>
+                                                      <md-button ng-href="">
+                                                          <p>Boleta Online documentacion</p>
+                                                      </md-button>
+                                                  </li>
+                                                  <li>
+                                                      <md-button ng-href="">
+                                                          <p>Boleta Online flujo Proceso </p>
+                                                      </md-button>
+                                                  </li>
+                                                  <li>
+                                                      <md-button ng-href="">
+                                                          <p>Boleta Online documentacion</p>
+                                                      </md-button>
+                                                  </li>
+                                                  <li>
+                                                      <md-button ng-href="#/molecule">
+                                                          <p>Boleta Online flujo Proceso </p>
+                                                      </md-button>
+                                                  </li>
+                                                  <li>
+                                                      <md-button ng-href="#/molecule">
+                                                          <p>Boleta Online documentacion</p>
+                                                      </md-button>
+                                                  </li>
+
+
+                                              </ul>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
                     </div>
-                    <!-- fin head tabla -->
-                    <!-- inicio menu -->
-                    <div style="height: 400px; background: #ccc; font-size: 18px; padding: 20px">
-                        <ul>
-                            <li style="text-decoration: none"><a style="color: rgb(13, 181, 210)" href="#/boletaOnline-flujoProcesoComercial">Boleta
-                                    Online flujo Proceso Comercial</a></li>
-                            <br>
-                            <li style="text-decoration: none"><a style="color: #fff" href="#/boletaOnline-documentacionRequerida">Boleta
-                                    Online documentacion Requerida</a></li>
-                        </ul>
-                    </div>
-                    <!-- fin menu -->
-                </div>
-                <!-- fin columna menu -->
-                <!-- inicio columna contenido -->
-                <div class="ban-col-md-9 visorContenido">
-                    <div class="headTabla">
-                        <p style="color: #fff !important">Boleta Online flujo Proceso Comercial</p>
+                    <div class="ban-col-md-9 visorContenido">
+                        <div class="headTabla">
+                            <p style="color: #fff !important">Boleta Online flujo Proceso Comercial</p>
+                        </div>
+                        <h1 style="font-size: 30px; padding: 20px 0px">Contenido 1</h1>
+
+
+
+
+
+
                     </div>
                     <h1 style="font-size: 30px; padding: 20px 0px">Contenido 1</h1>
                 </div>
