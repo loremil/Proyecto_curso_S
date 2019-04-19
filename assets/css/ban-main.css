@@ -2,7 +2,6 @@
 /* SECURITY MATERIAL FORMACIÓN TECNICA */
 h1, h2, h3, span, p, a {
   font-family: "Cabin", sans-serif !important;
-  color: #000000;
 }
 
 .ban-container {
@@ -247,6 +246,15 @@ nav#navegacionPrivada.nav--Privado .Privado-menu ul li a.menuPrivado--link.md-bu
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
   background: #302d5a;
+}
+
+.botonRedondoL {
+  font-size: 18px;
+  background-color: #ec6e00;
+  color: #FFFFFF;
+  height: 30px;
+  width: 260px;
+  border-radius: 16px;
 }
 
 .h--paddingTop8 {
@@ -995,11 +1003,12 @@ nav#navegacionPrivada.nav--Privado .Privado-menu ul li a.menuPrivado--link.md-bu
   left: 0;
   top: 266px;
   width: 420px;
-  height: 680px;
+  height: 705px;
   background-color: #dcdfe0;
   transform: translateX(-360px);
 }
 .panel_float .side--menu.izquierdo .md-button {
+  margin-right: 0px;
   text-align: center;
   display: block;
   font-size: 18px;
@@ -1033,7 +1042,7 @@ nav#navegacionPrivada.nav--Privado .Privado-menu ul li a.menuPrivado--link.md-bu
 }
 .panel_float .side--menu.izquierdo:hover {
   background-color: #dcdfe0;
-  transform: translateX(0px);
+  transform: translateX(-30px);
 }
 
 .areas {

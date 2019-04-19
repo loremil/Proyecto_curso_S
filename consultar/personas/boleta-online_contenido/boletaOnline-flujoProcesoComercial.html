@@ -1,35 +1,55 @@
-<div class="card h--paddingTop3" >
-    <div ng-controller="animateCtrl">
-        <!-- inicio miga -->
-        <span class="migadepan"> HOME / BOLETA DE GARANTÍA / BOLETA DE GARANTÍA ONLINE / FLUJO DEL PROCESO COMERCIAL</span>
-        <!-- fin miga -->
-        <div class="ban-container contenedorLlamada">
+<div class="card h--paddingTop3">
+    <!-- inicio miga -->
+    <span class="migadepan"> HOME / BOLETA DE GARANTÍA / BOLETA DE GARANTÍA ONLINE / FLUJO DEL PROCESO COMERCIAL</span>
+    <!-- fin miga -->
+    <!-- inicio contenedor contenido -->
+    <div class="ban-container contenedorLlamada">
+        <div class="ban-row">
+        <!-- inicio contenedor imagen boton -->
+        <div class="ban-col-md-12">
             <div class="contenidoImagen h--paddingTop2">
                 <img src="assets/images/BoletaOnline_FlujoProcesoComercial/BoletaOnline_FlujoProceso_encabezado.png">
             </div>
-            <md-button>CLIC PARA VER REFERENCIA</md-button>
-            <div class="tabla" >
-                <div class="ban-row">
-                    <div class="ban-col-md-3 menuInterior" >
-                        <div class="headTabla">
-                            <p style="color: #fff !important">INDICE</p>
-                        </div>
-                        <div class="" style="height: 400px; background: #ccc; font-size: 18px; padding: 20px">
-                          <ul>
-                              <li style="text-decoration: none"><a style="color: rgb(13, 181, 210)" href="#/boletaOnline-flujoProcesoComercial">Boleta Online flujo Proceso Comercial</a></li>
-                              <br>
-                              <li style="text-decoration: none"><a style="color: #fff" href="#/boletaOnline-documentacionRequerida">Boleta Online documentacion Requerida</a></li>
-                          </ul>
-                        </div>
+            <md-button class="botonRedondoL h--floatRight" href="">CLIC PARA VER REFERENCIA</md-button>
+        </div>
+        <!-- fin contenedor imagen boton -->
+        <!-- inicio tabla -->
+        <div class="ban-col-md-12 tabla h--paddingTop2">
+            <div class="ban-row">
+                <!-- inicio columna menu -->
+                <div class="ban-col-md-3 menuInterior">
+                    <!-- inicio head tabla -->
+                    <div class="headTabla">
+                        <p style="color: #fff !important">INDICE</p>
                     </div>
-                    <div class="ban-col-md-9 visorContenido">
-                        <div class="headTabla">
-                            <p style="color: #fff !important">Boleta Online flujo Proceso Comercial</p>
-                        </div>
-                        <h1 style="font-size: 30px; padding: 20px 0px">Contenido 1</h1>
+                    <!-- fin head tabla -->
+                    <!-- inicio menu -->
+                    <div style="height: 400px; background: #ccc; font-size: 18px; padding: 20px">
+                        <ul>
+                            <li style="text-decoration: none"><a style="color: rgb(13, 181, 210)" href="#/boletaOnline-flujoProcesoComercial">Boleta
+                                    Online flujo Proceso Comercial</a></li>
+                            <br>
+                            <li style="text-decoration: none"><a style="color: #fff" href="#/boletaOnline-documentacionRequerida">Boleta
+                                    Online documentacion Requerida</a></li>
+                        </ul>
                     </div>
+                    <!-- fin menu -->
                 </div>
+                <!-- fin columna menu -->
+                <!-- inicio columna contenido -->
+                <div class="ban-col-md-9 visorContenido">
+                    <div class="headTabla">
+                        <p style="color: #fff !important">Boleta Online flujo Proceso Comercial</p>
+                    </div>
+                    <h1 style="font-size: 30px; padding: 20px 0px">Contenido 1</h1>
+                </div>
+                <!-- fin columna contenido -->
             </div>
         </div>
     </div>
+    </div>
+    <!-- fin contenedor contenido -->
 </div>
+<!-- inicio menu flotante izquierdo -->
+<div ng-include src="'navegacion-privada/menu-flotanteIzquierdo.html'"></div>
+<!-- fin menu flotante izquierdo -->

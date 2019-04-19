@@ -13,11 +13,9 @@
     <div class="nav--Privado">
       <div class="Privado-menu" ng-controller="menuPrivadoCrtl-p">
         <ul>
-          <li ng-repeat="menu in menuEmpresa4" ng-class="{open: currentOpen.menuId == menu.id}">
-            <md-button ng-click="activeButton(menu.id);" class="hoverSideRight" href="#boletaOnline-flujoProcesoComercial">
-              <div>
+          <li ng-repeat="menu in menuEmpresa4" >
+            <md-button class="hoverSideRight" ng-href="{{menu.url}}">
                 {{menu.name}}
-              </div>
             </md-button>
           </li>
         </ul>

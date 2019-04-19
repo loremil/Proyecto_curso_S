@@ -80,10 +80,11 @@
             left:0;
             top:266px;
             width: 420px;
-            height: 680px;
+            height: 705px;
             background-color:#dcdfe0;
             transform: translateX(-360px);
             .md-button{
+                margin-right: 0px;
                 text-align: center;
                 display: block;
                 font-size: 18px;
@@ -129,7 +130,7 @@
                 // -o-transform: translateX(0);
                 // -ms-transform: translateX(0);
                 // transform: translateX(0);
-              transform: translateX(0px);
+              transform: translateX(-30px);
               }
         }
       }

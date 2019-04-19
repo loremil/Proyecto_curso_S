@@ -1,36 +1,56 @@
-<div class="card h--paddingTop3"  ng-controller="animateCtrl">
-      <!-- inicio miga -->
-      <span class="migadepan"> HOME / BOLETA DE GARANTÍA / BOLETA DE GARANTÍA ONLINE / DOCUMENTACIÓN REQUERIDA</span>
-      <!-- fin miga -->
-      <div class="ban-container contenedorLlamada">
-          <div class="contenidoImagen h--paddingTop2">
-              <img src="assets/images/BoletaOnline_FlujoProcesoComercial/BoletaOnline_FlujoProceso_encabezado.png">
-          </div>
-          <md-button>CLIC PARA VER REFERENCIA</md-button>
-          <div class="tabla" >
+<div  class="card h--paddingTop3" ng-controller="menuPrivadoCrtl-interior">
+    <!-- inicio miga -->
+    <span class="migadepan"> HOME / BOLETA DE GARANTÍA / BOLETA DE GARANTÍA ONLINE / DOCUMENTACIÓN REQUERIDA</span>
+    <!-- fin miga -->
+    <div class="ban-container contenedorLlamada">
+
+
+        <div class="ban-col-md-3 menuInterior">
+            <div class="headTabla">
+                <p style="color: #fff !important">INDICE</p>
+            </div>
+            <ul>
+                <li ng-repeat="menu in menuEmpresa5">
+                    <md-button class="hoverSideRight" ng-href="{{menu.url}}">
+                        {{menu.name}}
+                    </md-button>
+                </li>
+            </ul>
+        </div>
+        <div class="ban-col-md-9 visorContenido">
+            <div class="headTabla">
+                <p style="color: #fff !important">Boleta Online documentacion Requerida</p>
+            </div>
+            <div ng-view autoscroll><span>{{currentMenuInterior}}</span></div>
+        </div>
+
+
+        <!-- <div class="tabla">
             <div class="ban-row">
-                <div class="ban-col-md-3 menuInterior" >
+                <div class="ban-col-md-3 menuInterior">
                     <div class="headTabla">
                         <p style="color: #fff !important">INDICE</p>
                     </div>
                     <div class="" style="height: 400px; background: #ccc; font-size: 18px; padding: 20px">
-                      <ul>
-                          <li style="text-decoration: none"><a style="color: #fff" href="#/boletaOnline-flujoProcesoComercial">Boleta Online flujo Proceso Comercial</a></li>
-                          <br>
-                          <li style="text-decoration: none"><a style="color: rgb(13, 181, 210)" href="#/boletaOnline-documentacionRequerida">Boleta Online documentacion Requerida</a></li>
-                      </ul>
+                        <ul>
+                            <li style="text-decoration: none"><a style="color: #fff" href="#/boletaOnline-flujoProcesoComercial">Boleta
+                                    Online flujo Proceso Comercial</a></li>
+                            <br>
+                            <li style="text-decoration: none"><a style="color: rgb(13, 181, 210)" href="#/boletaOnline-documentacionRequerida">Boleta
+                                    Online documentacion Requerida</a></li>
+                        </ul>
                     </div>
                 </div>
                 <div class="ban-col-md-9 visorContenido">
                     <div class="headTabla">
                         <p style="color: #fff !important">Boleta Online documentacion Requerida</p>
                     </div>
-                      <h1 style="font-size: 30px; padding: 20px 0px">Contenido 2</h1>
-
-
-                      
+                    <h1 style="font-size: 30px; padding: 20px 0px">Contenido 2</h1>
                 </div>
             </div>
-          </div>
-      </div>
+        </div> -->
+    </div>
 </div>
+  <!-- inicio menu flotante izquierdo -->
+  <div ng-include src="'navegacion-privada/menu-flotanteIzquierdo.html'"></div>
+  <!-- fin menu flotante izquierdo -->

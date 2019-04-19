@@ -2,15 +2,14 @@ cursosApp.controller('menuRouteCrtl-personas',
 
   ['$scope', '$location', function ($scope, $location) {
     $scope.currentNavItem = 'home-persona';
-    $scope.currentMenuInterior = 'boleta-manual';
+    $scope.currentMenuInterior = 'boletaOnline-documentacionRequerida';
     // $scope.template = $scope.template1;
     $scope.nombreSeccion = "home-contenido"
-    $scope.changeMenu = function (template, name, location) {
-      $scope.template = template;
-      $scope.nombreSeccion = name;
-      $location.path(location);
-      // $scope.currentNavItem = location;
-    }
+    // $scope.changeMenu = function (template, name, location) {
+    //   $scope.template = template;
+    //   $scope.nombreSeccion = name;
+    //   $location.path(location);
+    // }
   }]);
 
 cursosApp.config(function ($routeProvider) {
@@ -40,8 +39,23 @@ cursosApp.config(function ($routeProvider) {
     .when('/boletaOnline-flujoProcesoComercial', {
       templateUrl: 'consultar/personas/boleta-online_contenido/boletaOnline-flujoProcesoComercial.html',
     })
+    .when('/boletaOnline-procesoOperaciones', {
+      templateUrl: 'consultar/personas/boleta-online_contenido/boletaOnline-procesoOperaciones.html',
+    })
+    .when('/boletaOnline-informacionProducto', {
+      templateUrl: 'consultar/personas/boleta-online_contenido/boletaOnline-informacionProducto.html',
+    })
+    .when('/boletaOnline-requisitosAreaRiesgo', {
+      templateUrl: 'consultar/personas/boleta-online_contenido/boletaOnline-requisitosAreaRiesgo.html',
+    })
     .when('/boletaOnline-documentacionRequerida', {
       templateUrl: 'consultar/personas/boleta-online_contenido/boletaOnline-documentacionRequerida.html',
+    })
+    .when('/flujo-sistemasInformaticos', {
+      templateUrl: 'consultar/personas/boleta-online_contenido/flujo-sistemasInformaticos.html',
+    })
+    .when('/boletaOnline-postVenta', {
+      templateUrl: 'consultar/personas/boleta-online_contenido/boletaOnline-postVenta.html',
     })
 
 
