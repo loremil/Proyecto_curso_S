@@ -60,16 +60,19 @@ cursosApp.controller('menuPrivadoCrtl-p', ['$scope', '$location', function ($sco
 // inicio nav flotante izquierdo
   $scope.menuEmpresa4 = [{
     id: 4,
-    name: 'FLUJO DEL PROCESO COMERCIAL',
-    // url:'#boletaOnline-flujoProcesoComercial'
-    menu: [{
-      name: 'menu2',
-      url: '#resumen'
-    }, {
-      name: 'menu2',
-      url: '#boleta-manual',
-      subMenu: []
-    }]
+    name: 'FLUJO DEL PROCESO COMERCIAL'},{
+    id: 5,
+    name: 'FLUJO DEL PROCESO COMERCIAL1'},{
+    id: 6,  
+    name: 'FLUJO DEL PROCESO COMERCIAL2'},{
+    id: 7,  
+    name: 'FLUJO DEL PROCESO COMERCIAL3'},{
+    id: 8,  
+    name: 'FLUJO DEL PROCESO COMERCIAL'},{
+    id: 9,
+    name: 'FLUJO DEL PROCESO COMERCIAL1'},{
+    id: 10,  
+    name: 'FLUJO DEL PROCESO COMERCIAL2'},{
   }];
 
 // fin nav flotante izquierdo

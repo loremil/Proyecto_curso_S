@@ -1,9 +1,12 @@
 <div class="panel_float ">
   <div class="side--menu izquierdo">
     <!-- inicio boton conocimiento -->
+   
     <div class="ban-col-md-12 boton">
-      <span>UNIDAD DE <br>CONOCIMIENTO</span>
-      <i class="material-icons icon--info">keyboard_arrow_right</i>
+      <div class="ban-row">
+          <i class="material-icons icon--info ban-col-md-12" >keyboard_arrow_right</i>
+          <span class="ban-col-md-12">UNIDAD DE <br>CONOCIMIENTO</span>
+        </div>
     </div>
     <!-- fin boton conocimiento -->
     <!-- inicio nav -->
@@ -11,7 +14,7 @@
       <div class="Privado-menu" ng-controller="menuPrivadoCrtl-p">
         <ul>
           <li ng-repeat="menu in menuEmpresa4" ng-class="{open: currentOpen.menuId == menu.id}">
-            <md-button ng-click="activeButton(menu.id);" class="line-center" href="#boletaOnline-flujoProcesoComercial">
+            <md-button ng-click="activeButton(menu.id);" class="hoverSideRight" href="#boletaOnline-flujoProcesoComercial">
               <div>
                 {{menu.name}}
               </div>
