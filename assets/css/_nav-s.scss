@@ -45,12 +45,6 @@
 
 
 .colapsable--lateral {
-    // overflow: hidden;
-    // width: 100%;
-
-
-
-
     .icono--menu1 {
         display: block;
         float: right;
@@ -58,6 +52,7 @@
         height: 55px;
         margin: 5px 10px 0 0;
         padding: 0;
+        color: #000000 !important;
     }
     .icono--menu2 {
         display: none;
@@ -66,33 +61,33 @@
         height: 55px;
         margin: 5px 10px 0 0;
         padding: 0;
+        color: #000000 !important;
     }
-    li {
-        width: 100%;
-        height: 50px;
-        margin: 0;
-        padding: 0;
-    }
-    md-button {
-      margin: 0px;
-      padding: 0px;
-      border-radius: 0px;
-      &:hover {
-          background: #F0F2F5 !important;
-      }
-
-    }
+    // li {
+    //     width: 100%;
+    //     height: 50px;
+    //     margin: 0;
+    //     padding: 0;
+    // }
+    // md-button {
+    //   margin: 0px;
+    //   padding: 0px;
+    //   border-radius: 0px;
+    //   &:hover {
+    //       background: #F0F2F5 !important;
+    //   }
+    // }
     a {
-      width: 100%;
-      margin: 0px;
-      padding: 0px;
-      height: 50px;
-      line-height: 50px;
-      border: none !important;
-      text-decoration: none;
-      text-transform: none;
-      font-size: 14px;
-      border: none;
+      // width: 100%;
+      // margin: 0px;
+      // padding: 0px;
+      // height: 50px;
+      // line-height: 50px;
+      // border: none !important;
+      // text-decoration: none;
+      // text-transform: none;
+      // font-size: 14px;
+      // border: none;
 
       &:focus {
           outline: none !important;
@@ -103,59 +98,112 @@
       &:hover {
           background: #F0F2F5;
       }
-      p {
-        float: left;
-        padding: 0px 0px 0px 20px;
-        line-height: 50px;
-        font-style: none;
-        color: #fff ;
-        font-size: 1.1em;
-      }
-    }
-    button {
-      width: 100%;
-      height: 50px;
-      line-height: 50px;
-      background: #fff;
-      border: none !important;
-      text-decoration: none;
-          color: red !important;
-      &:focus {
-          outline: none;
-      }
-      &:hover {
-          background: #F0F2F5;
-      }
-      p {
-        float: left;
-        padding: 0px 0px 0px 15px;
-        line-height: 50px;
-        color: #486C7C;
-        font-size: 1.1em;
-      }
-    }
-    p {
-        padding: 0 0 0 0px;
-        line-height: 60px;
-        color: #fff ;
-    }
-    i {
-      color: #fff ;
-    }
-    ul {
-        list-style-type: none;
+      // p {
+      //   color: #000000;
+      //   font-size: 18px;
+      //   line-height: 3;
+      //   height: 60px;
+      //   padding: 0;
+      // }
     }
 }
 
 .contenido--menu{
-  background: #ddd;
   border: none;
-  height: 200px;
+  height: 300px;
   overflow: scroll;
-  padding: 10px 0px 0px 0px;
+  margin: 0 0.5em;
+  .md-button.tipoLista{
+    color: #000000 !important;
+    box-shadow: none !important;
+    height: 48px!important;
+    display: block;
+    line-height: 48px;
+    border-radius:0px !important;
+    } 
+ }
 
-}
+
 .slideDown{
   border: none !important;
-
 }
+
+ /*
+    animation menuLateral*/
+
+    .slideDown.ng-hide {
+      height:0;
+      transition:height 0.35s ease;
+      overflow:hidden;
+      position:relative;
+    }
+
+    .slideDown {
+      padding-bottom: 20px;
+      height: 280px;
+      transition:height 0.35s ease;
+      overflow:hidden;
+      position:relative;
+    }
+   
+    .slideDown.ng-hide-remove,
+    .slideDown.ng-hide-add {
+      /* remember, the .hg-hide class is added to element
+      when the active class is added causing it to appear
+      as hidden. Therefore set the styling to display=block
+      so that the hide animation is visible */
+      display:block!important;
+    }
+
+
+    .slideDown.ng-hide-add {
+      animation-name: hide;
+      -webkit-animation-name: hide;
+
+      animation-duration: .5s;
+      -webkit-animation-duration: .5s;
+
+      animation-timing-function: ease-in;
+      -webkit-animation-timing-function: ease-in;
+    }
+
+
+
+    .slideDown.ng-hide-remove {
+      animation-name: show;
+      -webkit-animation-name: show;
+
+      animation-duration: .5s;
+      -webkit-animation-duration: .5s;
+
+      animation-timing-function: ease-out;
+      -webkit-animation-timing-function: ease-out;
+    } //fin animate menuLateral
+
+
+    // inicio menu dropdown
+
+    .menuDropdown{
+      height:550px;
+      .md-button{
+        height: 60px;
+        line-height: 60px;
+        background-color: #f4f4f4;
+        text-align: left;
+        padding-left: 2em;
+        color: #000000 !important;
+        width: 95%;
+        display: block;
+        font-size: 18px;
+        border-radius: 8px;
+        box-shadow: 5px 10px 10px -7px rgba(0, 0, 0, 0.75);
+        ul{
+          li{
+            color: #000000 !important;
+            box-shadow: none !important;
+          }
+        }
+      }
+
+    }
+

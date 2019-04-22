@@ -57,7 +57,96 @@ cursosApp.config(function ($routeProvider) {
     .when('/boletaOnline-postVenta', {
       templateUrl: 'consultar/personas/boleta-online_contenido/boletaOnline-postVenta.html',
     })
-
+    .when('/boletaOnline-procesoComercial-condiciones', {
+      templateUrl: 'consultar/personas/boleta-online_contenido/boletaOnline-procesoComercial-condiciones.html',
+    })
+    .when('/boletaOnline-procesoComercial-informacion', {
+      templateUrl: 'consultar/personas/boleta-online_contenido/boletaOnline-procesoComercial-informacion.html',
+    })
+    .when('/boletaOnline-procesoComercial-suscriptores', {
+      templateUrl: 'consultar/personas/boleta-online_contenido/boletaOnline-procesoComercial-suscriptores.html',
+    })
+    .when('/boletaOnline-postVenta-procedimientoCancelacion', {
+      templateUrl: 'consultar/personas/boleta-online_contenido/boletaOnline-postVenta-procedimientoCancelacion.html',
+    })
+    // inicio post venta TC - Beneficios
+    .when('/como-acumularSP', {
+      templateUrl: 'consultar/personas/post-venta-tarjeta_contenido/como-acumularSP.html',
+    })
+    .when('/canje-comprarSP', {
+      templateUrl: 'consultar/personas/post-venta-tarjeta_contenido/canje-comprarSP.html',
+    })
+    .when('/canje-deSP', {
+      templateUrl: 'consultar/personas/post-venta-tarjeta_contenido/canje-deSP.html',
+    })
+    .when('/traspaso-puntos', {
+      templateUrl: 'consultar/personas/post-venta-tarjeta_contenido/traspaso-puntos.html',
+    })
+    .when('/excepciones-cobro', {
+      templateUrl: 'consultar/personas/post-venta-tarjeta_contenido/excepciones-cobro.html',
+    })
+    .when('/consulta-historial', {
+      templateUrl: 'consultar/personas/post-venta-tarjeta_contenido/consulta-historial.html',
+    })
+    .when('/uso-salonesVipCliente', {
+      templateUrl: 'consultar/personas/post-venta-tarjeta_contenido/uso-salonesVipCliente.html',
+    })
+    .when('/uso-salonesVip', {
+      templateUrl: 'consultar/personas/post-venta-tarjeta_contenido/uso-salonesVip.html',
+    })
+    .when('/proceso-interno', {
+      templateUrl: 'consultar/personas/post-venta-tarjeta_contenido/proceso-interno.html',
+    })
+    .when('/consulta-accesos', {
+      templateUrl: 'consultar/personas/post-venta-tarjeta_contenido/consulta-accesos.html',
+    })
+    .when('/priority-pass', {
+      templateUrl: 'consultar/personas/post-venta-tarjeta_contenido/priority-pass.html',
+    })
+// inicio post venta TC - Campaña
+.when('/avance-cuotas', {
+  templateUrl: 'consultar/personas/post-venta-tarjeta_contenido/campana/avance-cuotas.html',
+})
+.when('/cargo-cuota_creditoConsumoTC', {
+  templateUrl: 'consultar/personas/post-venta-tarjeta_contenido/campana/cargo-cuota_creditoConsumoTC.html',
+})
+.when('/emision-tc_nuevasCuentas', {
+  templateUrl: 'consultar/personas/post-venta-tarjeta_contenido/campana/emision-tc_nuevasCuentas.html',
+})
+.when('/modificacion-cupo_campana', {
+  templateUrl: 'consultar/personas/post-venta-tarjeta_contenido/campana/modificacion-cupo_campana.html',
+})
+.when('/modificacion-cupo_solicitudCliente', {
+  templateUrl: 'consultar/personas/post-venta-tarjeta_contenido/campana/modificacion-cupo_solicitudCliente.html',
+})
+.when('/venta-seguros_cargoTC', {
+  templateUrl: 'consultar/personas/post-venta-tarjeta_contenido/campana/venta-seguros_cargoTC.html',
+})
+// inicio post venta TC - PLÁSTICO
+.when('/activacionTC', {
+  templateUrl: 'consultar/personas/post-venta-tarjeta_contenido/plastico/activacionTC.html',
+})
+.when('/upgrade', {
+  templateUrl: 'consultar/personas/post-venta-tarjeta_contenido/plastico/upgrade.html',
+})
+.when('/renovacionTC', {
+  templateUrl: 'consultar/personas/post-venta-tarjeta_contenido/plastico/renovacionTC.html',
+})
+.when('/bloqueo-robo-extravio', {
+  templateUrl: 'consultar/personas/post-venta-tarjeta_contenido/plastico/bloqueo-robo-extravio.html',
+})
+.when('/solicitudTA', {
+  templateUrl: 'consultar/personas/post-venta-tarjeta_contenido/plastico/solicitudTA.html',
+})
+.when('/reemisionTC', {
+  templateUrl: 'consultar/personas/post-venta-tarjeta_contenido/plastico/reemisionTC.html',
+})
+.when('/reseteoPIN', {
+  templateUrl: 'consultar/personas/post-venta-tarjeta_contenido/plastico/reseteoPIN.html',
+})
+.when('/bloqueo-orden-banco', {
+  templateUrl: 'consultar/personas/post-venta-tarjeta_contenido/plastico/bloqueo-orden-banco.html',
+})
 
 
     .otherwise({

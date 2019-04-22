@@ -20,6 +20,13 @@ h1, h2, h3, span, p, a {
 .contenedorLlamada {
   height: 700px !important;
 }
+.contenedorLlamada.s1600 {
+  width: 1600px !important;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 .contenidoImagen img {
   width: 100%;
@@ -101,7 +108,7 @@ body.personas header nav#navegacionPrivada.nav--Privado .Privado-menu ul li md-m
 .footerColor {
   height: 60px;
   width: 100%;
-  background-color: #9560AF;
+  background-color: #9560af;
 }
 
 .botoneraSuperior {
@@ -175,10 +182,13 @@ nav#navegacionPrivada.nav--Privado .Privado-menu ul li a.menuPrivado--link.md-bu
 .headTabla {
   text-align: center;
   font-size: 20px;
-  background-color: green;
-  background-color: #123a98;
+  color: #FFFFFF;
+  background-color: #393761;
   height: 60px;
   line-height: 40px;
+}
+.headTabla p {
+  line-height: 60px;
 }
 
 .navMenu {
@@ -225,6 +235,7 @@ nav#navegacionPrivada.nav--Privado .Privado-menu ul li a.menuPrivado--link.md-bu
   height: 55px;
   margin: 5px 10px 0 0;
   padding: 0;
+  color: #000000 !important;
 }
 .colapsable--lateral .icono--menu2 {
   display: none;
@@ -233,32 +244,7 @@ nav#navegacionPrivada.nav--Privado .Privado-menu ul li a.menuPrivado--link.md-bu
   height: 55px;
   margin: 5px 10px 0 0;
   padding: 0;
-}
-.colapsable--lateral li {
-  width: 100%;
-  height: 50px;
-  margin: 0;
-  padding: 0;
-}
-.colapsable--lateral md-button {
-  margin: 0px;
-  padding: 0px;
-  border-radius: 0px;
-}
-.colapsable--lateral md-button:hover {
-  background: #F0F2F5 !important;
-}
-.colapsable--lateral a {
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
-  height: 50px;
-  line-height: 50px;
-  border: none !important;
-  text-decoration: none;
-  text-transform: none;
-  font-size: 14px;
-  border: none;
+  color: #000000 !important;
 }
 .colapsable--lateral a:focus {
   outline: none !important;
@@ -269,58 +255,89 @@ nav#navegacionPrivada.nav--Privado .Privado-menu ul li a.menuPrivado--link.md-bu
 .colapsable--lateral a:hover {
   background: #F0F2F5;
 }
-.colapsable--lateral a p {
-  float: left;
-  padding: 0px 0px 0px 20px;
-  line-height: 50px;
-  font-style: none;
-  color: #fff;
-  font-size: 1.1em;
-}
-.colapsable--lateral button {
-  width: 100%;
-  height: 50px;
-  line-height: 50px;
-  background: #fff;
-  border: none !important;
-  text-decoration: none;
-  color: red !important;
-}
-.colapsable--lateral button:focus {
-  outline: none;
-}
-.colapsable--lateral button:hover {
-  background: #F0F2F5;
-}
-.colapsable--lateral button p {
-  float: left;
-  padding: 0px 0px 0px 15px;
-  line-height: 50px;
-  color: #486C7C;
-  font-size: 1.1em;
-}
-.colapsable--lateral p {
-  padding: 0 0 0 0px;
-  line-height: 60px;
-  color: #fff;
-}
-.colapsable--lateral i {
-  color: #fff;
-}
-.colapsable--lateral ul {
-  list-style-type: none;
-}
 
 .contenido--menu {
-  background: #ddd;
   border: none;
-  height: 200px;
+  height: 300px;
   overflow: scroll;
-  padding: 10px 0px 0px 0px;
+  margin: 0 0.5em;
+}
+.contenido--menu .md-button.tipoLista {
+  color: #000000 !important;
+  box-shadow: none !important;
+  height: 48px !important;
+  display: block;
+  line-height: 48px;
+  border-radius: 0px !important;
 }
 
 .slideDown {
   border: none !important;
+}
+
+/*
+   animation menuLateral*/
+.slideDown.ng-hide {
+  height: 0;
+  transition: height 0.35s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.slideDown {
+  padding-bottom: 20px;
+  height: 280px;
+  transition: height 0.35s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.slideDown.ng-hide-remove,
+.slideDown.ng-hide-add {
+  /* remember, the .hg-hide class is added to element
+  when the active class is added causing it to appear
+  as hidden. Therefore set the styling to display=block
+  so that the hide animation is visible */
+  display: block !important;
+}
+
+.slideDown.ng-hide-add {
+  animation-name: hide;
+  -webkit-animation-name: hide;
+  animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+  -webkit-animation-timing-function: ease-in;
+}
+
+.slideDown.ng-hide-remove {
+  animation-name: show;
+  -webkit-animation-name: show;
+  animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  -webkit-animation-timing-function: ease-out;
+}
+
+.menuDropdown {
+  height: 550px;
+}
+.menuDropdown .md-button {
+  height: 60px;
+  line-height: 60px;
+  background-color: #f4f4f4;
+  text-align: left;
+  padding-left: 2em;
+  color: #000000 !important;
+  width: 95%;
+  display: block;
+  font-size: 18px;
+  border-radius: 8px;
+  box-shadow: 5px 10px 10px -7px rgba(0, 0, 0, 0.75);
+}
+.menuDropdown .md-button ul li {
+  color: #000000 !important;
+  box-shadow: none !important;
 }
 
 /* inicio efectoBotones */
@@ -363,6 +380,48 @@ nav#navegacionPrivada.nav--Privado .Privado-menu ul li a.menuPrivado--link.md-bu
   height: 30px;
   width: 260px;
   border-radius: 16px;
+}
+
+.botonRedondoAltoL {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  background-color: #05bd2e;
+  height: 60px;
+  width: 200px;
+  color: #FFFFFF;
+  border-radius: 16px;
+  box-shadow: 10px 10px 10px -7px rgba(0, 0, 0, 0.3);
+}
+
+.botonCuadrado {
+  font-size: 22px;
+  background-color: #ec6e00;
+  color: #FFFFFF;
+  line-height: 44px;
+  width: 260px;
+  border-radius: 0px;
+}
+.botonCuadrado.s360 {
+  width: 360px;
+}
+.botonCuadrado.s480 {
+  width: 480px;
+}
+.botonCuadrado.s512 {
+  width: 512px;
+}
+
+.md-button.doslineas {
+  line-height: 28px !important;
+}
+
+.md-button.principalDropdown:hover {
+  border-left: 6px solid #ec6e00 !important;
+}
+
+.h--height100 {
+  height: 100%;
 }
 
 .h--paddingTop8 {
@@ -1112,7 +1171,7 @@ nav#navegacionPrivada.nav--Privado .Privado-menu ul li a.menuPrivado--link.md-bu
   top: 266px;
   width: 420px;
   height: 705px;
-  background-color: #dcdfe0;
+  background-color: #f4f4f4;
   transform: translateX(-360px);
 }
 .panel_float .side--menu.izquierdo .md-button {
@@ -1169,6 +1228,13 @@ nav#navegacionPrivada.nav--Privado .Privado-menu ul li a.menuPrivado--link.md-bu
   text-align: left;
 }
 
+.md-button.hoverSideRight:hover {
+  border-right: 10px solid #ec6e00;
+}
+.md-button .hoverSideLeft:hover {
+  border-left: 10px solid #ec6e00;
+}
+
 /* INICIO CONTENEDOR SCROLL */
 .contenedorScroll {
   width: 94%;
@@ -1212,7 +1278,7 @@ nav#navegacionPrivada.nav--Privado .Privado-menu ul li a.menuPrivado--link.md-bu
 
 .contenedorScrollme--desktop {
   width: 99%;
-  height: 550px;
+  height: 650px;
   overflow: scroll;
   overflow-x: hidden;
 }
@@ -1231,6 +1297,36 @@ i.iconoScroll {
   padding-right: 6px;
   color: #ec6e00;
   font-weight: 800;
+}
+
+.menuTabla .md-button {
+  text-align: left !important;
+  width: 96%;
+  line-height: 80px;
+  height: 80px;
+  font-size: 20px;
+  color: green !important;
+}
+.menuTabla .md-button:hover {
+  border-left: 6px solid #ec6e00;
+}
+
+.tabla .ban-row {
+  height: 550px;
+}
+.tabla .ban-row .menuInterior {
+  height: 550px;
+}
+.tabla .ban-row .visorContenido {
+  height: 550px;
+  overflow: hidden;
+}
+.tabla .ban-row .visorContenido .botonFixed {
+  min-height: 60px;
+}
+
+.menuInterior {
+  height: 100%;
 }
 
 /*# sourceMappingURL=ban-main.css.map */

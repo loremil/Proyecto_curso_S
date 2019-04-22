@@ -1,0 +1,292 @@
+<div class="menuDropdown">
+    <div ng-app="expandCollapseApp" ng-controller="expandCollapseCtrl">
+        <!-- inicio beneficios tc -->
+        <div class="colapsable--lateral">
+            <div ng-click="active = !active" ng-class="{'quiero-cerrado': !active, 'quiero-expandido': active}">
+                <md-button class="principalDropdown">
+                    BENEFICIOS TC
+                    <span class="icono--menu1">
+                        <i class="material-icons">keyboard_arrow_down</i>
+                    </span>
+                    <span class="icono--menu2">
+                        <i class="material-icons">keyboard_arrow_up</i>
+                    </span>
+                </md-button>
+            </div>
+            <div class="slideDown" ng-hide="active">
+                <div class="contenido--menu">
+                    <ul>
+                        <li>
+                            <md-button class="tipoLista">
+                                <p>SECURITY PESOS</p>
+                            </md-button>
+                        </li>
+                        <li>
+                            <md-button class="tipoLista" ng-href="#como-acumularSP">
+                                <p>COMO ACUMULAR SP CLIENTE</p>
+                            </md-button>
+                        </li>
+                        <li>
+                            <md-button class="tipoLista" ng-href="#canje-comprarSP">
+                                <p>CANJE Y COMPRAR SP CLIENTE</p>
+                            </md-button>
+                        </li>
+                        <li>
+                            <md-button class="tipoLista" ng-href="#canje-deSP">
+                                <p>CANJE DE SP PROCESO INTERNO</p>
+                            </md-button>
+                        </li>
+                        <li>
+                            <md-button class="tipoLista" ng-href="#traspaso-puntos">
+                                <p>TRASPASO DE PUNTOS</p>
+                            </md-button>
+                        </li>
+                        <li>
+                            <md-button class="tipoLista" ng-href="#excepciones-cobro">
+                                <p>EXCEPCIONES DE COBRO</p>
+                            </md-button>
+                        </li>
+                        <li>
+                            <md-button class="tipoLista" ng-href="#consulta-historial">
+                                <p>CONSULTA HISTORIAL SP</p>
+                            </md-button>
+                        </li>
+                        <br>
+                        <li>
+                            <md-button class="tipoLista" ng-href="#uso-salonesVip">
+                                <p>SALONES VIP</p>
+                            </md-button>
+                        </li>
+                        <li>
+                            <md-button class="tipoLista" ng-href="#uso-salonesVipCliente">
+                                <p>USO DE SALONES VIP CLIENTE</p>
+                            </md-button>
+                        </li>
+                        <li>
+                            <md-button class="tipoLista" ng-href="#proceso-interno">
+                                <p>USO DE SALONES VIP PROCESO INTERNO</p>
+                            </md-button>
+                        </li>
+                        <li>
+                            <md-button class="tipoLista" ng-href="#consulta-accesos">
+                                <p>CONSULTA CANTIDAD DE ACCESOS RESTANTES</p>
+                            </md-button>
+                        </li>
+                        <li>
+                            <md-button class="tipoLista" ng-href="#priority-pass">
+                                <p>EMISIÓN PRIORITY PASS</p>
+                            </md-button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- fin beneficios tc -->
+            <!-- inicio campaña -->
+            <div ng-click="active1 = !active1" ng-class="{'quiero-cerrado': active1, 'quiero-expandido': !active1}">
+                <md-button class="principalDropdown">
+                    CAMPAÑA
+                    <span class="icono--menu1">
+                        <i class="material-icons">keyboard_arrow_down</i>
+                    </span>
+                    <span class="icono--menu2">
+                        <i class="material-icons">keyboard_arrow_up</i>
+                    </span>
+                </md-button>
+            </div>
+            <div class="slideDown" ng-hide="active1">
+                <div class="contenido--menu">
+                    <ul>
+                        <li>
+                            <md-button class="tipoLista" ng-href="#avance-cuotas">
+                                <p>AVANCE EN CUOTAS </p>
+                            </md-button>
+                        </li>
+                        <li>
+                            <md-button class="tipoLista" ng-href="#modificacion-cupo_campana">
+                                <p>MODIFICACIÓN DE CUPO CAMPAÑA</p>
+                            </md-button>
+                        </li>
+                        <li>
+                            <md-button class="tipoLista" ng-href="#modificacion-cupo_solicitudCliente">
+                                <p>MODIFICACIÓN DE CUPO SOLICITUD CLIENTE</p>
+                            </md-button>
+                        </li>
+                        <li>
+                            <md-button class="tipoLista" ng-href="#venta-seguros_cargoTC">
+                                <p>VENTA DE SEGUROS CON CARGO A TC</p>
+                            </md-button>
+                        </li>
+                        <li>
+                            <md-button class="tipoLista" ng-href="#cargo-cuota_creditoConsumoTC">
+                                <p>CARGO CUOTA CRÉDITO CONSUMO EN TC</p>
+                            </md-button>
+                        </li>
+                        <li>
+                            <md-button class="tipoLista" ng-href="#emision-tc_nuevasCuentas">
+                                <p>EMISIÓN DE TC (NUEVAS CUENTAS)</p>
+                            </md-button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- fin campaña -->
+            <!-- inicio plástico -->
+            <div ng-click="active2 = !active2" ng-class="{'quiero-cerrado': active2, 'quiero-expandido': !active2}">
+                <md-button class="principalDropdown">
+                    PLÁSTICO
+                    <span class="icono--menu1">
+                        <i class="material-icons">keyboard_arrow_down</i>
+                    </span>
+                    <span class="icono--menu2">
+                        <i class="material-icons">keyboard_arrow_up</i>
+                    </span>
+                </md-button>
+            </div>
+            <div class="slideDown" ng-hide="active2">
+                <div class="contenido--menu">
+                    <ul>
+                        <li>
+                            <md-button class="tipoLista" ng-href="#activacionTC">
+                                <p>ACTIVACIÓN DE TC</p>
+                            </md-button>
+                        </li>
+                        <li>
+                            <md-button class="tipoLista" ng-href="#upgrade">
+                                <p>UPGRADE</p>
+                            </md-button>
+                        </li>
+                        <li>
+                            <md-button class="tipoLista" ng-href="#renovacionTC">
+                                <p>RENOVACIÓN DE TARJETA DE CRÉDITO</p>
+                            </md-button>
+                        </li>
+                        <li>
+                            <md-button class="tipoLista" ng-href="#bloqueo-robo-extravio">
+                                <p>BLOQUEO, ROBO Y EXTRAVÍO</p>
+                            </md-button>
+                        </li>
+                        <li>
+                            <md-button class="tipoLista" ng-href="#solicitudTA">
+                                <p>SOLICITUD TARJETA ADICIONAL</p>
+                            </md-button>
+                        </li>
+                        <li>
+                            <md-button class="tipoLista" ng-href="#reemisionTC">
+                                <p>REMISIÓN DE TC</p>
+                            </md-button>
+                        </li>
+                        <li>
+                            <md-button class="tipoLista" ng-href="#reseteoPIN">
+                                <p>RESETEO PIN</p>
+                            </md-button>
+                        </li>
+                        <li>
+                            <md-button class="tipoLista" ng-href="#bloqueo-orden-banco">
+                                <p>BLOQUEO ORDEN BANCO</p>
+                            </md-button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- fin plástico -->
+            <!-- inicio estado de cuenta -->
+            <div ng-click="active3 = !active3" ng-class="{'quiero-cerrado': active3, 'quiero-expandido': !active3}">
+                <md-button class="principalDropdown">
+                    ESTADO DE CUENTA
+                    <span class="icono--menu1">
+                        <i class="material-icons">keyboard_arrow_down</i>
+                    </span>
+                    <span class="icono--menu2">
+                        <i class="material-icons">keyboard_arrow_up</i>
+                    </span>
+                </md-button>
+            </div>
+            <div class="slideDown" ng-hide="active3">
+                <div class="contenido--menu">
+                    <ul>
+                        <li>
+                            <md-button class="tipoLista" ng-href="#">
+                                <p></p>
+                            </md-button>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+            <!-- fin estado de cuenta -->
+            <!-- inicio prevención fraude -->
+            <div ng-click="active4 = !active4" ng-class="{'quiero-cerrado': active4, 'quiero-expandido': !active4}">
+                <md-button class="principalDropdown">
+                    PREVENCIÓN FRAUDE
+                    <span class="icono--menu1">
+                        <i class="material-icons">keyboard_arrow_down</i>
+                    </span>
+                    <span class="icono--menu2">
+                        <i class="material-icons">keyboard_arrow_up</i>
+                    </span>
+                </md-button>
+            </div>
+            <div class="slideDown" ng-hide="active4">
+                <div class="contenido--menu">
+                    <ul>
+                        <li>
+                            <md-button class="tipoLista" ng-href="#">
+                                <p></p>
+                            </md-button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- fin prevención fraude -->
+            <!-- inicio servicios -->
+            <div ng-click="active5 = !active5" ng-class="{'quiero-cerrado': active5, 'quiero-expandido': !active5}">
+                <md-button>
+                    SERVICIOS
+                    <span class="icono--menu1">
+                        <i class="material-icons">keyboard_arrow_down</i>
+                    </span>
+                    <span class="icono--menu2">
+                        <i class="material-icons">keyboard_arrow_up</i>
+                    </span>
+                </md-button>
+            </div>
+            <div class="slideDown" ng-hide="active5">
+                <div class="contenido--menu">
+                    <ul>
+                        <li>
+                            <md-button class="tipoLista" ng-href="#">
+                                <p></p>
+                            </md-button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- fin servicios -->
+            <!-- inicio reclamos -->
+            <div ng-click="active6 = !active6" ng-class="{'quiero-cerrado': active6, 'quiero-expandido': !active6}">
+                <md-button class="principalDropdown">
+                    RECLAMOS
+                    <span class="icono--menu1">
+                        <i class="material-icons">keyboard_arrow_down</i>
+                    </span>
+                    <span class="icono--menu2">
+                        <i class="material-icons">keyboard_arrow_up</i>
+                    </span>
+                </md-button>
+            </div>
+            <div class="slideDown" ng-hide="active6">
+                <div class="contenido--menu">
+                    <ul>
+                        <li>
+                            <md-button class="tipoLista" ng-href="#">
+                                <p></p>
+                            </md-button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- fin reclamos -->
+        </div>
+    </div>
+</div>

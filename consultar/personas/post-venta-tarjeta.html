@@ -1,8 +1,51 @@
-<div ng-controller="animateCtrl">
-      <!-- inicio miga -->
-      <span class="migadepan"> HOME / POST VENTA TARJETA DE CRÉDITO</span>
-      <!-- fin miga -->
-  <div class="ban-container contenedorLlamada">
-  </div>
-  <div ng-include src="'componentes/botons-float.html'"></div>
+<div class="card h--paddingTop3">
+    <!-- inicio miga -->
+    <span class="migadepan"> HOME / POST VENTA TARJETA DE CRÉDITO</span>
+    <!-- fin miga -->
+    <!-- inicio contenedor llamada -->
+    <div class="ban-container contenedorLlamada s1600">
+        <div class="ban-row">
+            <div class="ban-col-md-12">
+                <!-- inicio tabla -->
+                <div class="tabla h--paddingTop1">
+                    <div class="ban-row">
+                        <!-- inicio menu -->
+                        <div class="ban-col-md-4 menuInterior h--padding0">
+                            <div class="headTabla">
+                                <p>INDICE</p>
+                            </div>
+                             <!-- inicio colapsable -->
+                             <div ng-include src="'navegacion-privada/menu-colapsable_postVentaTC.html'"></div>
+                            <!-- fin colapsable -->
+                        </div>
+                        <!-- fin menu -->
+                        <!-- inicio contenido -->
+                        <div class="ban-col-md-8 visorContenido h--padding0">
+                            <div class="ban-col-md-12 headTabla">
+                                <p style="color: #fff !important">CONTENIDO</p>
+                            </div>
+                            <div class="ban-col-md-12 h--paddingTop5">
+                                <div class="ban-row">
+                                    <div class="ban-col-md-7 ban-col-md-push-2 h--alignCenter" >
+                                            <md-button class="botonCuadrado" href="">BENEFICIOS</md-button>
+                                            <p style="line-height:30px;font-size:20px;"> <strong style="font-weight: 600;">TARJETA DE CRÉDITO</strong><br>
+                                            <br>
+                                                Toda la información necesaria está en la página web:<br>
+                                            Sección en el lado izquierdo que se llama “Tarjeta de Crédito One”.</p>
+                                            <link rel="stylesheet" href="http://personas.bancosecurity.cl/minisitio-tarjetas/">
+                                            <img style="width: 416px;" class="h--paddingTop1" src="assets/images/PostVentaTarjetaCredito/beneficios.png" alt="">
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <!-- fin contenido -->
+                    <!-- fin columna contenido -->
+                </div>
+                <!-- fin tabla -->
+            </div>
+        </div>
+    </div>
+    <!-- fin contenedor llamada -->
+    <div ng-include src="'componentes/botons-float.html'"></div>
 </div>

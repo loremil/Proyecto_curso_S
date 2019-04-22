@@ -44,3 +44,43 @@
     width:260px;
     border-radius:16px;
   }
+
+  .botonRedondoAltoL{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    background-color: #05bd2e;
+    height:60px;
+    width: 200px;
+    color:#FFFFFF;
+    border-radius:16px;
+    box-shadow: 10px 10px 10px -7px rgba(0, 0, 0, 0.3);
+  }
+
+  .botonCuadrado{
+    font-size:22px;
+    background-color: #ec6e00;
+    color:#FFFFFF;
+    line-height: 44px;
+    width:260px;
+    border-radius: 0px;
+    &.s360{
+      width: 360px;
+    }
+    &.s480{
+      width: 480px;
+    }
+    &.s512{
+      width: 512px;
+    }
+  }
+
+  .md-button.doslineas{
+    line-height:28px !important;
+  }
+
+  .md-button.principalDropdown{
+    &:hover{
+    border-left: 6px solid #ec6e00 !important;
+    }
+  }

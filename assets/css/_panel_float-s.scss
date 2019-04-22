@@ -81,7 +81,7 @@
             top:266px;
             width: 420px;
             height: 705px;
-            background-color:#dcdfe0;
+            background-color:#f4f4f4;
             transform: translateX(-360px);
             .md-button{
                 margin-right: 0px;
@@ -97,11 +97,6 @@
                         border-right: 10px solid #ec6e00;
                     }
             }
-            // .hoverSideLeft{
-            //     &:hover{
-            //         border-left: 10px solid #ec6e00;
-            //     }
-            // }
             }
             .boton{
                 background-color: #ec6e00;
@@ -155,5 +150,21 @@
     }
     //   fin flotante
     
+    .md-button{
+        &.hoverSideRight{
+            &:hover{
+                border-right: 10px solid #ec6e00;
+                }
+            }
+        .hoverSideLeft{
+            &:hover{
+                    border-left: 10px solid #ec6e00;
+                }
+            }
+    }
+
+
+
     // inicio flotante izquierdo
     // fin flotante izquierdo
+

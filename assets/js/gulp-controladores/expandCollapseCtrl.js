@@ -5,8 +5,8 @@ cursosApp.controller('expandCollapseCtrl', function($scope) {
   $scope.active2 = true;
   $scope.active3 = true;
   $scope.active4 = true;
-  $scope.active7 = false;
-  $scope.active8 = true;
+  $scope.active5 = true;
+  $scope.active6 = true;
   $scope.menuMovil = true;
   $scope.mouseClickN = function(position) {
     $scope.activo[position] = "";

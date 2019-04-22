@@ -1,0 +1,36 @@
+.menuTabla{
+    .md-button{
+        text-align: left !important;
+        width: 96%;
+        line-height: 80px;
+        height:80px;
+        font-size: 20px;
+        color:green !important;
+   
+        &:hover{
+            border-left: 6px  solid #ec6e00;
+        }
+    }
+}
+
+
+.tabla{
+    .ban-row{
+        height:550px;
+        .menuInterior{
+            height:550px;  
+        }
+        .visorContenido{
+            height:550px; 
+            overflow: hidden; 
+            .botonFixed{
+             min-height: 60px;
+            }
+        }
+    }
+}
+
+.menuInterior{
+    height: 100%;
+}
+    

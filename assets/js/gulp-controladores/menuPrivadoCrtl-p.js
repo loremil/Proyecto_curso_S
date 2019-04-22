@@ -85,7 +85,7 @@ cursosApp.controller('menuPrivadoCrtl-p', ['$scope', '$location', function ($sco
     id: 7,  
     name: 'POST VENTA',
     url: '#boletaOnline-postVenta',
-  },{
+  
   }];
 
 // fin nav flotante izquierdo
@@ -115,7 +115,6 @@ $scope.menuEmpresa5 = [{
   url: '#boletaOnline-postVenta',
 },{
 }];
-
 // fin nav flotante interior
 }]);
 
