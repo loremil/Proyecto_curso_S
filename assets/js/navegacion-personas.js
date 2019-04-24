@@ -147,7 +147,44 @@ cursosApp.config(function ($routeProvider) {
 .when('/bloqueo-orden-banco', {
   templateUrl: 'consultar/personas/post-venta-tarjeta_contenido/plastico/bloqueo-orden-banco.html',
 })
-
+// inicio post venta TC - ESTADO DE CUENTA
+.when('/informacion-gereneralEC', {
+  templateUrl: 'consultar/personas/post-venta-tarjeta_contenido/estado-cuenta/informacion-gereneralEC.html',
+})
+.when('/pac-multibanco', {
+  templateUrl: 'consultar/personas/post-venta-tarjeta_contenido/estado-cuenta/pac-multibanco.html',
+})
+.when('/pac-activar-desactivar', {
+  templateUrl: 'consultar/personas/post-venta-tarjeta_contenido/estado-cuenta/pac-activar-desactivar.html',
+})
+.when('/modificacion-direccion', {
+  templateUrl: 'consultar/personas/post-venta-tarjeta_contenido/estado-cuenta/modificacion-direccion.html',
+})
+.when('/modificacion-envioEC', {
+  templateUrl: 'consultar/personas/post-venta-tarjeta_contenido/estado-cuenta/modificacion-envioEC.html',
+})
+.when('/modificacion-pagoMinimo', {
+  templateUrl: 'consultar/personas/post-venta-tarjeta_contenido/estado-cuenta/modificacion-pagoMinimo.html',
+})
+.when('/modificacion-cicloFacturacion', {
+  templateUrl: 'consultar/personas/post-venta-tarjeta_contenido/estado-cuenta/modificacion-cicloFacturacion.html',
+})
+.when('/pat-inscripcion-eliminacion', {
+  templateUrl: 'consultar/personas/post-venta-tarjeta_contenido/estado-cuenta/pat-inscripcion-eliminacion.html',
+})
+.when('/consulta-deudaCliente', {
+  templateUrl: 'consultar/personas/post-venta-tarjeta_contenido/estado-cuenta/consulta-deudaCliente.html',
+})
+// inicio post venta TC - PREVENCIÓN FRAUDE
+.when('/bloque-transitorio-nexus', {
+  templateUrl: 'consultar/personas/post-venta-tarjeta_contenido/prevencion-fraude/bloque-transitorio-nexus.html',
+})
+.when('/punto-compromiso', {
+  templateUrl: 'consultar/personas/post-venta-tarjeta_contenido/prevencion-fraude/punto-compromiso.html',
+})
+.when('/protocolo-seguridadFiltracion', {
+  templateUrl: 'consultar/personas/post-venta-tarjeta_contenido/prevencion-fraude/protocolo-seguridadFiltracion.html',
+})
 
     .otherwise({
       redirectTo: '/boleta-online'
